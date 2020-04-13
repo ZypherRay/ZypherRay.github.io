@@ -97,8 +97,9 @@
 <meta property="og:image" content="c:%5CUsers%5CYOGA710%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1586592203349.png">
 <meta property="og:image" content="c:/Users/YOGA710/AppData/Roaming/Typora/typora-user-images/1586597767872.png">
 <meta property="og:image" content="c:/Users/YOGA710/AppData/Roaming/Typora/typora-user-images/1586597893337.png">
+<meta property="og:image" content="c:/Users/YOGA710/AppData/Roaming/Typora/typora-user-images/1586671362315.png">
 <meta property="article:published_time" content="2020-04-11T10:15:01.000Z">
-<meta property="article:modified_time" content="2020-04-11T10:16:24.110Z">
+<meta property="article:modified_time" content="2020-04-13T12:21:36.479Z">
 <meta property="article:author" content="未来的东东东">
 <meta property="article:tag" content="-Arcmap">
 <meta name="twitter:card" content="summary">
@@ -351,7 +352,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  275
+                  852
                 </span>
               
 
@@ -367,7 +368,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -420,8 +421,54 @@
  <img src="C:\Users\YOGA710\AppData\Roaming\Typora\typora-user-images\1586597767872.png" alt="1586597767872" style="zoom:50%;" />
 </li>
 <li><p>计算地级市面积</p>
- <img src="C:\Users\YOGA710\AppData\Roaming\Typora\typora-user-images\1586597893337.png" alt="1586597893337" style="zoom:50%;" /></li>
+ <img src="C:\Users\YOGA710\AppData\Roaming\Typora\typora-user-images\1586597893337.png" alt="1586597893337" style="zoom:50%;" />
+
+<ul>
+<li>应该先计算总体面积和道路总长度，这样在分割的时候，新的图层点的面积以及道路长度直接就计算好了，不用重复计算一遍。</li>
+</ul>
+</li>
+<li><p>分割省直辖市</p>
+<ul>
+<li><p>湖北省有四个省直辖市神农架、仙桃、天门、潜江，利用县级行政单位的图层，进行矢量分割</p>
+</li>
+<li><p>这里出现了一个bug，我计算的时候把省直辖市的面积已经计算好了，但是分割后的市面积都和省直辖市整个的面积相等，导致后来我算密度的时候，这四个省直辖市的道路密度只有0.05，0.06左右，搞的我一阵迷惑，后来在输入密度的时候，发现面积搞错了，然后又重现算了一遍四个省直辖市的面积，得到正确结果。</p>
+</li>
+</ul>
+</li>
+<li><p>计算所有市的道路密度</p>
+<ul>
+<li><p>这里我是手动输入用excel算的，如果要在gis里面算，每个图层都要点开算一遍，反正数据量也不大，我就手动计算了</p>
+</li>
+<li><p>计算的时候要注意单位的换算，因为我一开始就采用的米和平方米为单位，所以在计算密度的时候要进行单位的换算$1km=1000m$,$1km^2=1000000m^2$。当然一开始字段计算的时候，直接转换成$km,km^2$最好了。</p>
+</li>
+</ul>
+</li>
+<li><p>符号化</p>
+<ul>
+<li>把计算好的道路密度重新输入Arcmap的属性表中，注意要一一对应，不要搞错了。</li>
+<li>然后就是很简单的操作，符号化了，选择合适的范围分段。</li>
+</ul>
+</li>
+<li><p>出图</p>
+<ul>
+<li>加图例、比例尺、图名、标签</li>
+<li><img src="C:\Users\YOGA710\AppData\Roaming\Typora\typora-user-images\1586671362315.png" alt="1586671362315" style="zoom:50%;" /></li>
+<li>这里我没有出完整的图，只是个初步的结果图。</li>
+</ul>
+</li>
 </ol>
+<h2 id="下载高程数据"><a href="#下载高程数据" class="headerlink" title="下载高程数据"></a>下载高程数据</h2><p><a href="https://zhuanlan.zhihu.com/p/76344362" target="_blank" rel="noopener">高程知乎教程</a></p>
+<ul>
+<li>bigmap竟然无破解版</li>
+<li>水经注也是一样的软件</li>
+<li>localspace没有切割WGS1984坐标系</li>
+<li>闲鱼。。有点贵</li>
+<li>最后找师兄要到了哈哈哈哈哈哈</li>
+</ul>
+<h3 id="投影变换WGS1984—CGCS2000"><a href="#投影变换WGS1984—CGCS2000" class="headerlink" title="投影变换WGS1984—CGCS2000"></a>投影变换WGS1984—CGCS2000</h3><p><a href="https://blog.csdn.net/smss007/article/details/103504631" target="_blank" rel="noopener">投影转换</a></p>
+<h3 id="生成等高线"><a href="#生成等高线" class="headerlink" title="生成等高线"></a>生成等高线</h3><p><a href="https://www.cnblogs.com/123zxc/p/5913596.html" target="_blank" rel="noopener">栅格数据DEM生成等高线</a></p>
+<h3 id="插值DEM"><a href="#插值DEM" class="headerlink" title="插值DEM"></a>插值DEM</h3><p>这里我的数据是已经可以直接使用的DEM数据，故不需要进行转换，直接进行下一个步骤</p>
+<h3 id="符号化"><a href="#符号化" class="headerlink" title="符号化"></a>符号化</h3><p>属性——symbology——quality——选择字段、色带</p>
 
       
     </div>
@@ -461,6 +508,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/04/13/GeoDa/" rel="prev" title="GeoDa">
+                GeoDa <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -541,7 +592,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -554,7 +605,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -597,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#道路空间差异分析"><span class="nav-number">1.</span> <span class="nav-text">道路空间差异分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#提取湖北省数据"><span class="nav-number">1.1.</span> <span class="nav-text">提取湖北省数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算湖北省地级市道路密度"><span class="nav-number">1.2.</span> <span class="nav-text">计算湖北省地级市道路密度</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#道路空间差异分析"><span class="nav-number">1.</span> <span class="nav-text">道路空间差异分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#提取湖北省数据"><span class="nav-number">1.1.</span> <span class="nav-text">提取湖北省数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算湖北省地级市道路密度"><span class="nav-number">1.2.</span> <span class="nav-text">计算湖北省地级市道路密度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载高程数据"><span class="nav-number">1.3.</span> <span class="nav-text">下载高程数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#投影变换WGS1984—CGCS2000"><span class="nav-number">1.3.1.</span> <span class="nav-text">投影变换WGS1984—CGCS2000</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成等高线"><span class="nav-number">1.3.2.</span> <span class="nav-text">生成等高线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插值DEM"><span class="nav-number">1.3.3.</span> <span class="nav-text">插值DEM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#符号化"><span class="nav-number">1.3.4.</span> <span class="nav-text">符号化</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
