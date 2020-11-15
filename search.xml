@@ -6626,14 +6626,70 @@
       </tags>
   </entry>
   <entry>
-    <title>d</title>
-    <url>/2020/11/12/d/</url>
-    <content><![CDATA[]]></content>
+    <title>人文地理—经济地理参考</title>
+    <url>/2020/11/15/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6-%E7%BB%8F%E6%B5%8E%E5%9C%B0%E7%90%86%E5%AD%A6%E5%8F%82%E8%80%83/</url>
+    <content><![CDATA[
+
+	<div class="row">
+		<iframe src="https://drive.google.com/file/d/1wV4nuXj239bWZ0z1NYJhw64SLZB5VQsJ/preview" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+]]></content>
   </entry>
   <entry>
-    <title>人文地理&amp;经济地理参考</title>
-    <url>/2020/11/15/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86-%E7%BB%8F%E6%B5%8E%E5%9C%B0%E7%90%86%E5%8F%82%E8%80%83/</url>
-    <content><![CDATA[<object data="./test/test.pdf" type="application/pdf" width="100%" height="100%">
+    <title>hexo上传PDF</title>
+    <url>/2020/11/15/hexo%E4%B8%8A%E4%BC%A0PDF/</url>
+    <content><![CDATA[<h1 id="hexo上传pdf文件"><a href="#hexo上传pdf文件" class="headerlink" title="hexo上传pdf文件"></a>hexo上传pdf文件</h1><h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install --save hexo-pdf</span><br></pre></td></tr></table></figure>
+
+<h2 id="将文件上传到Google-drive并获取链接"><a href="#将文件上传到Google-drive并获取链接" class="headerlink" title="将文件上传到Google drive并获取链接"></a>将文件上传到Google drive并获取链接</h2><h3 id="修改格式"><a href="#修改格式" class="headerlink" title="修改格式"></a>修改格式</h3><p>如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% pdf https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;0B6qSwdwPxPRdTEliX0dhQ2JfUEU&#x2F;preview %&#125;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
+      <categories>
+        <category>-hexo</category>
+      </categories>
+      <tags>
+        <tag>-hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语图画作文问题分析</title>
+    <url>/2020/11/15/%E8%8B%B1%E8%AF%AD%E5%9B%BE%E7%94%BB%E4%BD%9C%E6%96%87%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h1 id="英语图画作文问题分析"><a href="#英语图画作文问题分析" class="headerlink" title="英语图画作文问题分析"></a>英语图画作文问题分析</h1><ul>
+<li>用词表达多重复<ul>
+<li>原因：词句积累不够，虽然单词背会，但是却不能组合起来使用</li>
+<li>对策：多看范文，积累不同话题的英语表达，进行背诵积累</li>
+</ul>
+</li>
+<li>语言不够富有逻辑性，表达的重点没有突出<ul>
+<li>原因：对英语句子的结构把握不准</li>
+<li>对策：多练习，将需要表达的重点尽量写在句子靠前的位置，可以采用“几个简单句——连起来——修饰”的三步骤来进行练习</li>
+</ul>
+</li>
+<li>第一段对于图画的内容描述不够全面，不够准确<ul>
+<li>忽略了图画中的重要因素，比如人的动作，人是以什么样的状态做的这个动作</li>
+</ul>
+</li>
+<li>第二段的引申义表述不准确，写出来内容和第一段差别不大，需要注意的是，第一段是对图片的描述，第二段需要对第一段的内容进行概括总结深化。并且要举例说明，图画中所代表象征的一类现象，而不是图片中所表达的具体现象。<ul>
+<li>原因：没有理解清楚第二段真正应该写什么，导致和第一段重复</li>
+<li>对策：注意与第一段进行对比，第一段描述代表一个，第二段代表一类</li>
+</ul>
+</li>
+<li>第二段虽然代表的是一类，但是不能笼统的写成一大类，而显得过于宏观，需要在一定程度上具体，如2020年的试卷，主题是习惯，个人品质类，但是习惯也分很多种，需要把题目中的具体是哪一个习惯写出来，不能简单的用一个habit就代替了<ul>
+<li>原因：虽然理解作文主旨，但是忽略了文章所表达的说服力，笼统的文章显得无力</li>
+<li>对策：在写作时要注意，个人习惯和品质都要写出来具体的习惯是什么，一个现象也要写出具体的现象，最好用一个典型的名词代替</li>
+</ul>
+</li>
+<li>第二段内容写的不够<ul>
+<li>原因：积累不够，写不出来</li>
+<li>对策：多积累</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>-考研英语一</category>
+      </categories>
   </entry>
 </search>
