@@ -6551,7 +6551,8 @@
 <p><a href="https://mp.weixin.qq.com/s/g2OEssgj8gMg888IpO4dCA" target="_blank" rel="noopener">马克思主义系列文章</a> ———- <a href="https://mp.weixin.qq.com/s/YNwIO1VpdjZVFWywl-iKKw" target="_blank" rel="noopener">垄断资本主义考点</a> ————- <a href="https://mp.weixin.qq.com/s/NmbCW-bij5bh5HPyjC52DQ" target="_blank" rel="noopener">唯物论考点</a></p>
 <p> <a href="https://mp.weixin.qq.com/s/pACwVUo_WGPLIneD-OqGWg" target="_blank" rel="noopener">辩证法</a>——–<a href="https://mp.weixin.qq.com/s/ciYdiiQooG8l3N0i6V_-vg" target="_blank" rel="noopener">认识论</a>————-<a href="https://mp.weixin.qq.com/s/kEXa257WcJyuYO3P_wkv4w" target="_blank" rel="noopener">历史观</a> ————<a href="https://mp.weixin.qq.com/s/TwssbLPAYUupYW0boNAHQw" target="_blank" rel="noopener">剩余价值论</a>————-<a href="https://mp.weixin.qq.com/s/19EG2zQh2194fHfFtVYKzQ" target="_blank" rel="noopener">科学社会主义</a></p>
 <h2 id="毛中特"><a href="#毛中特" class="headerlink" title="毛中特"></a>毛中特</h2><p><a href="https://mp.weixin.qq.com/s/l4iIcboTUJ4V-dLX3slnNA" target="_blank" rel="noopener">DAY9</a>———<a href="https://mp.weixin.qq.com/s/mV5623XATepPNuWOsaaGew" target="_blank" rel="noopener">DAY10</a>———–<a href="https://mp.weixin.qq.com/s/j70powD11Ice5o-FoYCn9g" target="_blank" rel="noopener">DAY11</a>———-<a href="https://mp.weixin.qq.com/s/TecHQyg974F3b6hZLZVmZw" target="_blank" rel="noopener">DAY12</a>    </p>
-<p><a href="https://mp.weixin.qq.com/s/SWbOAlnp0SLDldvPbbp40w" target="_blank" rel="noopener">DAY13</a></p>
+<p><a href="https://mp.weixin.qq.com/s/SWbOAlnp0SLDldvPbbp40w" target="_blank" rel="noopener">DAY13</a>——-<a href="https://mp.weixin.qq.com/s/0TKMXnJ_F7blu-yjzXzTcw" target="_blank" rel="noopener">DAY14</a>———–<a href="https://mp.weixin.qq.com/s/51CghZsVOHO4iVSML5UyHw" target="_blank" rel="noopener">DAY15</a>———-<a href="https://mp.weixin.qq.com/s/tl1AiKzPKKuQiJmUGQ0Flg" target="_blank" rel="noopener">DAY16</a></p>
+<p><a href="https://mp.weixin.qq.com/s/No6ODWHwcdNmRs1_bdCbxA" target="_blank" rel="noopener">DAY17</a></p>
 <p><a href="https://mp.weixin.qq.com/s/_9ehEZKvhd2yuVrm9h8M4Q" target="_blank" rel="noopener">社会主义改造理论</a></p>
 <p><img src="https://user-images.githubusercontent.com/63230281/98910228-dd1e2c00-24fd-11eb-84e6-e1c20f906bbf.jpg" alt="a"></p>
 ]]></content>
@@ -6691,5 +6692,176 @@
       <categories>
         <category>-考研英语一</category>
       </categories>
+  </entry>
+  <entry>
+    <title>高数总结</title>
+    <url>/2020/11/17/%E9%AB%98%E6%95%B0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="考研数学总结"><a href="#考研数学总结" class="headerlink" title="考研数学总结"></a>考研数学总结</h1><ol>
+<li>选择题如果计算量偏大，则需要考虑是不是方法错误，一般选择题计算量适中</li>
+<li></li>
+</ol>
+<h2 id="等价无穷小"><a href="#等价无穷小" class="headerlink" title="等价无穷小"></a>等价无穷小</h2><ol>
+<li>微分方程与等价无穷小的结合</li>
+</ol>
+<ul>
+<li>设$y=y(x)$是$y’’+2y’+y=e^x$满足$y(0)=y’(0)=0$的解，则当$x→0$时，与$y(x)$等价无穷小的是       <u>$1-cosx$</u></li>
+</ul>
+<ol start="2">
+<li>复合函数的等价无穷小</li>
+</ol>
+<ul>
+<li>若$f(x)——x^2$则$f(x^2)——x^4$</li>
+</ul>
+<ol start="3">
+<li>等价无穷小可以用来判断极限的敛散性</li>
+</ol>
+<h2 id="最值与极值"><a href="#最值与极值" class="headerlink" title="最值与极值"></a>最值与极值</h2><ol>
+<li>求导数和二阶导数</li>
+<li>拉格朗日算子（多元函数）</li>
+<li>注意计算仔细则拿分</li>
+<li>注意绝对值，求解时要对定义域进行分类，去绝对值后再求解</li>
+</ol>
+<h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><ol>
+<li>洛必达失效情况——极限不存在</li>
+<li>$1^∞$——$(u-1)*v$</li>
+<li>二元积分洛必达求极限，对x求导两次消掉积分号，两次分别对应两个不同的字母即可</li>
+</ol>
+<p>$$<br>\lim_{n\rightarrow0}\frac{-\int_{0}^{x}du\int_{0}^{u^2}f(t,u)dt}{x^3}<br>$$</p>
+<p>$$<br>\lim_{n\rightarrow0}\frac{-\int_{0}^{x^2}f(t,x)dt}{3x^2}<br>$$</p>
+<ol start="4">
+<li>两个字母注意使用换元，可以将定积分转换为变限积分</li>
+<li>等价无穷小公式</li>
+<li>夹逼准则的使用</li>
+</ol>
+<h2 id="敛散性"><a href="#敛散性" class="headerlink" title="敛散性"></a>敛散性</h2><ol>
+<li>P级数</li>
+<li>当如下情况时，需要在不同的情况对函数进行分析，当$0&lt;x&lt;1$和$x&gt;1$时，占主要作用的部分不同前者为$b$，后者为$a$</li>
+</ol>
+<p>$$<br>I=\int_{0}^{\infty}\frac{1}{x^a+x^b}dx(a&gt;b&gt;0)<br>$$</p>
+<h2 id="可微-amp-可导-amp-连续"><a href="#可微-amp-可导-amp-连续" class="headerlink" title="可微&amp;可导&amp;连续"></a>可微&amp;可导&amp;连续</h2><ul>
+<li>可导一定连续，连续不一定可导</li>
+<li>连续则极限存在，极限存在不一定连续</li>
+<li>连续一定可积，连续一定有界，可积一定有界，可积不一定连续</li>
+<li>连续不一定可微，可微一定连续</li>
+<li>偏导连续一定可微，偏导存在不一定连续</li>
+<li>连续不一定偏导存在，可微不一定偏导连续</li>
+<li>二阶混合偏导连续的偏导相等，偏导一个连续一个有界函数可微。</li>
+</ul>
+<h3 id="可微"><a href="#可微" class="headerlink" title="可微*"></a>可微*</h3><ol>
+<li><p>$$<br>\lim_{p\rightarrow+\infty}\frac{\Delta f-f_x’(0,0)\Delta x-f_y’(0,0)\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}<br>$$</p>
+</li>
+</ol>
+<p>​    其中<br>$$<br>p={\sqrt{\Delta x^2+\Delta y^2}}<br>$$</p>
+<ol start="2">
+<li>二阶连续偏导数连续<br> $$<br> \frac {\partial ^2u} {\partial ^2x }=\frac {\partial ^2u } {\partial ^2y }<br> $$</li>
+</ol>
+<h3 id="全微分"><a href="#全微分" class="headerlink" title="全微分"></a>全微分</h3><p>$$<br>du=Pdx+Qdy<br>$$</p>
+<p>$$<br>\rightarrow \frac {\partial P } {\partial y }=\frac {\partial Q } {\partial x }<br>$$</p>
+<h3 id="可导"><a href="#可导" class="headerlink" title="可导"></a>可导</h3><ol>
+<li><p>不可导点——函数无意义点，分段点</p>
+</li>
+<li><p>定义推导，左导数=右导数</p>
+</li>
+<li><p>二阶导数——泰勒公式</p>
+</li>
+</ol>
+<h2 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h2><ol>
+<li><p>注意积分限，有的积分限会故意颠倒顺序</p>
+</li>
+<li><p>积分换元时一定要注意换积分限</p>
+</li>
+<li><p>三角函数的积分公式【太多了，每天早中晚默写一遍】<br> $$<br> \int tanxdx=-ln|cosx|+c<br> $$</p>
+<p> $$<br> \int cotxdx=ln|sinx|+c<br> $$</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>点火公式推广应用</p>
+</li>
+<li><p>当积分上下限确定时，可以当作常数$A$看待</p>
+</li>
+<li><p>积分限对称问题</p>
+<ul>
+<li>关于$x$轴对称</li>
+<li>关于$y$轴对称</li>
+<li>关于原点对称</li>
+<li>函数的奇偶性</li>
+<li>轮换对称性</li>
+</ul>
+</li>
+<li><p>积分再现，当出现$\frac{x^2}{x^2+y^2}$时可以考虑轮换对称性</p>
+</li>
+</ol>
+<h2 id="旋转体问题"><a href="#旋转体问题" class="headerlink" title="旋转体问题***"></a>旋转体问题***</h2><ol>
+<li>绕$x$轴和$y$轴旋转公式的应用</li>
+</ol>
+<h2 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h2><ol>
+<li><p>有时候y不一定直接就写成y，可能是一个式子:sweat:<br> $$<br> y’cosy=x-siny<br> $$<br> 此题中可将$f(x)$看作$siny$</p>
+<p> 得,同时令$siny=u$<br> $$<br> （siny）’=x+siny<br> $$</p>
+</li>
+<li><p>首先判断微分方程得类型，再决定使用哪种方法计算求解 </p>
+</li>
+<li><p>微分方程可以是$\frac{dy}{dx}$也可以是$\frac{dy}{dx}$</p>
+</li>
+<li><p>二阶微分方程通解公式</p>
+</li>
+</ol>
+<h2 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理***"></a>中值定理***</h2><ol>
+<li><p>积分再现，三角函数的周期性</p>
+<p> $sinx=sin(n\pi+x)$</p>
+</li>
+<li><p>求实根问题</p>
+<ul>
+<li>单调，$f(a)$&lt;0及$f(b)&gt;0$</li>
+<li>设辅助函数，转换为导数存在为零<ul>
+<li>导数为零，可用罗尔定理</li>
+<li>二阶导数为零，可以使用两次罗尔定理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>中值定理与积分中值定理</p>
+</li>
+<li><p>拉格朗日 </p>
+</li>
+<li><p>泰勒</p>
+</li>
+</ol>
+<h2 id="参数方程"><a href="#参数方程" class="headerlink" title="参数方程"></a>参数方程</h2><ol>
+<li>参数方程二重积分计算时，直接将y带入，再求$\frac {dx}{dt}$与替换为$dx$</li>
+</ol>
+<h2 id="极坐标"><a href="#极坐标" class="headerlink" title="极坐标"></a>极坐标</h2><ol>
+<li>极坐标表示得方程不一定就是角度和半径，也可以是直角坐标系，根绝计算需求选择<ol>
+<li>$ \Theta $和$r$的顺序转换，可以将$ \Theta 和r$放入直角坐标系中考虑</li>
+</ol>
+</li>
+</ol>
+<h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h3 id="具体"><a href="#具体" class="headerlink" title="具体"></a>具体</h3><ol>
+<li><p>施密特正交化<br> $$<br> \begin{align}  \vec{b}<em>1&amp;=\vec{v}_1\  \vec{b}_2&amp;=\vec{v}_2-\frac{\vec{v}_2\cdot \vec{b}_1}{||\vec{b}_1||^2}\vec{b}_1\  \vec{b}_3&amp;=\vec{v}_3-\frac{\vec{v}_3\cdot \vec{b}_2}{||\vec{b}_2||^2}\vec{b}_2-\frac{\vec{v}_3\cdot \vec{b}_1}{||\vec{b}_1||^2}\vec{b}_1\  \cdots &amp;\  \vec{b}_p&amp;=\vec{v}_p-\sum</em>{i=1}^{p-1}\frac{\vec{v}_p\cdot \vec{b}_i}{||\vec{b}_i||^2}\vec{b}_i  \end{align}<br> $$</p>
+</li>
+<li><p>求$A^*$的方程通解时，通常会转化成与$A$相关的方程进行简化求解</p>
+</li>
+<li><p>求$A、B$正交矩阵，则$P_1AP_1^{-1}-\Lambda $以及则有$P_2BP_2^{-1}-\Lambda $则有$Q=P_1P_2^{-1}$</p>
+</li>
+</ol>
+<h3 id="抽象"><a href="#抽象" class="headerlink" title="抽象"></a>抽象</h3><ol>
+<li>构造特征值因式</li>
+<li>矩阵的逆的求和表现形式</li>
+<li>单位正交列向量$A^TA=E$</li>
+</ol>
+<h2 id="数学应用"><a href="#数学应用" class="headerlink" title="数学应用"></a>数学应用</h2><ol>
+<li>题目中的有关速率的直接写出来</li>
+<li>然后写出需要求解的式子</li>
+<li>判断两者之间的关系，得真正需求求解得式子</li>
+</ol>
+<h2 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h2><ol>
+<li>反函数$f(x)$与$g(x)$为反函数则$f(g(x))=x$,但是要注意区分，当$g(2)$此处对应的是$f(x)$的$y$,有关$f(x)$的$x$需要进行求解而得</li>
+</ol>
+<h2 id="可能的计算错误"><a href="#可能的计算错误" class="headerlink" title="可能的计算错误"></a>可能的计算错误</h2>]]></content>
+      <categories>
+        <category>-考研数学</category>
+      </categories>
+      <tags>
+        <tag>-高数</tag>
+      </tags>
   </entry>
 </search>
