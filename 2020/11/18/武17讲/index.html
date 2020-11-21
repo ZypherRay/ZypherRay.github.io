@@ -7,19 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <% if (theme.busuanzi && theme.busuanzi.enable && !index){ %>
-        <!-- 不蒜子统计 -->
-        <span id="busuanzi_container_page_pv" style='display:none' class="<%= class_name %>">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-<% } %>
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
+  
   
   
     
@@ -92,12 +80,34 @@
 
 
 
-<meta name="description" content="【武17讲】平面域的面积与旋转体体积平面域面积 直角坐标系与极坐标的转化 面积为区间对1的二重积分 积分次序的选择  旋转体的体积 基本问题   旋转体的体积的一般的问题是平面域$D$绕直线  $L: ax + by+ c&#x3D;0$ （该直线不穿过区域 ,$D$ 如右图）    通用公式$$V&#x3D;2\pi\int\int  r(x,y)d\sigma$$ $$r(x,y)&#x3D;\frac{|ax+by+c|">
+<meta name="description" content="【武17讲】极限方法s 注意洛必达失效的情况  洛必达公式使用的时候要注意函数的可导性，若函数$f^{(n)}(x)$可导，则洛必达法则只能使用到$f^{(n-1)}(x)$,否则使用导数的定义  尤其是大题，不要轻易使用洛必达法则，会出现概念漏洞$！！！！$      洛必达写不出来，或者写出来很复杂的，就使用泰勒公式  等价无穷小公式  加法进行等价无穷小使用的时候，两式相比，比值不为$-1$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="武17讲">
 <meta property="og:url" content="http://zypher.cn/2020/11/18/%E6%AD%A617%E8%AE%B2/index.html">
 <meta property="og:site_name" content="未来的东东东">
-<meta property="og:description" content="【武17讲】平面域的面积与旋转体体积平面域面积 直角坐标系与极坐标的转化 面积为区间对1的二重积分 积分次序的选择  旋转体的体积 基本问题   旋转体的体积的一般的问题是平面域$D$绕直线  $L: ax + by+ c&#x3D;0$ （该直线不穿过区域 ,$D$ 如右图）    通用公式$$V&#x3D;2\pi\int\int  r(x,y)d\sigma$$ $$r(x,y)&#x3D;\frac{|ax+by+c|">
+<meta property="og:description" content="【武17讲】极限方法s 注意洛必达失效的情况  洛必达公式使用的时候要注意函数的可导性，若函数$f^{(n)}(x)$可导，则洛必达法则只能使用到$f^{(n-1)}(x)$,否则使用导数的定义  尤其是大题，不要轻易使用洛必达法则，会出现概念漏洞$！！！！$      洛必达写不出来，或者写出来很复杂的，就使用泰勒公式  等价无穷小公式  加法进行等价无穷小使用的时候，两式相比，比值不为$-1$">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874755-3afcf300-2c25-11eb-8ff1-dc3918d115ac.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874757-3b958980-2c25-11eb-8b20-69e260826892.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874758-3cc6b680-2c25-11eb-973c-a0373b916a95.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874734-24569c00-2c25-11eb-93d8-e6272e3b7a43.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874735-26b8f600-2c25-11eb-9511-d39cc42d02f6.png">
+<meta property="og:image" content="c:/Users/YOGA710/AppData/Roaming/Typora/typora-user-images/1605842734636.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874755-3afcf300-2c25-11eb-8ff1-dc3918d115ac.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874739-2b7daa00-2c25-11eb-9d6c-20cab5dafcc5.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874740-2e789a80-2c25-11eb-8b30-0c7977348f4b.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874730-215bab80-2c25-11eb-9a54-b1ec582f71e7.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874742-31738b00-2c25-11eb-9ca0-1546ae341290.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874744-32a4b800-2c25-11eb-901f-e2e52f0feb15.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874734-24569c00-2c25-11eb-93d8-e6272e3b7a43.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874748-346e7b80-2c25-11eb-8b83-bb174f0c4489.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874749-359fa880-2c25-11eb-9835-cd81e2b3cfc4.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874750-36d0d580-2c25-11eb-97d3-f063ecdfc1c9.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874751-38020280-2c25-11eb-8235-a5ba20a3ef48.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874754-39cbc600-2c25-11eb-9ca3-c4a92c22eea2.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874761-3df7e380-2c25-11eb-83ea-72910c1bb0e6.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874763-3fc1a700-2c25-11eb-8216-49bea3b9ca55.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874766-42240100-2c25-11eb-9aa7-a013b6c9e30c.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99874719-0db04500-2c25-11eb-8494-62c98f7b354e.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99622954-17d81500-2a66-11eb-9ebc-f18f2fe4a386.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99622952-160e5180-2a66-11eb-841d-00b27f5ac732.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99622953-173f7e80-2a66-11eb-9472-8546e1068930.png">
@@ -115,11 +125,11 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99622949-14448e00-2a66-11eb-83bf-b9af1ace63bd.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99622944-127aca80-2a66-11eb-89d7-9eb97c43eef0.png">
 <meta property="article:published_time" content="2020-11-18T14:01:08.000Z">
-<meta property="article:modified_time" content="2020-11-19T05:05:56.363Z">
+<meta property="article:modified_time" content="2020-11-21T10:32:40.561Z">
 <meta property="article:author" content="未来的东东东">
 <meta property="article:tag" content="随记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/63230281/99622954-17d81500-2a66-11eb-9ebc-f18f2fe4a386.png">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/63230281/99874755-3afcf300-2c25-11eb-8ff1-dc3918d115ac.png">
 
 
 
@@ -421,7 +431,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  935
+                  1.6k
                 </span>
               
 
@@ -437,7 +447,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -458,7 +468,135 @@
       
 
       
-        <h1 id="【武17讲】"><a href="#【武17讲】" class="headerlink" title="【武17讲】"></a>【武17讲】</h1><h1 id="平面域的面积与旋转体体积"><a href="#平面域的面积与旋转体体积" class="headerlink" title="平面域的面积与旋转体体积"></a>平面域的面积与旋转体体积</h1><h2 id="平面域面积"><a href="#平面域面积" class="headerlink" title="平面域面积"></a>平面域面积</h2><ol>
+        <h1 id="【武17讲】"><a href="#【武17讲】" class="headerlink" title="【武17讲】"></a>【武17讲】</h1><h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><h2 id="方法s"><a href="#方法s" class="headerlink" title="方法s"></a>方法s</h2><ol>
+<li><p>注意洛必达失效的情况</p>
+<ul>
+<li><p>洛必达公式使用的时候要注意函数的可导性，若函数$f^{(n)}(x)$可导，则洛必达法则只能使用到$f^{(n-1)}(x)$,否则使用导数的定义</p>
+</li>
+<li><p>尤其是大题，不要轻易使用洛必达法则，会出现概念漏洞$！！！！$</p>
+</li>
+<li><p><img src="https://user-images.githubusercontent.com/63230281/99874755-3afcf300-2c25-11eb-8ff1-dc3918d115ac.png" alt="i"></p>
+</li>
+</ul>
+</li>
+<li><p>洛必达写不出来，或者写出来很复杂的，就使用泰勒公式</p>
+</li>
+<li><p>等价无穷小公式</p>
+</li>
+<li><p>加法进行等价无穷小使用的时候，两式相比，比值不为$-1$则可以进行使用</p>
+</li>
+<li><p>泰勒公式</p>
+</li>
+<li><p>泰勒公式其实很好用</p>
+<ul>
+<li><img src="https://user-images.githubusercontent.com/63230281/99874757-3b958980-2c25-11eb-8b20-69e260826892.png" alt="3"></li>
+</ul>
+</li>
+<li><p>夹逼准则求极限</p>
+<p> <img src="https://user-images.githubusercontent.com/63230281/99874758-3cc6b680-2c25-11eb-973c-a0373b916a95.png" alt="3"><br> $$<br> \lim_{n\rightarrow+\infty} \sqrt{a_1^n+a_2^n+…+a_m^n,其中a_i&gt;0,(i=1,2,…,m)}=max<br> $$</p>
+<p> $$<br> \frac{x}{1+x}&lt;ln(1+x)&lt;x<br> $$</p>
+<p> $$<br> sinx&lt;x&lt;tanx<br> $$</p>
+</li>
+<li><p>利用定积分</p>
+<p> <img src="https://user-images.githubusercontent.com/63230281/99874734-24569c00-2c25-11eb-93d8-e6272e3b7a43.png" alt="3"></p>
+</li>
+<li><p>多个乘积——夹逼、取对数【乘法变加法】</p>
+</li>
+<li><p><strong>单调有界准则求极限【递推关系】</strong></p>
+<ul>
+<li>后项$-$前项      后项$/$前项【证单调】</li>
+<li>求极限</li>
+</ul>
+</li>
+<li><p>中值定理求极限【配合夹逼准则】</p>
+<p> <img src="https://user-images.githubusercontent.com/63230281/99874735-26b8f600-2c25-11eb-9511-d39cc42d02f6.png" alt="&lt;841052866&quot; style=&quot;zoom:67%;&quot; /&gt;"></p>
+  <img src="C:\Users\YOGA710\AppData\Roaming\Typora\typora-user-images\1605842734636.png" alt="1605842734636" style="zoom:67%;" />
+
+
+
+</li>
+</ol>
+<h2 id="函数极限"><a href="#函数极限" class="headerlink" title="函数极限"></a>函数极限</h2><h3 id="frac-0-0-型极限"><a href="#frac-0-0-型极限" class="headerlink" title="$\frac{0}{0}$型极限"></a>$\frac{0}{0}$型极限</h3><ul>
+<li><strong>常用方法</strong></li>
+</ul>
+<ol>
+<li>洛必达</li>
+<li>等价无穷小</li>
+<li>泰勒公式</li>
+</ol>
+<ul>
+<li><strong>原式化简</strong></li>
+</ul>
+<ol>
+<li>极限非零的因子极限先求出</li>
+<li>有理化</li>
+<li>变量代换</li>
+</ol>
+<h3 id="infin-infin-型极限"><a href="#infin-infin-型极限" class="headerlink" title="$\infin - \infin$型极限"></a>$\infin - \infin$型极限</h3><ol>
+<li>通分化为$\frac{0}{0}$适用于分式差</li>
+<li>根式有理化，适用于根式差</li>
+<li>提无穷因子然后等价代换</li>
+</ol>
+<h3 id="0·-infin-型极限"><a href="#0·-infin-型极限" class="headerlink" title="$0·\infin$型极限"></a>$0·\infin$型极限</h3><ol>
+<li>化为$\frac{0}{0}或\frac{\infin}{\infin}$</li>
+<li>$ln(x+\sqrt {1+x^2})——~ x$</li>
+</ol>
+<h3 id="1-infin-型极限"><a href="#1-infin-型极限" class="headerlink" title="$1^{\infin}$型极限"></a>$1^{\infin}$型极限</h3><ol>
+<li>凑基本极限</li>
+<li>改写成指数</li>
+<li>利用结论</li>
+</ol>
+<p><strong>归纳为三步</strong></p>
+<ol>
+<li>写标准形式     原式=$lim[1+\alpha(x)]^{\beta(x)}$</li>
+<li>求极限       $lim\alpha(x)\beta(x)=A$</li>
+<li>写结果       原式$=e^A$</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874755-3afcf300-2c25-11eb-8ff1-dc3918d115ac.png" alt="dd"></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874739-2b7daa00-2c25-11eb-9d6c-20cab5dafcc5.png" alt="1"></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874740-2e789a80-2c25-11eb-8b30-0c7977348f4b.png" alt="1"></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874730-215bab80-2c25-11eb-9a54-b1ec582f71e7.png" alt="1"></p>
+<h2 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h2><h3 id="n项和的数列极限"><a href="#n项和的数列极限" class="headerlink" title="n项和的数列极限"></a>n项和的数列极限</h3><h4 id="夹逼原理【次量级】"><a href="#夹逼原理【次量级】" class="headerlink" title="夹逼原理【次量级】"></a>夹逼原理【次量级】</h4><p><img src="https://user-images.githubusercontent.com/63230281/99874742-31738b00-2c25-11eb-9ca0-1546ae341290.png" alt="2"></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874744-32a4b800-2c25-11eb-901f-e2e52f0feb15.png" alt="3"></p>
+<h4 id="定积分定义【同量级】"><a href="#定积分定义【同量级】" class="headerlink" title="定积分定义【同量级】"></a>定积分定义【同量级】</h4><p><img src="https://user-images.githubusercontent.com/63230281/99874734-24569c00-2c25-11eb-93d8-e6272e3b7a43.png" alt="1"></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874748-346e7b80-2c25-11eb-8b83-bb174f0c4489.png" alt="4"></p>
+<h4 id="方法选择"><a href="#方法选择" class="headerlink" title="方法选择"></a>方法选择</h4><ol>
+<li>变化部分是主体次量级，用夹逼原理</li>
+<li>变化部分与主体同量级，用定积分定义</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874749-359fa880-2c25-11eb-9835-cd81e2b3cfc4.png" alt="4"></p>
+<h3 id="递推关系-x-1-a-x-n-1-f-x-n-n-1-2-…"><a href="#递推关系-x-1-a-x-n-1-f-x-n-n-1-2-…" class="headerlink" title="递推关系$x_1=a,x_{n+1}=f(x_n)(n=1,2,…)$"></a>递推关系$x_1=a,x_{n+1}=f(x_n)(n=1,2,…)$</h3><p><strong>常用方法</strong></p>
+<p><strong>方法一</strong>【单调有界好证就选】</p>
+<ol>
+<li>证明极限$\lim_{n\rightarrow \infin}x_n$存在（利用单调有界准则）【难点】</li>
+<li>令$lim_{n\rightarrow \infin} x_n=A$,由$A=f(A)$解得$A$</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874750-36d0d580-2c25-11eb-97d3-f063ecdfc1c9.png" alt="3"></p>
+<p><strong>方法二</strong>【单调性不好证】</p>
+<ol>
+<li><p>令$lim_{n\rightarrow \infin} x_n=A$,由$A=f(A)$解得$A$</p>
+</li>
+<li><p>证明$lim_{n\rightarrow \infin} x_n=A$【难点】</p>
+<p> <img src="https://user-images.githubusercontent.com/63230281/99874751-38020280-2c25-11eb-8235-a5ba20a3ef48.png" alt="5"></p>
+</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874754-39cbc600-2c25-11eb-9ca3-c4a92c22eea2.png" alt="6"></p>
+<p><strong>常用不等式与判定方法</strong></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874761-3df7e380-2c25-11eb-83ea-72910c1bb0e6.png" alt="5"></p>
+<h1 id="无穷小量比较"><a href="#无穷小量比较" class="headerlink" title="无穷小量比较"></a>无穷小量比较</h1><h2 id="比较方法"><a href="#比较方法" class="headerlink" title="比较方法"></a>比较方法</h2><p>$$<br>1-cos^\alpha x ——\frac{\alpha}{2}x^2<br>$$</p>
+<p><strong>定义法、确定阶</strong></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874763-3fc1a700-2c25-11eb-8216-49bea3b9ca55.png" alt="5"></p>
+<h3 id="无穷小阶的比较及阶的确定"><a href="#无穷小阶的比较及阶的确定" class="headerlink" title="无穷小阶的比较及阶的确定"></a>无穷小阶的比较及阶的确定</h3><ul>
+<li><strong>小结论</strong><br>  $$<br>  \int_0^{\varphi (x)}f(t)dt<br>  $$<br>  $ \varphi (x)$是n阶，$f(t)$是m阶，则原式为$n(m+1)$阶 </li>
+</ul>
+<p>$$<br>(1+\alpha(x))^{\beta(x)}——\alpha(x)\beta(x)<br>$$</p>
+<p>其中$\alpha(x)\rightarrow0,\alpha(x)\beta(x)\rightarrow0$</p>
+<ul>
+<li>高阶+低阶=低阶</li>
+</ul>
+<h3 id="无穷小按阶排序或求最高（低）阶无穷小"><a href="#无穷小按阶排序或求最高（低）阶无穷小" class="headerlink" title="无穷小按阶排序或求最高（低）阶无穷小"></a>无穷小按阶排序或求最高（低）阶无穷小</h3><p><img src="https://user-images.githubusercontent.com/63230281/99874766-42240100-2c25-11eb-9aa7-a013b6c9e30c.png" alt="发"></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/99874719-0db04500-2c25-11eb-8494-62c98f7b354e.png" alt="*"></p>
+<h1 id="平面域的面积与旋转体体积"><a href="#平面域的面积与旋转体体积" class="headerlink" title="平面域的面积与旋转体体积"></a>平面域的面积与旋转体体积</h1><h2 id="平面域面积"><a href="#平面域面积" class="headerlink" title="平面域面积"></a>平面域面积</h2><ol>
 <li>直角坐标系与极坐标的转化</li>
 <li>面积为区间对1的二重积分</li>
 <li>积分次序的选择</li>
@@ -603,7 +741,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><h4 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h4><p>![<img src="https://user-images.githubusercontent.com/63230281/99622939-10b10700-2a66-11eb-9cab-c370fb1ffb90.png" alt="1"></p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><h4 id="极值"><a href="#极值" class="headerlink" title="极值"></a>极值</h4><p><img src="https://user-images.githubusercontent.com/63230281/99622939-10b10700-2a66-11eb-9cab-c370fb1ffb90.png" alt="1"></p>
 <h4 id="计算函数近似值"><a href="#计算函数近似值" class="headerlink" title="计算函数近似值"></a>计算函数近似值</h4><h4 id="求极限-1"><a href="#求极限-1" class="headerlink" title="求极限"></a>求极限</h4><p><img src="https://user-images.githubusercontent.com/63230281/99622949-14448e00-2a66-11eb-83bf-b9af1ace63bd.png" alt="160575"></p>
 <h4 id="求高阶导数"><a href="#求高阶导数" class="headerlink" title="求高阶导数"></a>求高阶导数</h4><p><img src="https://user-images.githubusercontent.com/63230281/99622944-127aca80-2a66-11eb-89d7-9eb97c43eef0.png" alt="16"></p>
 
@@ -741,7 +879,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -806,7 +944,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#【武17讲】"><span class="nav-number">1.</span> <span class="nav-text">【武17讲】</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#平面域的面积与旋转体体积"><span class="nav-number">2.</span> <span class="nav-text">平面域的面积与旋转体体积</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#平面域面积"><span class="nav-number">2.1.</span> <span class="nav-text">平面域面积</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#旋转体的体积"><span class="nav-number">2.2.</span> <span class="nav-text">旋转体的体积</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程"><span class="nav-number">3.</span> <span class="nav-text">微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#全微分"><span class="nav-number">4.</span> <span class="nav-text">全微分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#全微分应用"><span class="nav-number">4.1.</span> <span class="nav-text">全微分应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分中值定理"><span class="nav-number">5.</span> <span class="nav-text">微分中值定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#中值定理类型"><span class="nav-number">5.1.</span> <span class="nav-text">中值定理类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-罗尔定理"><span class="nav-number">5.1.1.</span> <span class="nav-text">1. 罗尔定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-拉格朗日定理"><span class="nav-number">5.1.2.</span> <span class="nav-text">2.拉格朗日定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-柯西中值定理"><span class="nav-number">5.1.3.</span> <span class="nav-text">3.柯西中值定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三个定理的关系"><span class="nav-number">5.2.</span> <span class="nav-text">三个定理的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用举例"><span class="nav-number">5.3.</span> <span class="nav-text">应用举例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方程的根"><span class="nav-number">5.3.1.</span> <span class="nav-text">方程的根</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明不等式"><span class="nav-number">5.3.2.</span> <span class="nav-text">证明不等式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求极限"><span class="nav-number">5.3.3.</span> <span class="nav-text">求极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明存在一个点-xi-in-a-b-使-F-xi-f-xi-f’-xi-0-【一个中值】"><span class="nav-number">5.3.4.</span> <span class="nav-text">证明存在一个点$\xi\in(a,b)$使$F[\xi,f(\xi),f’(\xi)]&#x3D;0$【一个中值】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#辅助函数构造方法"><span class="nav-number">5.3.4.1.</span> <span class="nav-text">辅助函数构造方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明存在两个点-xi-eta-f-eta-f’-xi-f’-eta-【两个中值，两个中值都出现在导数中】"><span class="nav-number">5.3.5.</span> <span class="nav-text">证明存在两个点$\xi ,\eta,f(\eta),f’(\xi),f’(\eta)$【两个中值，两个中值都出现在导数中】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法"><span class="nav-number">5.3.5.1.</span> <span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">5.3.6.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#泰勒公式"><span class="nav-number">6.</span> <span class="nav-text">泰勒公式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">6.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泰勒公式的本质及两个泰勒公式的异同点"><span class="nav-number">6.2.</span> <span class="nav-text">泰勒公式的本质及两个泰勒公式的异同点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本质（相同点）"><span class="nav-number">6.2.1.</span> <span class="nav-text">本质（相同点）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不同点"><span class="nav-number">6.2.2.</span> <span class="nav-text">不同点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#难点"><span class="nav-number">6.2.3.</span> <span class="nav-text">难点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题"><span class="nav-number">6.2.4.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#极值"><span class="nav-number">6.2.4.1.</span> <span class="nav-text">极值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#计算函数近似值"><span class="nav-number">6.2.4.2.</span> <span class="nav-text">计算函数近似值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#求极限-1"><span class="nav-number">6.2.4.3.</span> <span class="nav-text">求极限</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#求高阶导数"><span class="nav-number">6.2.4.4.</span> <span class="nav-text">求高阶导数</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#【武17讲】"><span class="nav-number">1.</span> <span class="nav-text">【武17讲】</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#极限"><span class="nav-number">2.</span> <span class="nav-text">极限</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法s"><span class="nav-number">2.1.</span> <span class="nav-text">方法s</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数极限"><span class="nav-number">2.2.</span> <span class="nav-text">函数极限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#frac-0-0-型极限"><span class="nav-number">2.2.1.</span> <span class="nav-text">$\frac{0}{0}$型极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#infin-infin-型极限"><span class="nav-number">2.2.2.</span> <span class="nav-text">$\infin - \infin$型极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#0·-infin-型极限"><span class="nav-number">2.2.3.</span> <span class="nav-text">$0·\infin$型极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-infin-型极限"><span class="nav-number">2.2.4.</span> <span class="nav-text">$1^{\infin}$型极限</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数列极限"><span class="nav-number">2.3.</span> <span class="nav-text">数列极限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#n项和的数列极限"><span class="nav-number">2.3.1.</span> <span class="nav-text">n项和的数列极限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#夹逼原理【次量级】"><span class="nav-number">2.3.1.1.</span> <span class="nav-text">夹逼原理【次量级】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定积分定义【同量级】"><span class="nav-number">2.3.1.2.</span> <span class="nav-text">定积分定义【同量级】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法选择"><span class="nav-number">2.3.1.3.</span> <span class="nav-text">方法选择</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递推关系-x-1-a-x-n-1-f-x-n-n-1-2-…"><span class="nav-number">2.3.2.</span> <span class="nav-text">递推关系$x_1&#x3D;a,x_{n+1}&#x3D;f(x_n)(n&#x3D;1,2,…)$</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#无穷小量比较"><span class="nav-number">3.</span> <span class="nav-text">无穷小量比较</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#比较方法"><span class="nav-number">3.1.</span> <span class="nav-text">比较方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无穷小阶的比较及阶的确定"><span class="nav-number">3.1.1.</span> <span class="nav-text">无穷小阶的比较及阶的确定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无穷小按阶排序或求最高（低）阶无穷小"><span class="nav-number">3.1.2.</span> <span class="nav-text">无穷小按阶排序或求最高（低）阶无穷小</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#平面域的面积与旋转体体积"><span class="nav-number">4.</span> <span class="nav-text">平面域的面积与旋转体体积</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#平面域面积"><span class="nav-number">4.1.</span> <span class="nav-text">平面域面积</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#旋转体的体积"><span class="nav-number">4.2.</span> <span class="nav-text">旋转体的体积</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程"><span class="nav-number">5.</span> <span class="nav-text">微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#全微分"><span class="nav-number">6.</span> <span class="nav-text">全微分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#全微分应用"><span class="nav-number">6.1.</span> <span class="nav-text">全微分应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分中值定理"><span class="nav-number">7.</span> <span class="nav-text">微分中值定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#中值定理类型"><span class="nav-number">7.1.</span> <span class="nav-text">中值定理类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-罗尔定理"><span class="nav-number">7.1.1.</span> <span class="nav-text">1. 罗尔定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-拉格朗日定理"><span class="nav-number">7.1.2.</span> <span class="nav-text">2.拉格朗日定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-柯西中值定理"><span class="nav-number">7.1.3.</span> <span class="nav-text">3.柯西中值定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三个定理的关系"><span class="nav-number">7.2.</span> <span class="nav-text">三个定理的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用举例"><span class="nav-number">7.3.</span> <span class="nav-text">应用举例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方程的根"><span class="nav-number">7.3.1.</span> <span class="nav-text">方程的根</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明不等式"><span class="nav-number">7.3.2.</span> <span class="nav-text">证明不等式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求极限"><span class="nav-number">7.3.3.</span> <span class="nav-text">求极限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明存在一个点-xi-in-a-b-使-F-xi-f-xi-f’-xi-0-【一个中值】"><span class="nav-number">7.3.4.</span> <span class="nav-text">证明存在一个点$\xi\in(a,b)$使$F[\xi,f(\xi),f’(\xi)]&#x3D;0$【一个中值】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#辅助函数构造方法"><span class="nav-number">7.3.4.1.</span> <span class="nav-text">辅助函数构造方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明存在两个点-xi-eta-f-eta-f’-xi-f’-eta-【两个中值，两个中值都出现在导数中】"><span class="nav-number">7.3.5.</span> <span class="nav-text">证明存在两个点$\xi ,\eta,f(\eta),f’(\xi),f’(\eta)$【两个中值，两个中值都出现在导数中】</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法"><span class="nav-number">7.3.5.1.</span> <span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">7.3.6.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#泰勒公式"><span class="nav-number">8.</span> <span class="nav-text">泰勒公式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">8.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泰勒公式的本质及两个泰勒公式的异同点"><span class="nav-number">8.2.</span> <span class="nav-text">泰勒公式的本质及两个泰勒公式的异同点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本质（相同点）"><span class="nav-number">8.2.1.</span> <span class="nav-text">本质（相同点）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不同点"><span class="nav-number">8.2.2.</span> <span class="nav-text">不同点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#难点"><span class="nav-number">8.2.3.</span> <span class="nav-text">难点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题"><span class="nav-number">8.2.4.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#极值"><span class="nav-number">8.2.4.1.</span> <span class="nav-text">极值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#计算函数近似值"><span class="nav-number">8.2.4.2.</span> <span class="nav-text">计算函数近似值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#求极限-1"><span class="nav-number">8.2.4.3.</span> <span class="nav-text">求极限</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#求高阶导数"><span class="nav-number">8.2.4.4.</span> <span class="nav-text">求高阶导数</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
