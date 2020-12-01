@@ -3292,7 +3292,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2k
+                  2.1k
                 </span>
               
 
@@ -3308,7 +3308,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -3350,6 +3350,7 @@
 <li>两个字母注意使用换元，可以将定积分转换为变限积分</li>
 <li>等价无穷小公式</li>
 <li>夹逼准则的使用</li>
+<li>分式的拆分，分子比分母始终少一阶</li>
 </ol>
 <h3 id="等价无穷小"><a href="#等价无穷小" class="headerlink" title="等价无穷小"></a>等价无穷小</h3><ol>
 <li>微分方程与等价无穷小的结合</li>
@@ -3366,8 +3367,9 @@
 <ol start="3">
 <li>等价无穷小可以用来判断极限的敛散性</li>
 <li>注意使用泰勒公式</li>
-<li>$ln(x+\sqrt{1+x^2)}$</li>
-<li>积分里面也可以等价无穷小</li>
+<li>$ln(x+\sqrt{1+x^2)} ——x$</li>
+<li>$x-ln(1+x)——\frac{1}{2}x^2$</li>
+<li>积分里面也可以等价无穷小 </li>
 </ol>
 <h3 id="间断点"><a href="#间断点" class="headerlink" title="间断点"></a>间断点</h3><ol>
 <li>找无定义点【找全最重要】</li>
@@ -3474,11 +3476,16 @@
 </li>
 <li><p>积分再现，当出现$\frac{x^2}{x^2+y^2}$时可以考虑轮换对称性</p>
 </li>
+<li><p>弧长公式<br> $$<br> S=\int_b^a \sqrt{1+y’^2}dx<br> $$</p>
+</li>
+<li><p>质心公式<br> $$<br> \frac{\int_b^a x\alpha (x)dx}{\int_b^a \alpha(x)dx}<br> $$</p>
+</li>
 </ol>
 <h3 id="旋转体问题"><a href="#旋转体问题" class="headerlink" title="旋转体问题***"></a>旋转体问题***</h3><ol>
 <li>绕$x$轴和$y$轴旋转公式的应用</li>
 <li>通用公式$\int\int_Dr(x,y)dxdy$</li>
 <li>旋转轴的平移</li>
+<li>x、y函数对应关系可以进行转换，将y(x)转换为x(y)</li>
 </ol>
 <h2 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h2><ol>
 <li><p>有时候y不一定直接就写成y，可能是一个式子<br> $$<br> y’cosy=x-siny<br> $$<br> 此题中可将$f(x)$看作$siny$</p>
@@ -3521,9 +3528,11 @@
 <li>求$A^*$的方程通解时，通常会转化成与$A$相关的方程进行简化求解</li>
 <li>求$A、B$正交矩阵，则$P_1AP_1^{-1}-\Lambda $以及则有$P_2BP_2^{-1}-\Lambda $则有$Q=P_1P_2^{-1}$</li>
 <li>正定矩阵代表特征值不全为0，可以为零。【注意二次型矩阵|A|&gt;0恒成立】</li>
+<li>分块矩阵的计算，必须是拉普拉斯型，角落是$O$矩阵</li>
 </ol>
 <h2 id="抽象"><a href="#抽象" class="headerlink" title="抽象"></a>抽象</h2><ol>
 <li>构造特征值因式</li>
+<li>矩阵等价$\Rightarrow$r相等</li>
 <li>矩阵的逆的求和表现形式</li>
 <li>单位正交列向量$A^TA=E$</li>
 <li>反实对称矩阵$B=-B^T$</li>
@@ -3541,21 +3550,26 @@
 <li><p><strong>巧妙使用解方程的思想,用秩</strong></p>
 <p> $eg.$<br> $$<br> \beta_1=\alpha_1+k\alpha_3\\beta_2=\alpha_2+l\alpha_3\若\alpha_1,\alpha_2,\alpha_3线性无关，则(\alpha_1,\alpha_2,\alpha_3)是三阶可逆矩阵，故r(\beta_1,\beta_2)=r\<br> a = r\left[\matrix{1&amp;0\0&amp;1\k&amp;l}\right]=2\即\alpha_1+k\alpha_3,\alpha_2+l\alpha_3线性无关<br> $$</p>
 </li>
+<li><p>线性无关的延伸组必线性无关</p>
+</li>
 </ol>
-<ol start="4">
-<li>线性无关的延伸组必线性无关</li>
+<h2 id="解方程"><a href="#解方程" class="headerlink" title="解方程"></a>解方程</h2><ol>
+<li>通解带k，括号注明</li>
 </ol>
 <h2 id="相似对角化条件"><a href="#相似对角化条件" class="headerlink" title="相似对角化条件"></a>相似对角化条件</h2><ol>
 <li>实对称矩阵必相似于对角矩阵</li>
 <li>特征值不同</li>
-<li>有n个不同的特征向量</li>
+<li>有n个不同的特征向量【其他条件算不出来，就计算特征值，看特征向量，肯定能算出来】</li>
 <li>实对称矩阵的特征值必为实数</li>
 </ol>
 <h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><ul>
-<li>配方法，先配一个，再配另一个，按顺序，如果配不出来，说明前面配错了，重算</li>
-<li>施密特正交化</li>
+<li><p>配方法，先配一个，再配另一个，按顺序，如果配不出来，说明前面配错了，重算</p>
+</li>
+<li><p>施密特正交化</p>
+</li>
 <li><img src="https://user-images.githubusercontent.com/63230281/99212701-ba925880-2806-11eb-8a1f-88f0cea7b553.png" style="zoom:50%;" />
-
+</li>
+<li><p>两个矩阵经过正定变化之后，正、负惯性指数不变</p>
 </li>
 </ul>
 <h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h3 id="反函数"><a href="#反函数" class="headerlink" title="反函数"></a>反函数</h3><p>反函数$f(x)$与$g(x)$为反函数则$f(g(x))=x$,但是要注意区分，当$g(2)$此处对应的是$f(x)$的$y$,有关$f(x)$的$x$需要进行求解而得</p>
