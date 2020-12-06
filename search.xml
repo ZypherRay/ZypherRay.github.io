@@ -9279,11 +9279,6 @@
       </categories>
   </entry>
   <entry>
-    <title>“新型城镇化</title>
-    <url>/2020/12/03/%E2%80%9C%E6%96%B0%E5%9E%8B%E5%9F%8E%E9%95%87%E5%8C%96/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>中部崛起战略</title>
     <url>/2020/12/03/%E4%B8%AD%E9%83%A8%E5%B4%9B%E8%B5%B7%E6%88%98%E7%95%A5/</url>
     <content><![CDATA[<h1 id="中部崛起战略"><a href="#中部崛起战略" class="headerlink" title="中部崛起战略"></a>中部崛起战略</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><ul>
@@ -9714,6 +9709,30 @@
 ]]></content>
       <categories>
         <category>-人文地理考研</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何求切平面以及曲面法线</title>
+    <url>/2020/12/06/%E5%A6%82%E4%BD%95%E6%B1%82%E5%88%87%E5%B9%B3%E9%9D%A2%E4%BB%A5%E5%8F%8A%E6%9B%B2%E9%9D%A2%E6%B3%95%E7%BA%BF/</url>
+    <content><![CDATA[<h1 id="如何求切平面以及曲面法线"><a href="#如何求切平面以及曲面法线" class="headerlink" title="如何求切平面以及曲面法线"></a>如何求切平面以及曲面法线</h1><p><a href="https://blog.csdn.net/piaoxuezhong/article/details/71164408" target="_blank" rel="noopener">内容转载自Naruto_Q</a>,格式有调整</p>
+<h2 id="1-曲面方程为隐式方程的情况"><a href="#1-曲面方程为隐式方程的情况" class="headerlink" title="1.曲面方程为隐式方程的情况"></a>1.曲面方程为隐式方程的情况</h2><p>$$<br>\sum :F(X,Y,Z)=0<br>$$</p>
+<p>光滑曲面方程形式为：</p>
+<img src="https://img-blog.csdn.net/20170505162639189?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGlhb3h1ZXpob25n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" style="zoom:50%;" />
+
+<p>在曲面上任意取一点$M(x_0,y_0,z_0)$,曲线方程为<br>$$<br>\Gamma:x=\varphi(t),y=\psi(t),z=\omega(t)<br>$$<br>设$t=t_0$时，对应点$M$,则$M$点处的</p>
+<h3 id="切向量为："><a href="#切向量为：" class="headerlink" title="切向量为："></a>切向量为：</h3><p>$$<br>\vec{T}=(\varphi’(t_0),\psi’(t_0),\omega’(t_0))<br>$$</p>
+<h3 id="切线方程为"><a href="#切线方程为" class="headerlink" title="切线方程为"></a>切线方程为</h3><p>$$<br>\frac{x-x_0}{\varphi’(t_0)}=\frac{y-y_0}{\psi’(t_0)}=\frac{z-z_0}{\omega’(t_0)}<br>$$</p>
+<h3 id="M-点处法向量"><a href="#M-点处法向量" class="headerlink" title="$M$点处法向量"></a>$M$点处法向量</h3><p>$$<br>\vec{n}=(F_x(x_0,y_0,z_0),F_y(x_0,y_0,z_0),F_z(x_0,y_0,z_0))<br>$$</p>
+<h3 id="法线方程为"><a href="#法线方程为" class="headerlink" title="法线方程为"></a>法线方程为</h3><p>$$<br>\frac{x-x_0}{F_x(x_0,y_0,z_0)}=\frac{y-y_0}{F_y(x_0,y_0,z_0)}=\frac{z-z_0}{F_z(x_0,y_0,z_0)}<br>$$</p>
+<p>$\sum$上过点$M$的任何曲线在该点的切线都在同一平面上，此平面称为在该点的切平面</p>
+<h3 id="切平面的方程为："><a href="#切平面的方程为：" class="headerlink" title="切平面的方程为："></a>切平面的方程为：</h3><p>$$<br>F_x(x_0,y_0,z_0)(x-x_0)\+F_y(x_0,y_0,z_0)(y-y_0)+F_z(x_0,y_0,z_0)(z-z_0)=0<br>$$</p>
+<hr>
+<p><img src="https://img-blog.csdn.net/20170505163517201?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGlhb3h1ZXpob25n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"></p>
+<h2 id="2-曲面方程为显式方程的情况："><a href="#2-曲面方程为显式方程的情况：" class="headerlink" title="2.曲面方程为显式方程的情况："></a>2.曲面方程为显式方程的情况：</h2><img src="https://img-blog.csdn.net/20170505163732299?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGlhb3h1ZXpob25n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" style="zoom:50%;" />
+
+<img src="https://img-blog.csdn.net/20170505163922268?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGlhb3h1ZXpob25n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" style="zoom:50%;" />]]></content>
+      <categories>
+        <category>-考研数学</category>
       </categories>
   </entry>
 </search>
