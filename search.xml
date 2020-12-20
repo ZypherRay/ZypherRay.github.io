@@ -3297,6 +3297,30 @@
 <ul>
 <li>I assume that this hard nut can be cracked if …. take effective steps</li>
 </ul>
+<h1 id="大作文模板"><a href="#大作文模板" class="headerlink" title="大作文模板"></a>大作文模板</h1><h2 id="第一段"><a href="#第一段" class="headerlink" title="第一段"></a>第一段</h2><p>The picture intends to illustrate the irreplaceable role xxx plays in realizing great ambitions.</p>
+<h2 id="第二段"><a href="#第二段" class="headerlink" title="第二段"></a>第二段</h2><ol>
+<li>象征图片就写图片象征的社会现象。<ul>
+<li>写出各种不同东西象征的是什么，代表了什么含义</li>
+</ul>
+</li>
+<li>不是象征直接就是社会现象，就写现象背后的原因，找出原因，举出相关例子<ul>
+<li>一般可以写两句话来描述正反两个方面</li>
+<li>然后举出一个正面的例子</li>
+</ul>
+</li>
+</ol>
+<h3 id="文化融合"><a href="#文化融合" class="headerlink" title="文化融合"></a>文化融合</h3><ul>
+<li>All countries have been benefiting greatly from absorbing different but complementary cultures,which accelerates the development of both material and spiritual civilization of human society.</li>
+<li>Multicultural elements provide spiritual nourishment for people all over the world.</li>
+</ul>
+<h2 id="第三段-1"><a href="#第三段-1" class="headerlink" title="第三段"></a>第三段</h2><h3 id="美德"><a href="#美德" class="headerlink" title="美德"></a>美德</h3><ul>
+<li>All desired life goals can be achieved through diligence,persistence and willingness to learn continuously. Therefore, we can xxx, advance bravely and embrace the various challenges.</li>
+<li>The virtue of xxx is the key to success and thus needs to be cultivated consciously.</li>
+</ul>
+<h3 id="两者好坏对比"><a href="#两者好坏对比" class="headerlink" title="两者好坏对比"></a>两者好坏对比</h3><ul>
+<li>rational attitude should be paid to the xx.</li>
+<li>Due importance should be attached to contact in real life.  </li>
+</ul>
 ]]></content>
       <categories>
         <category>-考研英语一</category>
@@ -3330,7 +3354,7 @@
 <ul>
 <li><p>注意格式</p>
   <center>Notice </center> 
-​                                                                                                               January 9,2010【右对齐】
+  ​                                                                                                               January 9,2010【右对齐】
 
 </li>
 </ul>
@@ -3418,6 +3442,40 @@
 <li>sports meets </li>
 <li>speech contest </li>
 <li>social gatherings</li>
+</ul>
+<h1 id="英语小作文模板"><a href="#英语小作文模板" class="headerlink" title="英语小作文模板"></a>英语小作文模板</h1><p>Dear Mr. or Miss. ,</p>
+<ul>
+<li><p>【邀请信】</p>
+<ul>
+<li>On behalf of the Students’ Union, I’m writing to invite you to xxx on May $1^{st}$.</li>
+<li>The xxx will be held from 18:00 to 20:00 at the auditorium.</li>
+<li>You are expected to score and comment on their performance.You are an academic elite and native speaker, so that your valuable comments will surely benefit the competitors and audience alike.</li>
+<li>We/I will appreciate it if you could reply to us at your earliest convenience.</li>
+</ul>
+</li>
+<li><p>【提建议】</p>
+<ul>
+<li>I am a senior student in this university.I’m writing to express my humble opinions about xxx.</li>
+</ul>
+</li>
+<li><p>【推荐信】</p>
+<ul>
+<li>I am so glad to hear from you as it has been a long time since we met last time. You told me in your letter that you loved to whatch inspirational movies, so I’m writing to recommend one of my favorite movies to you, which is called  The Lion King.</li>
+<li>I love it for two reasons. To begin with, the film explores the theme of growth and self-discovery, which could easily strike a chord with young people.The lion prince named Simba,who  is cast out of his pride by his cruel uncle.And finally, the prince became brave and powerful enough to be a ruler in the end.In addition, the glamour of Disney also adds appeal to the film.</li>
+<li>Hope you enjoy the movie and look forward to your reply.</li>
+</ul>
+</li>
+<li><p>【告示】</p>
+<ul>
+<li>There is a wonderful news! The xxx for overseas students will kick off at 7 p.m. next Sturday, May $1^{st}$</li>
+<li>Please feel free to contact us if you need any help via xxx.</li>
+</ul>
+</li>
+<li><p>【景点】</p>
+<ul>
+<li>Firstly I recommend exploring the Palace Museum, the world’s largest ancient palace complex,because it showcases a huge collection of arts which offers a quick glimpse into China’s extensive history and sophisticated culture.Moreover, if you are interested in the outdoor activities, I recommend visiting the Great Wall, for the spectecular view of rolling mountains atop the ancient beacon towers will definitely make your trip worthwhile.</li>
+</ul>
+</li>
 </ul>
 ]]></content>
       <categories>
@@ -10762,6 +10820,181 @@
 ]]></content>
       <categories>
         <category>-人文地理考研</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>90-90高数复盘</title>
+    <url>/2020/12/20/90-90%E9%AB%98%E6%95%B0%E5%A4%8D%E7%9B%98/</url>
+    <content><![CDATA[<h1 id="高数1990-1999真题复盘"><a href="#高数1990-1999真题复盘" class="headerlink" title="高数1990-1999真题复盘"></a>高数1990-1999真题复盘</h1><h1 id="12-13"><a href="#12-13" class="headerlink" title="12.13"></a>12.13</h1><ol>
+<li><p>$A_{11}=a_{11}$，其中$A_{11}$为矩阵的代数余子式，则推$A^T=A^*$,两边同乘$A$,取行列式，则推出$|A|=1或|A|=0$</p>
+</li>
+<li><p>幂级数求和要注意角标是从第几项开始，计算之后要进行加项补项，有$n$次方的就是$x$</p>
+</li>
+<li><p>$$<br> cos\theta=\frac{a·b}{|a||b|}<br> $$</p>
+</li>
+<li><p>$$<br> \int_0^{\pi}xf(sinx)dx =\frac{\pi}{2}\int_0^{\pi} f(sinx)dx<br> $$</p>
+</li>
+<li><p>反常积分的判敛散</p>
+<p> 积分限有限，次数小于1收敛，积分限无穷次数大于1收敛</p>
+<p> 判断次数的时候，要先进行化简【因式分解】</p>
+</li>
+<li><p>$\sqrt {x^2-1}$化简换元令$x=sec\theta$</p>
+</li>
+<li><p>正定矩阵所有的顺序主、子式的行列式的值都大于零</p>
+</li>
+<li><p>n阶方阵A具有n个不同的特征值是A与对角阵相似的充分不必要条件</p>
+</li>
+<li><p>$AB=O\Rightarrow r(A)+r(B)\le n$</p>
+</li>
+<li><p>$$<br>\int\sqrt{1-sinx}dx \<br>半角公式开根号\<br>1-sinx=sin^2\frac{x}{2}+cos^2\frac{x}{2}-2sin\frac{x}{2}cos\frac{x}{2}=(sin\frac{x}{2}+cos\frac{x}{2})^2<br>$$</p>
+</li>
+<li><p>证明可逆矩阵</p>
+<ul>
+<li>平方法</li>
+<li>凑因式相乘，等式右边为$aE$</li>
+</ul>
+</li>
+</ol>
+<h1 id="12-14"><a href="#12-14" class="headerlink" title="12.14"></a>12.14</h1><ol>
+<li><p>二元函数偏导存在和在该点连续无关系，两者既不是充分条件也不是必要条件</p>
+</li>
+<li><p>判断向量组线性无关时，注意联系方程组思想，转换为求系数矩阵行列式的值，不为零则只有零解，则线性无关</p>
+</li>
+<li><p>全微分方程<br> $$<br> Adx+Bdy=0\<br> \Rightarrow \frac{\partial A}{\partial y}=\frac{\partial B}{\partial x}<br> $$</p>
+</li>
+<li><p>线性代数同解和公共解问题</p>
+<ul>
+<li>公共解，则代入求解</li>
+<li>同解，互相带入，或者两者联立求解</li>
+</ul>
+</li>
+<li><p>含参数微分方程求解，要对参数进行分类，分类标准为与等号右边的值相关系</p>
+</li>
+<li><p>证明题，有积分的题，可以拆区间进行合并</p>
+</li>
+<li><p>实对称矩阵的不同特征值对应的特征向量相互正交</p>
+</li>
+<li><p>$E+A^T=(E+A)^T\Rightarrow |E+A^T|=|(E+A)^T|=|A+E|$</p>
+</li>
+</ol>
+<h1 id="12-17"><a href="#12-17" class="headerlink" title="12.17"></a>12.17</h1><ol>
+<li>表面积与弦长公式差一个$2\pi y$,以及参数方程和极坐标方程的变换公式</li>
+<li>使用矩阵的逆变换时，首先要证明矩阵是可逆的才可以进行使用</li>
+</ol>
+<h1 id="12-19"><a href="#12-19" class="headerlink" title="12.19"></a>12.19</h1><ol>
+<li>柯西中值定理可以使用$f(a)-f(b)$做中间过渡量</li>
+<li>计算数列极限时，类比函数极限求解，设$x$，【但是】不能直接对数列极限进行求解，要设x，最后代值</li>
+<li>证明题使用泰勒公式时，在两点展开之后，两式相减是常用套路</li>
+<li>级数计算时，使用的公式，要进行加项减项，糟老头子不会让你轻易得到正确答案，一定要注意加减项，否则就只有与正确答案擦肩而过</li>
+<li>证明一个矩阵正定，先证明实对称，再证明大于零</li>
+</ol>
+]]></content>
+      <categories>
+        <category>-考研数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>李林4套卷复盘</title>
+    <url>/2020/12/20/%E6%9D%8E%E6%9E%974%E5%A5%97%E5%8D%B7%E5%A4%8D%E7%9B%98/</url>
+    <content><![CDATA[<h1 id="李林四套卷复盘"><a href="#李林四套卷复盘" class="headerlink" title="李林四套卷复盘"></a>李林四套卷复盘</h1><ul>
+<li>几天没练数学，错了很多简单的地方，以及发现还有很多知识盲点，计算还是一个大问题，细节方面还需要多注意</li>
+</ul>
+<h2 id="第一套"><a href="#第一套" class="headerlink" title="第一套"></a>第一套</h2><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ol>
+<li><p>第一题，没有注意x区间，把不在分段函数区间内的点也算了间断点，以后要注意</p>
+</li>
+<li><p>第三题，使用了公式<br> $$<br> \int_0^ \pi xf(sinx)dx=\frac{\pi}{2}\int_0^\pi f(sinx)dx<br> $$</p>
+</li>
+<li><p>注意使用特值法，直接带值检验或者设特殊函数</p>
+</li>
+<li><p>第九题，验证矩阵是否可逆，可以使用平方法，如验证$E-2\alpha\alpha^T$直接平方，其中$\alpha^T\alpha=2$,令$E-2\alpha\alpha^T=A$可得$A^2-A=0\Rightarrow |A|=0$则矩阵$A$可逆</p>
+</li>
+</ol>
+<h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><ol>
+<li>第十一题，间断点和极值点书写为$x=a$,拐点是坐标$(x,y)$</li>
+<li>第十六题，矩阵特征值之和为等于矩阵的迹，令$A$的特征值为$\lambda$则$A^*$的特征值为$\frac{|A|}{\lambda}$</li>
+</ol>
+<h3 id="解答题"><a href="#解答题" class="headerlink" title="解答题"></a>解答题</h3><ol>
+<li><p>旋转体的题目，不要先着急写，先确定计算的方法，方法的确定，决定了后面计算的难度，方法选择的越简单，则计算错误的几率会越小，可以优先考虑通用公式<br> $$<br> 2\pi\int\int_Dr(x,y)dxdy<br> $$</p>
+</li>
+<li><p>二元方程最小值求解利用拉格朗日乘数法时，不要随意改动约束条件，只能进行等号两边的加减法，移到等号一边，千万不要进行加减法，不要进行加减法</p>
+</li>
+<li><p>证明题的第一问，如果不是一般的证明类型，比较特殊，那么一般会与第二问进行联系，作为第二问的条件</p>
+</li>
+<li><p>施密特正交化公式还需要熟练掌握</p>
+</li>
+</ol>
+<h2 id="第二套"><a href="#第二套" class="headerlink" title="第二套"></a>第二套</h2><h3 id="选择题-1"><a href="#选择题-1" class="headerlink" title="选择题"></a>选择题</h3><ol>
+<li>反常积分的判敛，首先要做的是化简！！！！！化简！！！！化简！！！！化简到分母下面，再对$p$进行判断</li>
+<li>对于二元函数中的极值问题，如果没$xy$相乘的项，可以分别对$x,y$进行考虑，求极值</li>
+<li>选择题中涉及到参数的，可以直接由选项进行推断，直接得出参数的值，再进行反带入验证</li>
+</ol>
+<h3 id="填空题-1"><a href="#填空题-1" class="headerlink" title="填空题"></a>填空题</h3><ol>
+<li>多元函数求隐函数，先写链式图，否则容易忘记，否则容易忘记——先写链式图！！！！</li>
+</ol>
+<h3 id="大题"><a href="#大题" class="headerlink" title="大题"></a>大题</h3><ol>
+<li>三角函数轮换对称性，令$t=x+\frac{\pi}{2}$</li>
+<li>证明题中的区间内均成立的问题<ul>
+<li>利用泰勒公式的拉格朗日余项的展开</li>
+<li>分区间证明</li>
+</ul>
+</li>
+</ol>
+<h2 id="第三套"><a href="#第三套" class="headerlink" title="第三套"></a>第三套</h2><h3 id="选择题-2"><a href="#选择题-2" class="headerlink" title="选择题"></a>选择题</h3><ol>
+<li><p>参数方程求斜渐近线，首先需要根据$x\rightarrow \infin$时来确定$t$值，然后再进行求解</p>
+</li>
+<li><p>注意割线的几何意义<br> $$<br> k=\frac{f(x)}{x}<br> $$</p>
+</li>
+</ol>
+<h3 id="解答题-1"><a href="#解答题-1" class="headerlink" title="解答题"></a>解答题</h3><ol>
+<li><p>反常积分的判敛，首先要化简！！！！！！然后考虑使用比较判别法，结合$p积分&amp; q积分$</p>
+</li>
+<li><p>进行$1^{\infin}$求极限时，先在答题纸上面写$e$否则最后容易忘记</p>
+</li>
+<li><p>微分方程确定常数$C$时，要多方面考虑求解定值</p>
+</li>
+<li><p>积分三角函数换限$\int_0^aF(x)dx$令$t=a-x$</p>
+<p> 证明公式<br> $$<br> \int_0^{\pi}xf(sinx)dx=\frac{\pi}{2}\int_0^{\pi}f(sinx)dx<br> $$</p>
+</li>
+<li><p>利用半角公式对积分求解<br> $$<br> \int \sqrt{1+sinx}dx\<br> \int \sqrt{1+cosx}dx<br> $$</p>
+</li>
+<li><p>心形线$y=a(1+cos\theta)$一圈长度为$8a$</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>-考研数学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>英语作文例子</title>
+    <url>/2020/12/20/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87%E4%BE%8B%E5%AD%90/</url>
+    <content><![CDATA[<h1 id="英语作文例子"><a href="#英语作文例子" class="headerlink" title="英语作文例子"></a>英语作文例子</h1><h2 id="屠呦呦"><a href="#屠呦呦" class="headerlink" title="屠呦呦"></a>屠呦呦</h2><ul>
+<li>few people are brave enough to risk their own life in the hope of saving others.</li>
+<li>Tu dedicated her life to perfecting the drug but continue to work in the shadows </li>
+<li>She was awarded the Nobel Prize for medicine,the first Chinese person ever to win the award.</li>
+<li>if you measure greatness in terms of the number of human lives saved,then there is no doubt at all that Tu Youyou is one of the greatest scientist of all time</li>
+<li>When it comes to science icons,there is no doubt at all Tu Youyou is right up there</li>
+<li>they all shared the intellectual courage to think outside the box and the personal courage to stand firm in the face of adversity</li>
+<li>Despite the hardship,Tu never gave up hope that a cure was just around the corner</li>
+<li>by the stage,she had tested almost 200 compounds with nothing to show for it. She continue to scour the ancient text.</li>
+<li>Tu Youyou was very self-disciplined and set an example for the rest of team members leading the discussions and inspiring everyone else.</li>
+</ul>
+<h2 id="居里夫人"><a href="#居里夫人" class="headerlink" title="居里夫人"></a>居里夫人</h2><ul>
+<li>she did not seek out fame and prizes.</li>
+<li>she was instead to focus her research on an area largely ignored by her male counterparts——radioactivity</li>
+<li>Curie not only discovered radium,she realized what it could be used to attack cancer cell.</li>
+<li>suddenly,doctors had a new weapon in the fight against the disease   </li>
+<li>she would suffer two great tragedies and how she overcame them speaks volumes about her character </li>
+</ul>
+<h2 id="海伦凯勒"><a href="#海伦凯勒" class="headerlink" title="海伦凯勒"></a>海伦凯勒</h2><ul>
+<li>yet at nineteen months ,Helen Keller was stricken with what at that time was called brain fever and was left both blind and deaf</li>
+<li>she is the first deafblind person to graduate from a college</li>
+<li>Helen Keller will be remembered for really transforming the view of blind and others with disabilities </li>
+<li>People with disabilities can live a full life and complete life</li>
+</ul>
+]]></content>
+      <categories>
+        <category>-考研英语一</category>
       </categories>
   </entry>
 </search>
