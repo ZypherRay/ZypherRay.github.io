@@ -10997,4 +10997,36 @@
         <category>-考研英语一</category>
       </categories>
   </entry>
+  <entry>
+    <title>高数考前做题复盘</title>
+    <url>/2020/12/23/%E9%AB%98%E6%95%B0%E8%80%83%E5%89%8D%E5%81%9A%E9%A2%98%E5%A4%8D%E7%9B%98/</url>
+    <content><![CDATA[<h1 id="高数考前做题复盘"><a href="#高数考前做题复盘" class="headerlink" title="高数考前做题复盘"></a>高数考前做题复盘</h1><ol>
+<li><p>$$<br> x-ln(1+x)——\frac{1}{2}x^2<br> $$</p>
+</li>
+<li><p>特征向量不变化则特征值不变，特征向量前的正负号不改变特征值</p>
+</li>
+<li><p>质心<br> $$<br> \frac{\int_a^bx\theta(x)}{\int_a^b \theta(x)}<br> $$</p>
+</li>
+<li><p>$AB=C$，$B$可逆，则矩阵$C$列向量组与矩阵$A$的列向量组等价</p>
+</li>
+<li><p>全微分<br> $$<br> Pdx+Qdy=0\<br> \Rightarrow  \frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}<br> $$</p>
+</li>
+<li><p>高阶导数<br> $$<br> (\frac{1}{ax+b})^{(n)}=\frac{(-1)^na^nn!}{(ax+b)^{n+1}}\(sinkx)^{(n)}=k^nsin(kx+\frac{\pi}{2}n)\(coskx)^{(n)}=k^ncos(kx+\frac{\pi}{2}n)<br> $$</p>
+</li>
+<li><p>$$<br> \int_1^{\infin}\frac{1+x^2}{1+x^4}dx=\int_1^{\infin}\frac{d(x-\frac{1}{x})}{(x-\frac{1}{x})^2+2}=\frac{1}{\sqrt{2}}actan\frac{x-\frac{1}{x}}{\sqrt{2}}|_1^{\infin}=\frac{\sqrt{2}\pi}{4}<br> $$</p>
+</li>
+</ol>
+<ol start="8">
+<li><p>正定矩阵的充分必要条件是$A+kE$的顺序主子式均大于0</p>
+</li>
+<li><p>$$<br> 由\int_a^{ab}f(x)dx与a无关，则有[\int_a^{ab}f(x)dx]’\equiv0\<br> f(ab)b-f(a)\equiv0<br> $$</p>
+</li>
+<li><p>矩阵没说求其中一个特解，就是要求通解，需要写通解形式</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>-考研数学</category>
+      </categories>
+  </entry>
 </search>
