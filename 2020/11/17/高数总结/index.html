@@ -1,101 +1,517 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><meta name="description" content="高数总结 [ 未来的东东东 ] "><meta name="theme-color" content="#ebc65a"><title>高数总结 [ 未来的东东东 ] </title><style>@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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BL3+M1K+NfPvjlJEHZTOrkYvtdprqx0Hka+W/IhsQoUJE0jsPVOhV2itgp3Wame8dsB73DeCOfp+FMSxp2At3aozP1zVQ/tmEpXdveum7kat3CaLXRcmTZHmOveMiqxSteCZOrGKmscOa9WycTUXtRFabrtts1Nb3e5qHtqWPMWtuEkMSdydcarhKoTcVXtBgujKwULbPFJvqywIzBjboUacECG6ajlIews5dBUMkJ/LYHa12gpRLEsBDAAA6raxOaTnbx4GG5J6hdn4twxT1DRvEQZvD6banOa3BbstVh48efHmw5cffwECBQkWIvK/LTbhIkSKEi1GrDjxEiRKkixFqjTpMmTKki1Hrjz5ChQqUqxEqTLlKlSqUq2e+hpoqJHGmmiqmeZhWGKoYfaZ7qXhxhtjnlWWxsBotw0xxWdfjDPDSEfc98l8q33z1XeLrXPKCeu10NJErZzR2kmnXXDWOee90sYVF12yQVsfTXLdVde088Y7o3TQXkedddLFQnb/qVGrq24cuuvhtZ5666WPfvraaZEB+htokLfe2+1GBDbalARuuueWzbbYboejttrmmBHW2O+AvUmRDMb6EEUsHHQoDskRjxRIiVRILev2qn1oaGpomZOB2z/jmn/eUk6tvaZda/5znbhPCguQ7wsEvd1strBI3OYR8ye01+ZO0jbH36oqKm37w90hl2v/wO5o3vIjtpoZx20H) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css"><script src="https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js" defer></script><script src="/js/paper.js" defer></script><script src="https://www.googletagmanager.com/gtag/js?id=xx-xxxxxxx-xx" async></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbot.css"><script src="/js/tocbot.js" defer></script><script>window.addEventListener('DOMContentLoaded', () => {
-  tocbot.init({
-    // Where to render the table of contents.
-    tocSelector: '.toc__content',
-    // Where to grab the headings to build the table of contents.
-    contentSelector: '.article__content',
-    // Which headings to grab inside of the contentSelector element.
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    // For headings inside relative or absolute positioned containers within content.
-    hasInnerContainers: true,
-    orderedList: false,
-    collapseDepth: 2,
-  });
-})</script><link rel="preload" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css"><link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="mask-border"></div><div class="head"><div class="head__inner"><h1><a href="/">未来的东东东</a></h1><p>去摘，遥不可及的星</p></div></div><div class="paper-container"><div class="main"><div class="location-bar"><div class="line-1"><div class="horizontal-line" style="height: 3px"></div></div><div class="line-2"><div class="horizontal-line" style="height: 1px"></div></div><p class="text">高数总结</p><div class="switch-button"><input class="container_toggle" type="checkbox" id="switch" name="mode"><label for="switch">Toggle</label></div><div class="line-3"><div class="horizontal-line" style="height: 1px"></div></div></div><div class="main__2-col"><article class="post-view__article"><div class="article__infomation"><div class="posts-item"><h2 class="posts-item__title"><a href="">高数总结</a></h2><span class="post__date">2020-11-17</span><a href="/tags/%E9%AB%98%E6%95%B0/"><span class="post__tags">#-高数</span></a></div></div><div class="article__content"><h1 id="考研数学总结"><a href="#考研数学总结" class="headerlink" title="考研数学总结"></a>考研数学总结</h1><h1 id="高数"><a href="#高数" class="headerlink" title="高数"></a>高数</h1><ol>
-<li><p>选择题如果计算量偏大，则需要考虑是不是方法错误，一般选择题计算量适中</p>
-</li>
-<li><p>计算时，不要先将参数的表达式代入，而是直接代参数计算，最后将参数带入【限于参数的表达式也是多项式】</p>
-</li>
-<li><p>当计算时，参数要代入具体值，则将能够代入得具体值先代入计算，会使计算变得简单</p>
-</li>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-simple.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="-高数," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="考研数学总结 高数  选择题如果计算量偏大，则需要考虑是不是方法错误，一般选择题计算量适中 计算时，不要先将参数的表达式代入，而是直接代参数计算，最后将参数带入【限于参数的表达式也是多项式】 当计算时，参数要代入具体值，则将能够代入得具体值先代入计算，会使计算变得简单  极限 计算  洛必达失效情况——极限不存在 \(1^∞\)——\((u-1)*v\) 二元积分洛必达求极">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高数总结">
+<meta property="og:url" content="http://zypher.cn/2020/11/17/%E9%AB%98%E6%95%B0%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="未来的东东东">
+<meta property="og:description" content="考研数学总结 高数  选择题如果计算量偏大，则需要考虑是不是方法错误，一般选择题计算量适中 计算时，不要先将参数的表达式代入，而是直接代参数计算，最后将参数带入【限于参数的表达式也是多项式】 当计算时，参数要代入具体值，则将能够代入得具体值先代入计算，会使计算变得简单  极限 计算  洛必达失效情况——极限不存在 \(1^∞\)——\((u-1)*v\) 二元积分洛必达求极">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/99212701-ba925880-2806-11eb-8a1f-88f0cea7b553.png">
+<meta property="article:published_time" content="2020-11-17T13:31:20.000Z">
+<meta property="article:modified_time" content="2021-01-12T07:58:57.569Z">
+<meta property="article:author" content="未来的东东东">
+<meta property="article:tag" content="-高数">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/63230281/99212701-ba925880-2806-11eb-8a1f-88f0cea7b553.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zypher.cn/2020/11/17/高数总结/"/>
+
+
+
+
+
+  <title>高数总结 | 未来的东东东</title>
+  
+
+
+
+
+
+
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">未来的东东东</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">想看的更远，你就跳跳跳跳起来吧！想和目标更近，你就跑跑跑跑起来吧！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zypher.cn/2020/11/17/%E9%AB%98%E6%95%B0%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="未来的东东东">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gangqin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="未来的东东东">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">高数总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-17T21:31:20+08:00">
+                2020-11-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index">
+                    <span itemprop="name">-考研数学</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="考研数学总结">考研数学总结</h1>
+<h1 id="高数">高数</h1>
+<ol type="1">
+<li><p>选择题如果计算量偏大，则需要考虑是不是方法错误，一般选择题计算量适中</p></li>
+<li><p>计算时，不要先将参数的表达式代入，而是直接代参数计算，最后将参数带入【限于参数的表达式也是多项式】</p></li>
+<li><p>当计算时，参数要代入具体值，则将能够代入得具体值先代入计算，会使计算变得简单</p></li>
 </ol>
-<h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><h3 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h3><ol>
+<h2 id="极限">极限</h2>
+<h3 id="计算">计算</h3>
+<ol type="1">
 <li>洛必达失效情况——极限不存在</li>
-<li>$1^∞$——$(u-1)*v$</li>
+<li><span class="math inline">\(1^∞\)</span>——<span class="math inline">\((u-1)*v\)</span></li>
 <li>二元积分洛必达求极限，对x求导两次消掉积分号，两次分别对应两个不同的字母即可</li>
 </ol>
-<p>$$<br>\lim_{n\rightarrow0}\frac{-\int_{0}^{x}du\int_{0}^{u^2}f(t,u)dt}{x^3}<br>$$</p>
-<p>$$<br>\lim_{n\rightarrow0}\frac{-\int_{0}^{x^2}f(t,x)dt}{3x^2}<br>$$</p>
-<ol start="4">
+<p><span class="math display">\[
+\lim_{n\rightarrow0}\frac{-\int_{0}^{x}du\int_{0}^{u^2}f(t,u)dt}{x^3}
+\]</span></p>
+<p><span class="math display">\[
+\lim_{n\rightarrow0}\frac{-\int_{0}^{x^2}f(t,x)dt}{3x^2}
+\]</span></p>
+<ol start="4" type="1">
 <li>两个字母注意使用换元，可以将定积分转换为变限积分</li>
 <li>等价无穷小公式</li>
 <li>夹逼准则的使用</li>
 <li>分式的拆分，分子比分母始终少一阶</li>
 </ol>
-<h3 id="等价无穷小"><a href="#等价无穷小" class="headerlink" title="等价无穷小"></a>等价无穷小</h3><ol>
+<h3 id="等价无穷小">等价无穷小</h3>
+<ol type="1">
 <li>微分方程与等价无穷小的结合</li>
 </ol>
 <ul>
-<li>设$y=y(x)$是$y’’+2y’+y=e^x$满足$y(0)=y’(0)=0$的解，则当$x→0$时，与$y(x)$等价无穷小的是       <u>$1-cosx$</u></li>
+<li>设<span class="math inline">\(y=y(x)\)</span>是<span class="math inline">\(y&#39;&#39;+2y&#39;+y=e^x\)</span>满足<span class="math inline">\(y(0)=y&#39;(0)=0\)</span>的解，则当<span class="math inline">\(x→0\)</span>时，与<span class="math inline">\(y(x)\)</span>等价无穷小的是 <u><span class="math inline">\(1-cosx\)</span></u></li>
 </ul>
-<ol start="2">
+<ol start="2" type="1">
 <li>复合函数的等价无穷小</li>
 </ol>
 <ul>
-<li>若$f(x)——x^2$则$f(x^2)——x^4$</li>
+<li>若<span class="math inline">\(f(x)——x^2\)</span>则<span class="math inline">\(f(x^2)——x^4\)</span></li>
 </ul>
-<ol start="3">
+<ol start="3" type="1">
 <li>等价无穷小可以用来判断极限的敛散性</li>
 <li>注意使用泰勒公式</li>
-<li>$ln(x+\sqrt{1+x^2)} ——x$</li>
-<li>$x-ln(1+x)——\frac{1}{2}x^2$</li>
-<li>积分里面也可以等价无穷小 </li>
+<li><span class="math inline">\(ln(x+\sqrt{1+x^2)} ——x\)</span></li>
+<li><span class="math inline">\(x-ln(1+x)——\frac{1}{2}x^2\)</span></li>
+<li>积分里面也可以等价无穷小</li>
 </ol>
-<h3 id="间断点"><a href="#间断点" class="headerlink" title="间断点"></a>间断点</h3><ol>
+<h3 id="间断点">间断点</h3>
+<ol type="1">
 <li>找无定义点【找全最重要】</li>
 <li>左右求极限</li>
 <li>注意三角函数</li>
-<li>$e^x\rightarrow0^+or\rightarrow0^-$</li>
+<li><span class="math inline">\(e^x\rightarrow0^+or\rightarrow0^-\)</span></li>
 <li>绝对值</li>
 </ol>
-<hr>
+<hr />
 <ul>
-<li>跳跃间断点、可去间断点，除此以外都是第二类间断点 </li>
+<li>跳跃间断点、可去间断点，除此以外都是第二类间断点</li>
 </ul>
-<h3 id="渐近线"><a href="#渐近线" class="headerlink" title="渐近线"></a>渐近线</h3><ul>
+<h3 id="渐近线">渐近线</h3>
+<ul>
 <li>正无穷和负无穷都要考虑</li>
 </ul>
-<h2 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h2><h4 id="两种方法"><a href="#两种方法" class="headerlink" title="两种方法"></a>两种方法</h4><ul>
+<h2 id="数列极限">数列极限</h2>
+<h4 id="两种方法">两种方法</h4>
+<ul>
 <li>先求单调性，再求有界——得出极限</li>
 <li>先假设有极限，求出极限，证明假设正确</li>
 </ul>
-<ol>
-<li><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2></li>
+<ol type="1">
+<li></li>
 </ol>
-<h3 id="最值与极值"><a href="#最值与极值" class="headerlink" title="最值与极值"></a>最值与极值</h3><ol>
+<h2 id="微分">微分</h2>
+<h3 id="最值与极值">最值与极值</h3>
+<ol type="1">
 <li>求导数和二阶导数</li>
 <li>拉格朗日算子（多元函数）</li>
 <li>注意计算仔细则拿分</li>
 <li>注意绝对值，求解时要对定义域进行分类，去绝对值后再求解</li>
 </ol>
-<h3 id="可微-amp-可导-amp-连续的关系"><a href="#可微-amp-可导-amp-连续的关系" class="headerlink" title="可微&amp;可导&amp;连续的关系"></a>可微&amp;可导&amp;连续的关系</h3><ul>
+<h3 id="可微可导连续的关系">可微&amp;可导&amp;连续的关系</h3>
+<ul>
 <li>可导一定连续，连续不一定可导</li>
 <li>连续则极限存在，极限存在不一定连续</li>
 <li>连续一定可积，连续一定有界，可积一定有界，可积不一定连续</li>
@@ -104,177 +520,973 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>连续不一定偏导存在，可微不一定偏导连续</li>
 <li>二阶混合偏导连续的偏导相等，偏导一个连续一个有界函数可微。</li>
 </ul>
-<h4 id="可微"><a href="#可微" class="headerlink" title="可微*"></a>可微*</h4><ol>
-<li><p>$$<br>\lim_{p\rightarrow+\infty}\frac{\Delta f-f_x’(0,0)\Delta x-f_y’(0,0)\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}<br>$$</p>
-</li>
+<h4 id="可微">可微*</h4>
+<ol type="1">
+<li></li>
 </ol>
-<p>​    其中<br>$$<br>p={\sqrt{\Delta x^2+\Delta y^2}}<br>$$</p>
-<ol start="2">
-<li>二阶连续偏导数连续<br> $$<br> \frac {\partial ^2u} {\partial ^2x }=\frac {\partial ^2u } {\partial ^2y }<br> $$</li>
+<p><span class="math display">\[
+\lim_{p\rightarrow+\infty}\frac{\Delta f-f_x&#39;(0,0)\Delta x-f_y&#39;(0,0)\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}
+\]</span></p>
+<p>​ 其中 <span class="math display">\[
+p={\sqrt{\Delta x^2+\Delta y^2}}
+\]</span></p>
+<ol start="2" type="1">
+<li>二阶连续偏导数连续 <span class="math display">\[
+ \frac {\partial ^2u} {\partial ^2x }=\frac {\partial ^2u } {\partial ^2y }
+ \]</span></li>
 </ol>
-<h4 id="全微分"><a href="#全微分" class="headerlink" title="全微分"></a>全微分</h4><p>$$<br>du=Pdx+Qdy<br>$$</p>
-<p>$$<br>\rightarrow \frac {\partial P } {\partial y }=\frac {\partial Q } {\partial x }<br>$$</p>
+<h4 id="全微分">全微分</h4>
+<p><span class="math display">\[
+du=Pdx+Qdy
+\]</span></p>
+<p><span class="math display">\[
+\rightarrow \frac {\partial P } {\partial y }=\frac {\partial Q } {\partial x }
+\]</span></p>
 <ul>
-<li>计算可以取对数<br>  $$<br>  u=(\frac{z}{x})^y<br>  $$</li>
+<li>计算可以取对数 <span class="math display">\[
+  u=(\frac{z}{x})^y
+  \]</span></li>
 </ul>
-<h4 id="可导"><a href="#可导" class="headerlink" title="可导"></a>可导</h4><ol>
+<h4 id="可导">可导</h4>
+<ol type="1">
 <li>不可导点——函数无意义点，分段点</li>
 <li>定义推导，左导数=右导数</li>
 <li>二阶导数——泰勒公式</li>
 <li>题目中若只有连续条件，如果对分段函数求导，分段点一定一定一定要用导数定义，就算连续，但是也不一定可导</li>
 </ol>
-<h3 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理***"></a>中值定理***</h3><ol>
+<h3 id="中值定理">中值定理***</h3>
+<ol type="1">
 <li><p>积分再现，三角函数的周期性</p>
-<p> $sinx=sin(n\pi+x)$</p>
-</li>
+<p><span class="math inline">\(sinx=sin(n\pi+x)\)</span></p></li>
 <li><p>求实根问题</p>
 <ul>
-<li>单调，$f(a)$&lt;0及$f(b)&gt;0$</li>
-<li>设辅助函数，转换为导数存在为零<ul>
+<li>单调，<span class="math inline">\(f(a)\)</span>&lt;0及<span class="math inline">\(f(b)&gt;0\)</span></li>
+<li>设辅助函数，转换为导数存在为零
+<ul>
 <li>导数为零，可用罗尔定理</li>
 <li>二阶导数为零，可以使用两次罗尔定理</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>中值定理与积分中值定理</p>
-</li>
-<li><p>拉格朗日 </p>
-</li>
-<li><p>泰勒</p>
-</li>
+</ul></li>
+</ul></li>
+<li><p>中值定理与积分中值定理</p></li>
+<li><p>拉格朗日</p></li>
+<li><p>泰勒</p></li>
 </ol>
-<h3 id="极值点-amp-拐点"><a href="#极值点-amp-拐点" class="headerlink" title="极值点&amp;拐点"></a>极值点&amp;拐点</h3><ol>
+<h3 id="极值点拐点">极值点&amp;拐点</h3>
+<ol type="1">
 <li>极值点一阶导函数变号</li>
 <li>拐点二阶导函数变号</li>
 </ol>
-<h2 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h2><h3 id="计算-1"><a href="#计算-1" class="headerlink" title="计算"></a>计算</h3><ol>
-<li><p>注意积分限，有的积分限会故意颠倒顺序</p>
-</li>
-<li><p>积分换元时一定要注意换积分限</p>
-</li>
-<li><p>三角函数的积分公式【太多了，每天早中晚默写一遍】<br> $$<br> \int tanxdx=-ln|cosx|+c<br> $$</p>
-<p> $$<br> \int cotxdx=ln|sinx|+c<br> $$</p>
-</li>
-</ol>
-<ol start="4">
-<li><p>点火公式推广应用</p>
-</li>
-<li><p>当积分上下限确定时，可以当作常数$A$看待</p>
-</li>
+<h2 id="积分">积分</h2>
+<h3 id="计算-1">计算</h3>
+<ol type="1">
+<li><p>注意积分限，有的积分限会故意颠倒顺序</p></li>
+<li><p>积分换元时一定要注意换积分限</p></li>
+<li><p>三角函数的积分公式【太多了，每天早中晚默写一遍】 <span class="math display">\[
+ \int tanxdx=-ln|cosx|+c
+ \]</span></p>
+<p><span class="math display">\[
+ \int cotxdx=ln|sinx|+c
+ \]</span></p></li>
+<li><p>点火公式推广应用</p></li>
+<li><p>当积分上下限确定时，可以当作常数<span class="math inline">\(A\)</span>看待</p></li>
 <li><p>积分限对称问题</p>
 <ul>
-<li>关于$x$轴对称</li>
-<li>关于$y$轴对称</li>
+<li>关于<span class="math inline">\(x\)</span>轴对称</li>
+<li>关于<span class="math inline">\(y\)</span>轴对称</li>
 <li>关于原点对称</li>
 <li>函数的奇偶性</li>
 <li>轮换对称性</li>
-</ul>
-</li>
-<li><p>积分再现，当出现$\frac{x^2}{x^2+y^2}$时可以考虑轮换对称性</p>
-</li>
-<li><p>弧长公式<br> $$<br> S=\int_b^a \sqrt{1+y’^2}dx<br> $$</p>
-</li>
-<li><p>质心公式<br> $$<br> \frac{\int_b^a x\alpha (x)dx}{\int_b^a \alpha(x)dx}<br> $$</p>
-</li>
+</ul></li>
+<li><p>积分再现，当出现<span class="math inline">\(\frac{x^2}{x^2+y^2}\)</span>时可以考虑轮换对称性</p></li>
+<li><p>弧长公式 <span class="math display">\[
+ S=\int_b^a \sqrt{1+y&#39;^2}dx
+ \]</span></p></li>
+<li><p>质心公式 <span class="math display">\[
+ \frac{\int_b^a x\alpha (x)dx}{\int_b^a \alpha(x)dx}
+ \]</span></p></li>
 </ol>
-<h3 id="旋转体问题"><a href="#旋转体问题" class="headerlink" title="旋转体问题***"></a>旋转体问题***</h3><ol>
-<li>绕$x$轴和$y$轴旋转公式的应用</li>
-<li>通用公式$\int\int_Dr(x,y)dxdy$</li>
+<h3 id="旋转体问题">旋转体问题***</h3>
+<ol type="1">
+<li>绕<span class="math inline">\(x\)</span>轴和<span class="math inline">\(y\)</span>轴旋转公式的应用</li>
+<li>通用公式<span class="math inline">\(\int\int_Dr(x,y)dxdy\)</span></li>
 <li>旋转轴的平移</li>
 <li>x、y函数对应关系可以进行转换，将y(x)转换为x(y)</li>
 </ol>
-<h2 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h2><ol>
-<li><p>有时候y不一定直接就写成y，可能是一个式子<br> $$<br> y’cosy=x-siny<br> $$<br> 此题中可将$f(x)$看作$siny$</p>
-<p> 得,同时令$siny=u$<br> $$<br> （siny）’=x+siny<br> $$</p>
-</li>
-<li><p>首先判断微分方程得类型，再决定使用哪种方法计算求解 </p>
-</li>
-<li><p>微分方程可以是$\frac{dy}{dx}$也可以是$\frac{dy}{dx}$</p>
-</li>
-<li><p>二阶微分方程通解公式</p>
-</li>
+<h2 id="微分方程">微分方程</h2>
+<ol type="1">
+<li><p>有时候y不一定直接就写成y，可能是一个式子 <span class="math display">\[
+ y&#39;cosy=x-siny
+ \]</span> 此题中可将<span class="math inline">\(f(x)\)</span>看作<span class="math inline">\(siny\)</span></p>
+<p>得,同时令<span class="math inline">\(siny=u\)</span> <span class="math display">\[
+ （siny）&#39;=x+siny
+ \]</span></p></li>
+<li><p>首先判断微分方程得类型，再决定使用哪种方法计算求解</p></li>
+<li><p>微分方程可以是<span class="math inline">\(\frac{dy}{dx}\)</span>也可以是<span class="math inline">\(\frac{dy}{dx}\)</span></p></li>
+<li><p>二阶微分方程通解公式</p></li>
 </ol>
-<h3 id="设特解公式"><a href="#设特解公式" class="headerlink" title="设特解公式"></a>设特解公式</h3><p>背熟！！</p>
-<h3 id="知通解反求微分方程"><a href="#知通解反求微分方程" class="headerlink" title="知通解反求微分方程"></a>知通解反求微分方程</h3><ul>
-<li>由通解求$y’,y’’$消去常数$C_1,C_2$</li>
-</ul>
-<h3 id="幂级数与微分方程"><a href="#幂级数与微分方程" class="headerlink" title="幂级数与微分方程"></a>幂级数与微分方程</h3><p>$$<br>x_n=e^2+\frac{e^4}{3!}+\frac{e^4}{5!}+…+\frac{e^{2n+2}}{(2n+1)!},求lim_{n\rightarrow\infin}x_n<br>$$</p>
-<p>$$<br>构造\sum_{n=0}^{\infin}\frac{x^n}{n!}=e^x<br>$$</p>
+<h3 id="设特解公式">设特解公式</h3>
+<p>背熟！！</p>
+<h3 id="知通解反求微分方程">知通解反求微分方程</h3>
 <ul>
-<li>提$e$、求导、相加</li>
+<li>由通解求<span class="math inline">\(y&#39;,y&#39;&#39;\)</span>消去常数<span class="math inline">\(C_1,C_2\)</span></li>
 </ul>
-<h2 id="级数敛散性"><a href="#级数敛散性" class="headerlink" title="级数敛散性"></a>级数敛散性</h2><ol>
+<h3 id="幂级数与微分方程">幂级数与微分方程</h3>
+<p><span class="math display">\[
+x_n=e^2+\frac{e^4}{3!}+\frac{e^4}{5!}+...+\frac{e^{2n+2}}{(2n+1)!},求lim_{n\rightarrow\infin}x_n
+\]</span></p>
+<p><span class="math display">\[
+构造\sum_{n=0}^{\infin}\frac{x^n}{n!}=e^x
+\]</span></p>
+<ul>
+<li>提<span class="math inline">\(e\)</span>、求导、相加</li>
+</ul>
+<h2 id="级数敛散性">级数敛散性</h2>
+<ol type="1">
 <li>P级数</li>
-<li>当如下情况时，需要在不同的情况对函数进行分析，当$0&lt;x&lt;1$和$x&gt;1$时，占主要作用的部分不同前者为$b$，后者为$a$</li>
+<li>当如下情况时，需要在不同的情况对函数进行分析，当<span class="math inline">\(0&lt;x&lt;1\)</span>和<span class="math inline">\(x&gt;1\)</span>时，占主要作用的部分不同前者为<span class="math inline">\(b\)</span>，后者为<span class="math inline">\(a\)</span></li>
 </ol>
-<p>$$<br>I=\int_{0}^{\infty}\frac{1}{x^a+x^b}dx(a&gt;b&gt;0)<br>$$</p>
-<h2 id="不等式的证明"><a href="#不等式的证明" class="headerlink" title="不等式的证明"></a>不等式的证明</h2><ol>
+<p><span class="math display">\[
+I=\int_{0}^{\infty}\frac{1}{x^a+x^b}dx(a&gt;b&gt;0)
+\]</span></p>
+<h2 id="不等式的证明">不等式的证明</h2>
+<ol type="1">
 <li>移到一边</li>
 <li>设辅助函数</li>
 <li>求导</li>
 <li>找特殊值点</li>
 <li>常用不等式的应用</li>
 </ol>
-<h2 id="数学应用"><a href="#数学应用" class="headerlink" title="数学应用"></a>数学应用</h2><ol>
+<h2 id="数学应用">数学应用</h2>
+<ol type="1">
 <li>题目中的有关速率的直接写出来</li>
 <li>然后写出需要求解的式子</li>
 <li>判断两者之间的关系，得真正需求求解得式子</li>
 </ol>
-<h1 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h1><h2 id="具体"><a href="#具体" class="headerlink" title="具体"></a>具体</h2><ol>
-<li>求$A^*$的方程通解时，通常会转化成与$A$相关的方程进行简化求解</li>
-<li>求$A、B$正交矩阵，则$P_1AP_1^{-1}-\Lambda $以及则有$P_2BP_2^{-1}-\Lambda $则有$Q=P_1P_2^{-1}$</li>
+<h1 id="线性代数">线性代数</h1>
+<h2 id="具体">具体</h2>
+<ol type="1">
+<li>求<span class="math inline">\(A^*\)</span>的方程通解时，通常会转化成与<span class="math inline">\(A\)</span>相关的方程进行简化求解</li>
+<li>求<span class="math inline">\(A、B\)</span>正交矩阵，则$P_1AP_1<sup>{-1}-<span class="math inline">\(以及则有\)</span>P_2BP_2</sup>{-1}-<span class="math inline">\(则有\)</span>Q=P_1P_2^{-1}$</li>
 <li>正定矩阵代表特征值不全为0，可以为零。【注意二次型矩阵|A|&gt;0恒成立】</li>
-<li>分块矩阵的计算，必须是拉普拉斯型，角落是$O$矩阵</li>
+<li>分块矩阵的计算，必须是拉普拉斯型，角落是<span class="math inline">\(O\)</span>矩阵</li>
 </ol>
-<h2 id="抽象"><a href="#抽象" class="headerlink" title="抽象"></a>抽象</h2><ol>
+<h2 id="抽象">抽象</h2>
+<ol type="1">
 <li>构造特征值因式</li>
-<li>矩阵等价$\Rightarrow$r相等</li>
+<li>矩阵等价<span class="math inline">\(\Rightarrow\)</span>r相等</li>
 <li>矩阵的逆的求和表现形式</li>
-<li>单位正交列向量$A^TA=E$</li>
-<li>反实对称矩阵$B=-B^T$</li>
-<li>单位正交向量，$A^T=A^{-1}$</li>
+<li>单位正交列向量<span class="math inline">\(A^TA=E\)</span></li>
+<li>反实对称矩阵<span class="math inline">\(B=-B^T\)</span></li>
+<li>单位正交向量，<span class="math inline">\(A^T=A^{-1}\)</span></li>
 </ol>
-<h2 id="线性相关与线性无关"><a href="#线性相关与线性无关" class="headerlink" title="线性相关与线性无关"></a>线性相关与线性无关</h2><p><strong>线性相关性与方程组的结合！！！</strong></p>
+<h2 id="线性相关与线性无关">线性相关与线性无关</h2>
+<p><strong>线性相关性与方程组的结合！！！</strong></p>
 <ul>
-<li>$A^<em>A=0$则$A$的列向量是$A^</em>$的解</li>
+<li><span class="math inline">\(A^*A=0\)</span>则<span class="math inline">\(A\)</span>的列向量是<span class="math inline">\(A^*\)</span>的解</li>
 </ul>
-<ol>
-<li><p>不要臆测不要臆测</p>
-</li>
-<li><p>但凡线性相关和线性无关都能推导出来</p>
-</li>
+<ol type="1">
+<li><p>不要臆测不要臆测</p></li>
+<li><p>但凡线性相关和线性无关都能推导出来</p></li>
 <li><p><strong>巧妙使用解方程的思想,用秩</strong></p>
-<p> $eg.$<br> $$<br> \beta_1=\alpha_1+k\alpha_3\\beta_2=\alpha_2+l\alpha_3\若\alpha_1,\alpha_2,\alpha_3线性无关，则(\alpha_1,\alpha_2,\alpha_3)是三阶可逆矩阵，故r(\beta_1,\beta_2)=r\<br> a = r\left[\matrix{1&amp;0\0&amp;1\k&amp;l}\right]=2\即\alpha_1+k\alpha_3,\alpha_2+l\alpha_3线性无关<br> $$</p>
-</li>
-<li><p>线性无关的延伸组必线性无关</p>
-</li>
+<p><span class="math inline">\(eg.\)</span> <span class="math display">\[
+ \beta_1=\alpha_1+k\alpha_3\\\beta_2=\alpha_2+l\alpha_3\\若\alpha_1,\alpha_2,\alpha_3线性无关，则(\alpha_1,\alpha_2,\alpha_3)是三阶可逆矩阵，故r(\beta_1,\beta_2)=r\\
+ a = r\left[\matrix{1&amp;0\\0&amp;1\\k&amp;l}\right]=2\\即\alpha_1+k\alpha_3,\alpha_2+l\alpha_3线性无关
+ \]</span></p></li>
+<li><p>线性无关的延伸组必线性无关</p></li>
 </ol>
-<h2 id="解方程"><a href="#解方程" class="headerlink" title="解方程"></a>解方程</h2><ol>
+<h2 id="解方程">解方程</h2>
+<ol type="1">
 <li>通解带k，括号注明</li>
 </ol>
-<h2 id="相似对角化条件"><a href="#相似对角化条件" class="headerlink" title="相似对角化条件"></a>相似对角化条件</h2><ol>
+<h2 id="相似对角化条件">相似对角化条件</h2>
+<ol type="1">
 <li>实对称矩阵必相似于对角矩阵</li>
 <li>特征值不同</li>
 <li>有n个不同的特征向量【其他条件算不出来，就计算特征值，看特征向量，肯定能算出来】</li>
 <li>实对称矩阵的特征值必为实数</li>
 </ol>
-<h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><ul>
-<li><p>配方法，先配一个，再配另一个，按顺序，如果配不出来，说明前面配错了，重算</p>
-</li>
-<li><p>施密特正交化</p>
-</li>
-<li><img src="https://user-images.githubusercontent.com/63230281/99212701-ba925880-2806-11eb-8a1f-88f0cea7b553.png" style="zoom:50%;" />
-</li>
-<li><p>两个矩阵经过正定变化之后，正、负惯性指数不变</p>
-</li>
+<h2 id="二次型">二次型</h2>
+<ul>
+<li>配方法，先配一个，再配另一个，按顺序，如果配不出来，说明前面配错了，重算</li>
+<li>施密特正交化</li>
+<li><p><img src="https://user-images.githubusercontent.com/63230281/99212701-ba925880-2806-11eb-8a1f-88f0cea7b553.png" style="zoom:50%;" /></p></li>
+<li><p>两个矩阵经过正定变化之后，正、负惯性指数不变</p></li>
 </ul>
-<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h3 id="反函数"><a href="#反函数" class="headerlink" title="反函数"></a>反函数</h3><p>反函数$f(x)$与$g(x)$为反函数则$f(g(x))=x$,但是要注意区分，当$g(2)$此处对应的是$f(x)$的$y$,有关$f(x)$的$x$需要进行求解而得</p>
-<h2 id="参数方程"><a href="#参数方程" class="headerlink" title="参数方程"></a>参数方程</h2><ol>
-<li>参数方程二重积分计算时，直接将y带入，再求$\frac {dx}{dt}$与替换为$dx$</li>
+<h1 id="其他补充">其他补充</h1>
+<h3 id="反函数">反函数</h3>
+<p>反函数<span class="math inline">\(f(x)\)</span>与<span class="math inline">\(g(x)\)</span>为反函数则<span class="math inline">\(f(g(x))=x\)</span>,但是要注意区分，当<span class="math inline">\(g(2)\)</span>此处对应的是<span class="math inline">\(f(x)\)</span>的<span class="math inline">\(y\)</span>,有关<span class="math inline">\(f(x)\)</span>的<span class="math inline">\(x\)</span>需要进行求解而得</p>
+<h2 id="参数方程">参数方程</h2>
+<ol type="1">
+<li>参数方程二重积分计算时，直接将y带入，再求<span class="math inline">\(\frac {dx}{dt}\)</span>与替换为<span class="math inline">\(dx\)</span></li>
 </ol>
-<h2 id="极坐标"><a href="#极坐标" class="headerlink" title="极坐标"></a>极坐标</h2><ol>
+<h2 id="极坐标">极坐标</h2>
+<ol type="1">
 <li>极坐标表示得方程不一定就是角度和半径，也可以是直角坐标系，根绝计算需求选择</li>
-<li>$ \Theta $和$r$的顺序转换，可以将$ \Theta 和r$放入直角坐标系中考虑</li>
+<li>$ <span class="math inline">\(和\)</span>r<span class="math inline">\(的顺序转换，可以将\)</span> 和r$放入直角坐标系中考虑</li>
 </ol>
-</div></article><div class="post-view__sidebar"><div class="sidebar"><div class="tocbot"><h2>Toc</h2><div class="toc__content"></div></div><h2>Links</h2><div class="sidebar__link"><ul><li><a href="https://github.com/yours" target="_blank" rel="noopener">Github</a></li><li><a href="https://codepen.io/yours" target="_blank" rel="noopener">Codepen</a></li><li><a href="https://dribbble.com/yours" target="_blank" rel="noopener">Dribbble</a></li><li><a href="https://twitter.com/yours" target="_blank" rel="noopener">Twitter</a></li><li><a href="https://www.zhihu.com/people/yours" target="_blank" rel="noopener">知乎</a></li><li><a href="https://juejin.im/user/yours" target="_blank" rel="noopener">掘金</a></li><li><a href="mailto:xxx@yourmail.xxxx">Mail</a></li></ul></div><h2>Archives</h2><div class="sidebar__archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul></div><h2>Categories</h2><div class="sidebar__categories"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Arcmap/">-Arcmap</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/CAD/">-CAD</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Geoda/">-Geoda</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PS/">-PS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">-hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E8%80%83%E7%A0%94/">-人文地理考研</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">-其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%98%8E%E5%98%8E%E5%98%8E/">-嘎嘎嘎</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BD%E5%9C%9F%E7%A9%BA%E9%97%B4%E8%A7%84%E5%88%92/">-国土空间规划</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9C%B0%E5%9B%BE%E5%88%B6%E4%BD%9C/">-地图制作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">-考研政治</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/">-考研数学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%B8%80/">-考研英语一</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%92%E5%B9%B4%E7%94%9F%E6%80%81%E7%8E%AF%E4%BF%9D%E7%BB%84%E7%BB%87%E5%9F%B9%E8%AE%AD/">-青年生态环保组织培训</a></li></ul></div><h2>Tags</h2><div class="sidebar__tags"><ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Arcmap/" rel="tag">-Arcmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CAD%E6%B3%A8%E9%87%8A/" rel="tag">-CAD注释</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Geoda-%E7%A9%BA%E9%97%B4%E8%87%AA%E7%9B%B8%E5%85%B3/" rel="tag">-Geoda -空间自相关</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">-hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF/" rel="tag">-一带一路</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/" rel="tag">-人文地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-人文地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%9B%9B%E4%BA%94%E8%A7%84%E5%88%92/" rel="tag">-十四五规划</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BD%E5%9C%9F%E8%A7%84%E5%88%92-%E5%9C%B0%E7%90%86/" rel="tag">-国土规划 -地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E5%9B%BE%E9%85%8D%E8%89%B2/" rel="tag">-地图配色</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E7%90%86%E5%9B%BD%E6%83%85/" rel="tag">-地理国情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-城市地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD-%E5%8C%BB%E7%96%97/" rel="tag">-基础设施 -医疗</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%A0%E5%9B%BE/" rel="tag">-抠图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF%E6%B2%BB%E8%83%8C%E8%AF%B5/" rel="tag">-政治背诵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E7%82%B9/" rel="tag">-热点</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D/" rel="tag">-热词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D-%E9%95%BF%E4%B8%89%E8%A7%92/" rel="tag">-热词 -长三角</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E4%BF%9D%E4%BA%91%E5%9F%B9%E8%AE%AD-%E7%BE%8E%E4%B8%BD%E4%B8%AD%E5%9B%BD%C2%B7%E9%9D%92%E6%98%A5%E8%A1%8C%E5%8A%A8/" rel="tag">-环保云培训 -美丽中国·青春行动</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9C%9F%E9%A2%98/" rel="tag">-真题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/" rel="tag">-社会学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/" rel="tag">-第七次人口普查</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-经济地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87/" rel="tag">-英语作文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E7%BF%BB%E8%AF%91/" rel="tag">-英语翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B5%B5%E7%87%95%E8%8F%81/" rel="tag">-赵燕菁</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0/" rel="tag">-高数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E5%A4%A7%E9%A2%98/" rel="tag">-高数大题</a></li></ul></div></div></div></div><div class="horizontal-line" style="height: 1px"></div><div class="main__bottom"><div class="pre-next"><a class="pre-button" href="/2020/11/18/%E6%AD%A617%E8%AE%B2/">武17讲</a><a class="next-button" href="/2020/11/15/%E8%8B%B1%E8%AF%AD%E5%9B%BE%E7%94%BB%E4%BD%9C%E6%96%87%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/">英语图画作文问题分析</a></div></div></div></div><div class="footer"><span>©️2019-2021 Designed By&nbsp;<strong><a href="https://github.com/random-yang" target="_blank" rel="noopener">RandomYang</a></strong> Powered By&nbsp;</span><strong><a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></strong></div><div class="darkmode-mask" id="darkmode-mask"></div><div class="sidebar__button"></div></body></html>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    未来的东东东
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://zypher.cn/2020/11/17/%E9%AB%98%E6%95%B0%E6%80%BB%E7%BB%93/" title="高数总结">http://zypher.cn/2020/11/17/%E9%AB%98%E6%95%B0%E6%80%BB%E7%BB%93/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E9%AB%98%E6%95%B0/" rel="tag"># -高数</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/11/15/%E8%8B%B1%E8%AF%AD%E5%9B%BE%E7%94%BB%E4%BD%9C%E6%96%87%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/" rel="next" title="英语图画作文问题分析">
+                <i class="fa fa-chevron-left"></i> 英语图画作文问题分析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/11/18/%E6%AD%A617%E8%AE%B2/" rel="prev" title="武17讲">
+                武17讲 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/gangqin.jpg"
+                alt="未来的东东东" />
+            
+              <p class="site-author-name" itemprop="name">未来的东东东</p>
+              <p class="site-description motion-element" itemprop="description">去摘，遥不可及的星</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ZypherRay" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#考研数学总结"><span class="nav-number">1.</span> <span class="nav-text">考研数学总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高数"><span class="nav-number">2.</span> <span class="nav-text">高数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#极限"><span class="nav-number">2.1.</span> <span class="nav-text">极限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算"><span class="nav-number">2.1.1.</span> <span class="nav-text">计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等价无穷小"><span class="nav-number">2.1.2.</span> <span class="nav-text">等价无穷小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#间断点"><span class="nav-number">2.1.3.</span> <span class="nav-text">间断点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#渐近线"><span class="nav-number">2.1.4.</span> <span class="nav-text">渐近线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数列极限"><span class="nav-number">2.2.</span> <span class="nav-text">数列极限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#两种方法"><span class="nav-number">2.2.0.1.</span> <span class="nav-text">两种方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微分"><span class="nav-number">2.3.</span> <span class="nav-text">微分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最值与极值"><span class="nav-number">2.3.1.</span> <span class="nav-text">最值与极值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可微可导连续的关系"><span class="nav-number">2.3.2.</span> <span class="nav-text">可微&amp;可导&amp;连续的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可微"><span class="nav-number">2.3.2.1.</span> <span class="nav-text">可微*</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#全微分"><span class="nav-number">2.3.2.2.</span> <span class="nav-text">全微分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可导"><span class="nav-number">2.3.2.3.</span> <span class="nav-text">可导</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中值定理"><span class="nav-number">2.3.3.</span> <span class="nav-text">中值定理***</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#极值点拐点"><span class="nav-number">2.3.4.</span> <span class="nav-text">极值点&amp;拐点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#积分"><span class="nav-number">2.4.</span> <span class="nav-text">积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算-1"><span class="nav-number">2.4.1.</span> <span class="nav-text">计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#旋转体问题"><span class="nav-number">2.4.2.</span> <span class="nav-text">旋转体问题***</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微分方程"><span class="nav-number">2.5.</span> <span class="nav-text">微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设特解公式"><span class="nav-number">2.5.1.</span> <span class="nav-text">设特解公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#知通解反求微分方程"><span class="nav-number">2.5.2.</span> <span class="nav-text">知通解反求微分方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幂级数与微分方程"><span class="nav-number">2.5.3.</span> <span class="nav-text">幂级数与微分方程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#级数敛散性"><span class="nav-number">2.6.</span> <span class="nav-text">级数敛散性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不等式的证明"><span class="nav-number">2.7.</span> <span class="nav-text">不等式的证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数学应用"><span class="nav-number">2.8.</span> <span class="nav-text">数学应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性代数"><span class="nav-number">3.</span> <span class="nav-text">线性代数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#具体"><span class="nav-number">3.1.</span> <span class="nav-text">具体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象"><span class="nav-number">3.2.</span> <span class="nav-text">抽象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性相关与线性无关"><span class="nav-number">3.3.</span> <span class="nav-text">线性相关与线性无关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解方程"><span class="nav-number">3.4.</span> <span class="nav-text">解方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相似对角化条件"><span class="nav-number">3.5.</span> <span class="nav-text">相似对角化条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二次型"><span class="nav-number">3.6.</span> <span class="nav-text">二次型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他补充"><span class="nav-number">4.</span> <span class="nav-text">其他补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#反函数"><span class="nav-number">4.0.1.</span> <span class="nav-text">反函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数方程"><span class="nav-number">4.1.</span> <span class="nav-text">参数方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#极坐标"><span class="nav-number">4.2.</span> <span class="nav-text">极坐标</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">未来的东东东</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

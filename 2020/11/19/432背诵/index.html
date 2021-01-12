@@ -1,34 +1,507 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><meta name="description" content="432背诵 [ 未来的东东东 ] "><meta name="theme-color" content="#ebc65a"><title>432背诵 [ 未来的东东东 ] </title><style>@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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BL3+M1K+NfPvjlJEHZTOrkYvtdprqx0Hka+W/IhsQoUJE0jsPVOhV2itgp3Wame8dsB73DeCOfp+FMSxp2At3aozP1zVQ/tmEpXdveum7kat3CaLXRcmTZHmOveMiqxSteCZOrGKmscOa9WycTUXtRFabrtts1Nb3e5qHtqWPMWtuEkMSdydcarhKoTcVXtBgujKwULbPFJvqywIzBjboUacECG6ajlIews5dBUMkJ/LYHa12gpRLEsBDAAA6raxOaTnbx4GG5J6hdn4twxT1DRvEQZvD6banOa3BbstVh48efHmw5cffwECBQkWIvK/LTbhIkSKEi1GrDjxEiRKkixFqjTpMmTKki1Hrjz5ChQqUqxEqTLlKlSqUq2e+hpoqJHGmmiqmeZhWGKoYfaZ7qXhxhtjnlWWxsBotw0xxWdfjDPDSEfc98l8q33z1XeLrXPKCeu10NJErZzR2kmnXXDWOee90sYVF12yQVsfTXLdVde088Y7o3TQXkedddLFQnb/qVGrq24cuuvhtZ5666WPfvraaZEB+htokLfe2+1GBDbalARuuueWzbbYboejttrmmBHW2O+AvUmRDMb6EEUsHHQoDskRjxRIiVRILev2qn1oaGpomZOB2z/jmn/eUk6tvaZda/5znbhPCguQ7wsEvd1strBI3OYR8ye01+ZO0jbH36oqKm37w90hl2v/wO5o3vIjtpoZx20H) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css"><script src="https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js" defer></script><script src="/js/paper.js" defer></script><script src="https://www.googletagmanager.com/gtag/js?id=xx-xxxxxxx-xx" async></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbot.css"><script src="/js/tocbot.js" defer></script><script>window.addEventListener('DOMContentLoaded', () => {
-  tocbot.init({
-    // Where to render the table of contents.
-    tocSelector: '.toc__content',
-    // Where to grab the headings to build the table of contents.
-    contentSelector: '.article__content',
-    // Which headings to grab inside of the contentSelector element.
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    // For headings inside relative or absolute positioned containers within content.
-    hasInnerContainers: true,
-    orderedList: false,
-    collapseDepth: 2,
-  });
-})</script><link rel="preload" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css"><link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="mask-border"></div><div class="head"><div class="head__inner"><h1><a href="/">未来的东东东</a></h1><p>去摘，遥不可及的星</p></div></div><div class="paper-container"><div class="main"><div class="location-bar"><div class="line-1"><div class="horizontal-line" style="height: 3px"></div></div><div class="line-2"><div class="horizontal-line" style="height: 1px"></div></div><p class="text">432背诵</p><div class="switch-button"><input class="container_toggle" type="checkbox" id="switch" name="mode"><label for="switch">Toggle</label></div><div class="line-3"><div class="horizontal-line" style="height: 1px"></div></div></div><div class="main__2-col"><article class="post-view__article"><div class="article__infomation"><div class="posts-item"><h2 class="posts-item__title"><a href="">432背诵</a></h2><span class="post__date">2020-11-19</span></div></div><div class="article__content"><p><strong>2019年</strong></p>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-simple.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="2019年 1.总体 包含所研究的全部个体（数据）的集合，通常由所研究的一些个体组成。 2.变量类型 变量：说明现象某种特征的概念，可以有两个或过更多个可能的取值，其特点是从一次观察到下一次观察结果会出现差别或变化。 （1）分类变量：说明事物类别，取值是分类数据。eg. 男、女 （2）顺序变量：说明事物有序类别的一个名称，其取值是顺序数据。eg.一等、二等、次品 （3）数值型变量：说">
+<meta property="og:type" content="article">
+<meta property="og:title" content="432背诵">
+<meta property="og:url" content="http://zypher.cn/2020/11/19/432%E8%83%8C%E8%AF%B5/index.html">
+<meta property="og:site_name" content="未来的东东东">
+<meta property="og:description" content="2019年 1.总体 包含所研究的全部个体（数据）的集合，通常由所研究的一些个体组成。 2.变量类型 变量：说明现象某种特征的概念，可以有两个或过更多个可能的取值，其特点是从一次观察到下一次观察结果会出现差别或变化。 （1）分类变量：说明事物类别，取值是分类数据。eg. 男、女 （2）顺序变量：说明事物有序类别的一个名称，其取值是顺序数据。eg.一等、二等、次品 （3）数值型变量：说">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image019.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image025.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image027.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image029.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image031.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image033.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image035.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image041.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image045.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image047.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image052.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image054.jpg">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image058.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image060.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image064.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image068.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif">
+<meta property="og:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif">
+<meta property="article:published_time" content="2020-11-19T04:53:42.000Z">
+<meta property="article:modified_time" content="2021-01-12T07:57:58.179Z">
+<meta property="article:author" content="未来的东东东">
+<meta property="article:tag" content="随记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zypher.cn/2020/11/19/432背诵/"/>
+
+
+
+
+
+  <title>432背诵 | 未来的东东东</title>
+  
+
+
+
+
+
+
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">未来的东东东</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">想看的更远，你就跳跳跳跳起来吧！想和目标更近，你就跑跑跑跑起来吧！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zypher.cn/2020/11/19/432%E8%83%8C%E8%AF%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="未来的东东东">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gangqin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="未来的东东东">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">432背诵</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-19T12:53:42+08:00">
+                2020-11-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%98%8E%E5%98%8E%E5%98%8E/" itemprop="url" rel="index">
+                    <span itemprop="name">-嘎嘎嘎</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  13.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  44
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>2019年</strong></p>
 <p><strong>1.总体</strong></p>
 <p>包含所研究的全部个体（数据）的集合，通常由所研究的一些个体组成。</p>
 <p><strong>2.变量类型</strong></p>
@@ -41,7 +514,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p><strong>4.</strong> <strong>统计量</strong></p>
 <p>统计量是用来描述样本特征的概括性数字度量。它是根据样本数据计算出来的一个量，由于抽样是随机的，因此统计量是样本的函数。研究者所关心的统计量主要有样本平均数、样本标准差、样本比例等，统计量不含任何未知的参数。</p>
 <p><strong>5.</strong> <strong>度量数据特征的方面有哪些？分别可用什么指标度量？</strong></p>
-<p><strong><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"></strong></p>
+<p><strong><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img" /></strong></p>
 <p>度量特征可以从集中趋势、分布的形状、离散程度三方面入手。对数据的集中趋势，我们可以计算众数、中位数、平均数；针对数据的离散程度，我们可以计算异众比率、四分位差、极差、平均差、方差或标准差，离散系数；针对数据的分布形状，我们可以计算其偏态系数，峰态系数等。</p>
 <p><strong>6.</strong> <strong>编制总指数的目的是什么？</strong></p>
 <p>（1）运用指数可以分析复杂经济现象总体的变动方向和程度；</p>
@@ -54,37 +527,41 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>1．简单指数</p>
 <p>（1）简单综合指数</p>
 <p>是将报告期的指标总和与基期的指标总和相对比的指数，其特点是“先综合，后对比”，计算公式为：</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg" alt="img"> ， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img"> </p>
-<p>式中，p代表质量指标；q代表数量指标； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img"> 代表质量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img"> 代表数量指标指数；下标1表示报告期；下标0表示基期。</p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg" alt="img" /> ， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img" /></p>
+<p>式中，p代表质量指标；q代表数量指标； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img" /> 代表质量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img" /> 代表数量指标指数；下标1表示报告期；下标0表示基期。</p>
 <p>使用范围：只能用于指标值相差不大的商品，在商品价格差异大，且变动幅度差异大的情况下，这种方法不能反映实际变动水平。</p>
 <p>（2）简单平均指数</p>
 <p>是将个体指数进行简单平均得到的总指数，其特点是“先对比，后综合”，计算公式为：</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg" alt="img"> </p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg" alt="img" /></p>
 <p>简单综合指数和简单平均指数的缺陷：两种方法都没有考虑到权数的影响，计算结果难以反映实际情况。另外，将使用价值不同的产品个体指数或价格（指标值）相加，即缺少实际意义，又缺少理论依据。</p>
 <p>2．加权指数</p>
 <p>（1）加权综合指数</p>
 <p>①拉氏指数</p>
 <p>拉氏指数在计算综合指数时将作为权数的同度量因素固定在基期，计算公式为：</p>
-<p>​     拉氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img"> </p>
-<p>​     拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg" alt="img"> </p>
-<p>式中， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img"> 表示数量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img"> 表示质量指标指数；p0和p1分别表示基期和报告期的质量指标值；q0和q1分别表示基期和报告期的数量指标值。</p>
+<p>​ 拉氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img" /></p>
+<p>​ 拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg" alt="img" /></p>
+<p>式中， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img" /> 表示数量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img" /> 表示质量指标指数；p0和p1分别表示基期和报告期的质量指标值；q0和q1分别表示基期和报告期的数量指标值。</p>
 <p>②帕氏指数</p>
 <p>帕氏指数在计算综合指数时将作为权数的同度量因素固定在报告期，计算公式为：</p>
-<p>​     帕氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img"> </p>
-<p>​     拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img"> </p>
+<p>​ 帕氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img" /></p>
+<p>​ 拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img" /></p>
 <p>权数时期的选择主要取决于编制指数的目的，取决于指数要说明的问题。</p>
 <p>（2）加权平均指数</p>
 <p>是以个体指数为基础，通过对个体指数进行加权平均来编制的指数。即先计算所研究对象各个项目的个体指数，然后根据所给的价值量指标（产值或销售额）作为权数对个体指数进行加权平均。公式为：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" alt="img"></p>
-<p>①加权算术平均指数： </p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<p>①加权算术平均指数：</p>
 <p>如果用基期权数q0p0，则</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" alt="img"> （与拉氏质量指标指数相同）</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" alt="img"> （与拉氏数量指标指数相同）</p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" alt="img" /> （与拉氏质量指标指数相同）</p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" alt="img" /> （与拉氏数量指标指数相同）</p>
 <p>②加权调和平均指数：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>如果用报告期权数q1p1，则</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg" alt="img">（与帕氏质量指标指数相同）</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg" alt="img"> （与帕氏数量指标指数相同）</p>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg" alt="img" />（与帕氏质量指标指数相同）</p>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg" alt="img" /> （与帕氏数量指标指数相同）</p>
 <p><strong>8.</strong> <strong>根据数据类型，填补缺失数据</strong></p>
 <p>（1）<strong>人工填写</strong></p>
 <p>由于最了解数据的还是用户自己，因此这个方法产生数据偏离最小，可能是填充效果最好的一种，然而一般来说，该方法很费时，当数据规模很大，空值很多的时候，该方法是不可行的。</p>
@@ -94,13 +571,15 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>将信息表中的属性分为数值属性和非数值属性来分别进行处理。如果空值是数值型的，就根据该属性在其他所有对象的取值的平均值来填充该缺失的属性值；如果空值是非数值型的，就根据统计学中的众数原理，用该属性在其他所有对象的取值次数最多的值(即出现频率最高的值)来补齐该缺失的属性值。另外有一种与其相似的方法叫条件平均值填充法(条件均数)在该方法中，缺失属性值的补齐同样是靠该属性在其他对象中的取值求平均得到，但不同的是用于求平均的值并不是从信息表所有对象中取，而是从与该对象具有相同决策属性值的对象中取得.这两种数据的补齐方法，其基本的出发点都是一样的，以最大概率可能的取值来补充缺失的属性值，只是在具体方法上有一点不同。与其他方法相比，它是用现存数据的多数信息来推测缺失值。</p>
 <p>（4）<strong>热卡填充</strong>（Hot deck imputation,或就近补齐）</p>
 <p>将信息表中的属性分为数值属性和非数值属性来分别进行处理。对于一个包含空值的对象，热卡填充法在完整数据中找到一个与它最相似的对象，然后用这个相似对象的值来进行填充。不同的问题，可能会选用不同的标准来对相似进行判定。该方法概念上很简单，且利用了数据间的关系来进行空值估计；这个方法的缺点在于难以定义相似标准，主观因素较多。</p>
-<p><strong>（5**</strong>）使用所有可能的值填充**</p>
+<p><strong>（5）使用所有可能的值填充</strong></p>
 <p>这种方法是用空缺属性值的所有可能的属性取值来填充，能够得到较好的补齐效果。但是，当数据量很大或者遗漏的属性值较多时，其计算的代价很大，可能的测试方案很多。另有一种方法填补遗漏属性值的原则是一样的，不同的只是从决策相同的对象中尝试所有的属性值的可能情况，而不是根据信息表中所有的对象进行尝试，这样能够在一定程度上减小原方法的代价。</p>
 <p><strong>（6）组合完整化方法</strong></p>
 <p>这种方法是用空缺属性值的所有可能的属性取值来试，并从最终属性的简约结果中选取一个最好的作为填补的属性值，这是以简约为目的的数据补齐方法，能够得到较好的简约效果，但是，当数据量很大，或者遗漏的属性值较多时，其计算的代价很大，另一种称为条件组合完整化方法，填补遗漏属性值的原则是一样的，不同的只是从决策相同的对象中尝试所有的属性值的可能情况，而不是根据信息表中所有对象来进行尝试。条件组合完整化方法能够在一定程度上减小组合完整化方法的代价。在信息表包含不完整数据较多的情况下，可能的测试方案将巨增。</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image019.jpg" alt="img"></p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg" alt="img">**<br>** </p>
-<p><strong>2018**</strong>年**</p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image019.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg" alt="img" /><strong> </strong></p>
+<p><strong>2018年</strong></p>
 <p><strong>1.</strong> <strong>数据类型分类.</strong> <strong>对不同类型的数据可以从哪些方面进行分析？可以采用什么方法分析？</strong></p>
 <p><strong>按计量尺度不同分类</strong>：分类数据、顺序数据、数值型数据</p>
 <p>（1）分类数据：只能归于某一类别的非数字型数据，它是对事物进行分类的结果，数据表现为类别，是用文字来表述的；</p>
@@ -136,14 +615,14 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>商品销售额指数=商品销售价格指数×商品销售量指数</p>
 <p>产品产值指数=产品价格指数×产品产量指数</p>
 <p>总成本指数= 成本指数×产品产量指数</p>
-<p> 销售利润指数=商品销售量指数×商品销售价格指数×商品利润率指数</p>
-<p>指数体系主要有以下三方面的<strong>作用</strong>： </p>
+<p>销售利润指数=商品销售量指数×商品销售价格指数×商品利润率指数</p>
+<p>指数体系主要有以下三方面的<strong>作用</strong>：</p>
 <p>①指数体系是<strong>进行因素分析的根据</strong>。</p>
-<p>即利用指数体系可以分析复杂经济现象总变动中各因素变动影响方向和程度。 </p>
+<p>即利用指数体系可以分析复杂经济现象总变动中各因素变动影响方向和程度。</p>
 <p>②利用各指数之间的联系进行指数间的<strong>相互推算</strong>。</p>
 <p>例如，我国商品销售量总指数往往就是根据商品销售额总指数和价格总指数进行推算的。即商品的销售量指数=销售额指数÷价格指数。</p>
 <p>③用综合指数法编制总指数时，指数体系也是确定同度量因素时期的根据之一。</p>
-<p><strong>2017**</strong>年**</p>
+<p><strong>2017年</strong></p>
 <p><strong>1.</strong> <strong>描述性统计与推断统计的联系与区别</strong></p>
 <p><strong>区别</strong>：</p>
 <p><strong>描述统计</strong>研究的是数据收集、处理、汇总、图表描述、概括与分析等统计方法。</p>
@@ -156,58 +635,76 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p><strong>统计整理与分析</strong>：描述统计是指对采集的数据进行登记、审核、整理、归类，在此基础上进一步 计算出各种总体数量特征的综合指标，并用图表形式表示经归纳分析得到有用的统计信息 推断统计。在对样本数据进行描述的基础上，利用一定方法估计或检验总体的数量特征。包括：描述统计和推断统计。</p>
 <p><strong>3.</strong> <strong>刻画统计数据的特征，一般你会用什么指标？各指标分别用来说明数据的什么特征？写出指标的计算公式。</strong></p>
 <p>数据分布的特征可以从三个方面进行测度和描述：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg" alt="img">（1）<strong>分布的集中趋势</strong>，反映各数据向其中心值靠拢或聚集的程度；</p>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg" alt="img" />（1）<strong>分布的集中趋势</strong>，反映各数据向其中心值靠拢或聚集的程度；</p>
 <p>平均数：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg" alt="img"></p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image025.jpg" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image025.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>（2）<strong>分布的离散程度</strong>，反映各数据远离其中心值的趋势；</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image027.jpg" alt="img"></p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image029.jpg" alt="img"></p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image031.jpg" alt="img"></p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image033.jpg" alt="img"></p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image035.jpg" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image027.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image029.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image031.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image033.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image035.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>（3）<strong>分布的形状</strong>，反映数据分布的偏态和峰态。</p>
 <p>偏态系数：是测度偏态的程度的统计量，记作SK.</p>
-<p>未分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif" alt="img"></p>
-<p>分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img"></p>
+<p>未分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif" alt="img" /></p>
+<p>分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img" /></p>
 <p>峰态系数：</p>
-<p>未分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image041.gif" alt="img"></p>
-<p>分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif" alt="img"></p>
+<p>未分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image041.gif" alt="img" /></p>
+<p>分组数据：<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif" alt="img" /></p>
 <p><strong>4.</strong> <strong>编制综合指数的常用公式有哪些？其特点各是什么？</strong></p>
 <p>1．简单指数</p>
 <p>（1）简单综合指数</p>
 <p>是将报告期的指标总和与基期的指标总和相对比的指数，其特点是“先综合，后对比”，计算公式为：</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg" alt="img"> ， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img"> </p>
-<p>式中，p代表质量指标；q代表数量指标； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img"> 代表质量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img"> 代表数量指标指数；下标1表示报告期；下标0表示基期。</p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg" alt="img" /> ， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img" /></p>
+<p>式中，p代表质量指标；q代表数量指标； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img" /> 代表质量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img" /> 代表数量指标指数；下标1表示报告期；下标0表示基期。</p>
 <p>使用范围：只能用于指标值相差不大的商品，在商品价格差异大，且变动幅度差异大的情况下，这种方法不能反映实际变动水平。</p>
 <p>（2）简单平均指数</p>
 <p>是将个体指数进行简单平均得到的总指数，其特点是“先对比，后综合”，计算公式为：</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg" alt="img"> </p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg" alt="img" /></p>
 <p>简单综合指数和简单平均指数的缺陷：两种方法都没有考虑到权数的影响，计算结果难以反映实际情况。另外，将使用价值不同的产品个体指数或价格（指标值）相加，即缺少实际意义，又缺少理论依据。</p>
 <p>2．加权指数</p>
 <p>（1）加权综合指数</p>
 <p>①拉氏指数</p>
 <p>拉氏指数在计算综合指数时将作为权数的同度量因素固定在基期，计算公式为：</p>
-<p>​     拉氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img"> </p>
-<p>​     拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg" alt="img"> </p>
-<p>式中， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img"> 表示数量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img"> 表示质量指标指数；p0和p1分别表示基期和报告期的质量指标值；q0和q1分别表示基期和报告期的数量指标值。</p>
+<p>​ 拉氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img" /></p>
+<p>​ 拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg" alt="img" /></p>
+<p>式中， <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img" /> 表示数量指标指数； <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img" /> 表示质量指标指数；p0和p1分别表示基期和报告期的质量指标值；q0和q1分别表示基期和报告期的数量指标值。</p>
 <p>②帕氏指数</p>
 <p>帕氏指数在计算综合指数时将作为权数的同度量因素固定在报告期，计算公式为：</p>
-<p>​     帕氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img"> </p>
-<p>​     拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img"> </p>
+<p>​ 帕氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img" /></p>
+<p>​ 拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img" /></p>
 <p>权数时期的选择主要取决于编制指数的目的，取决于指数要说明的问题。</p>
 <p>（2）加权平均指数</p>
 <p>是以个体指数为基础，通过对个体指数进行加权平均来编制的指数。即先计算所研究对象各个项目的个体指数，然后根据所给的价值量指标（产值或销售额）作为权数对个体指数进行加权平均。公式为：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" alt="img"></p>
-<p>①加权算术平均指数： </p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<p>①加权算术平均指数：</p>
 <p>如果用基期权数q0p0，则</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" alt="img"> （与拉氏质量指标指数相同）</p>
-<p>​     <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" alt="img"> （与拉氏数量指标指数相同）</p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" alt="img" /> （与拉氏质量指标指数相同）</p>
+<p>​ <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" alt="img" /> （与拉氏数量指标指数相同）</p>
 <p>②加权调和平均指数：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>如果用报告期权数q1p1，则</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg" alt="img">（与帕氏质量指标指数相同）</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg" alt="img"> （与帕氏数量指标指数相同）</p>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg" alt="img" />（与帕氏质量指标指数相同）</p>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg" alt="img" /> （与帕氏数量指标指数相同）</p>
 <p><strong>2016年</strong></p>
 <p><strong>1.</strong> <strong>单因素方差分析的方差分析表有何特点？</strong></p>
 <p>单因素方差分析也称作一维方差分析。它检验由单一因素影响的一个（或几个相互独立的）因变量由因素各水平分组的均值之间的差异是否具有统计意义。还可以对该因素的若干水平分组中哪一组与其他各组均值间具有显著性差异进行分析，即进行均值的多重比较。</p>
@@ -234,15 +731,15 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>（2）相关与回归分析可以研究数值型自变量与数值型因变量之间的关系；</p>
 <p>（3）分类数据的分析主要用于分类数据的分析；</p>
 <p>（4）时间序列分析主要用于描述现象随时间发展变化的特征等。</p>
-<p><strong>2.</strong> <strong>（2018-3**</strong>）从狭义上讲，指数体系是什么？狭义指数体系的作用表现在哪几个方面？**</p>
+<p><strong>2.</strong> <strong>（2018-3）从狭义上讲，指数体系是什么？狭义指数体系的作用表现在哪几个方面？</strong></p>
 <p><strong>指数体系</strong>：由总量指数及其若干个因素指数构成的数量关系式称为指数体系。它一般保持两个对等关系，一是各影响因素指数的连乘积等于总变动指数；二是各因素对总额变动影响差额的总和等于实际发生的总差额。</p>
 <p><strong>指数体系反映了总量指标与因素指标之间的相互关系，表现为各指标指数之间的联系：</strong>商品销售额指数=商品销售价格指数×商品销售量指数</p>
 <p>产品产值指数=产品价格指数×产品产量指数</p>
 <p>总成本指数= 成本指数×产品产量指数</p>
-<p> 销售利润指数=商品销售量指数×商品销售价格指数×商品利润率指数</p>
-<p>指数体系主要有以下三方面的<strong>作用</strong>： </p>
+<p>销售利润指数=商品销售量指数×商品销售价格指数×商品利润率指数</p>
+<p>指数体系主要有以下三方面的<strong>作用</strong>：</p>
 <p>①指数体系是<strong>进行因素分析的根据</strong>。</p>
-<p>即利用指数体系可以分析复杂经济现象总变动中各因素变动影响方向和程度。 </p>
+<p>即利用指数体系可以分析复杂经济现象总变动中各因素变动影响方向和程度。</p>
 <p>②利用各指数之间的联系进行指数间的<strong>相互推算</strong>。</p>
 <p>例如，我国商品销售量总指数往往就是根据商品销售额总指数和价格总指数进行推算的。即商品的销售量指数=销售额指数÷价格指数。</p>
 <p>③用综合指数法编制总指数时，指数体系也是确定同度量因素时期的根据之一。</p>
@@ -258,7 +755,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>（1）<strong>进行理论研究</strong>，其中包括统计指标理论以及统计指标体系的理论研究，以便为确定所需的评价指标提供一定的理论依据。</p>
 <p>（2）<strong>建立科学的评价指标体系</strong>。所建立的指标体系是否科学与合理，直接关系到评价结果的科学性和准确性。建立指标体系，首先应进行必要的定性研究，对所研究的问题进行深入的分析，尽量选择那些具有一定综合意义的代表性指标；其次，应尽可能运用多元统计的方法进行指标的筛选，以提高指标的客观性。</p>
 <p>（3）评价方法研究，主要包括综合评价指数的构造方法、指标的赋权方法以及各种评价方法的比较等。</p>
-<p><strong>4.</strong> <strong>在对某项产品认可的抽样调查报告中，如果报告仅仅说，“对该产品认可的有 90%**</strong>”，那么该报告是否负责？一个负责任的调查报告应该给出什么有关信息？**</p>
+<p><strong>4.</strong> <strong>在对某项产品认可的抽样调查报告中，如果报告仅仅说，“对该产品认可的有 90%”，那么该报告是否负责？一个负责任的调查报告应该给出什么有关信息？</strong></p>
 <p>不负责。应给出：</p>
 <p>（1）调查目的，是一套方案首先要明确的问题；</p>
 <p>（2）调查对象即总体，调查单位即总体中单个个体；</p>
@@ -267,7 +764,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>（5）调查方法，包括访问法、观察法、报告法。调查方式包括普查、重点调查、典型调查、抽样调查；</p>
 <p>（6）调查地点、时间、期限；</p>
 <p>（7）组织计划</p>
-<p><strong>2014**</strong>年**</p>
+<p><strong>2014年</strong></p>
 <p><strong>1.</strong> <strong>统计调查方案的基本内容有哪些？指出调查时间和调查期限有什么不同？</strong></p>
 <p>基本内容：</p>
 <p>（1）调查目的，是一套方案首先要明确的问题；</p>
@@ -278,7 +775,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>（6）调查地点、时间、期限；</p>
 <p>（7）组织计划</p>
 <p><strong>调查时间</strong>是指调查资料所属时间；<strong>调查期限</strong>是指从调查工作开始到结束时间， 指进行调查登记工作的时间。</p>
-<p><strong>2.</strong> <strong>什么是统计整理？写出统计整理的步骤.</strong> </p>
+<p><strong>2.</strong> <strong>什么是统计整理？写出统计整理的步骤.</strong></p>
 <p><strong>统计整理</strong>： 根据研究的目的和任务的要求，对统计调查所收集到的原始资料进行科学的加工整理，使之条理化、系统化，把反映总体单位的大量原始资料转化为反映总体的基本统计指标，统计工作这一过程叫做统计资料整理，还包括对次级资料的再加工，根据研究任务的要求，选择应整理的指标，并根据分析的需要确定具体分组，对统计资料进行汇总、计算，通过统计表描述汇总的结果，抓住最能说明本质特征的统计分组和统计指标，对统计资料加工。</p>
 <p><strong>步骤</strong>：设计整理方案→对调查资料进行审核、订正→进行科学的统计分组→统计汇总→</p>
 <p>编制统计表</p>
@@ -287,15 +784,15 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p><strong>指数体系反映了总量指标与因素指标之间的相互关系，表现为各指标指数之间的联系：</strong>商品销售额指数=商品销售价格指数×商品销售量指数</p>
 <p>产品产值指数=产品价格指数×产品产量指数</p>
 <p>总成本指数= 成本指数×产品产量指数</p>
-<p> 销售利润指数=商品销售量指数×商品销售价格指数×商品利润率指数</p>
-<p>指数体系主要有以下三方面的<strong>作用</strong>： </p>
+<p>销售利润指数=商品销售量指数×商品销售价格指数×商品利润率指数</p>
+<p>指数体系主要有以下三方面的<strong>作用</strong>：</p>
 <p>①指数体系是<strong>进行因素分析的根据</strong>。</p>
-<p>即利用指数体系可以分析复杂经济现象总变动中各因素变动影响方向和程度。 </p>
+<p>即利用指数体系可以分析复杂经济现象总变动中各因素变动影响方向和程度。</p>
 <p>②利用各指数之间的联系进行指数间的<strong>相互推算</strong>。</p>
 <p>例如，我国商品销售量总指数往往就是根据商品销售额总指数和价格总指数进行推算的。即商品的销售量指数=销售额指数÷价格指数。</p>
 <p>③用综合指数法编制总指数时，指数体系也是确定同度量因素时期的根据之一。</p>
 <p><strong>2013年</strong></p>
-<p><strong>1.</strong> <strong>简述众数、中位数和平均数的各自特点和应用场合.</strong> </p>
+<p><strong>1.</strong> <strong>简述众数、中位数和平均数的各自特点和应用场合.</strong></p>
 <p><strong>众数</strong>是一组数据中出现次数最多的变量值，是一组数据的峰值，不受极端值的影响，众数具有不唯一性，可能有一个众数或者多个。主要适用于测度<strong>分类型数据</strong>的集中趋势，也适用于作为<strong>顺序数据</strong>以及<strong>数值型数据</strong>集中趋势的测度值，只有在数据量较大时才有意义。</p>
 <p><strong>中位数</strong>是一组数据排序后处于中间位置的变量值，它将全部数据等分为两部分，每部分包含50%的数据，一部分数据比中位数大，另一部分比中位数小，不受极端值影响，主要用于测度<strong>顺序数据</strong>的集中趋势，也适用于测度<strong>数值型数据</strong>的集中趋势，但不适用于分类数据。</p>
 <p><strong>平均数</strong>是由一组数据相加后除以数据个数所得结果，平均数是对数值型数据进行计算的，且利用全部数据的信息，是在实际中应用最广泛测度值。其主要缺点是易受极端值影响，对偏态分布的数据，平均数的代表性较差。平均数主要适用于<strong>数据型数据</strong>，不适用于分类数据和顺序数据。</p>
@@ -308,24 +805,34 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p><strong>时期指标数列</strong>是由一系列时期指标按时间顺序排列而成，反映社会经济现象、在一段时间变</p>
 <p>化的结果的时间序列，通常以年、季、月为单位；</p>
 <p><strong>时点指标数列</strong>是由一些列时点指标按时间顺序排列而成，反映社会经济现象在某一时刻 （瞬</p>
-<p>间）的情况的时间序列。 </p>
+<p>间）的情况的时间序列。</p>
 <p><strong>区别</strong>：</p>
 <p>（1）时期指标时间数列具有可加性，不同时期的总量指标可以相加；而时点是不可以相加的，因为不同时点的总量指标相加后无法解释所得数值的时间状态。</p>
 <p>（2）时期指标值的大小与所属时间的长短有直接关系（正相关），而时点指标值大小与时点间隔长短无直接关系（时点数列中，相邻两个指标所属时间的差距为时间间隔），存在长期趋势除外。</p>
 <p>（3）时期的指标可以直接采用连续统计的方式获得；时点指标时间序列指标值采用间断统计的方法获得。</p>
 <p>（4）计算方法上的不同，时期指标平均数采用简单算术平均数计算，公式为：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image045.gif" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image045.gif" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>时点指标采用序时平均数</p>
 <p>A. 间隔相等的时点数列时平均数采用“首末折半法”，公式为：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image047.gif" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image047.gif" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>B. 间隔不等的时点序列序时平均数计算公式：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>C. 当现象发生变动时登记一次的时点数列序时平均数计算公式：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p><strong>4.</strong> <strong>什么是标准差系数？计算标准差系数的意义是什么？</strong></p>
 <p>标准差系数既离散系数，也称为变异系数，它是一组数据的标准差与其相应的平均数之比。</p>
 <p>其计算公式为：</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image052.jpg" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image052.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>方差和标准差是反映数据分散程度的绝对值；离散系数是测度数据离散程度的相对统计量，</p>
 <p>其作用主要是用于比较对不同样本数据的离散程度。离散系数大，说明数据的离散程度也大；</p>
 <p>离散系数小，说明数据的离散程度也小。</p>
@@ -338,63 +845,67 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p><strong>1.</strong> <strong>在计算价格指数时，“拉氏价格指数”和“帕氏价格指数”有什么不同（用计算公式说明）？</strong></p>
 <p>①拉氏指数</p>
 <p>拉氏指数在计算综合指数时将作为权数的同度量因素固定在基期，相应的计算公式为：</p>
-<p>   拉氏数量指标指数  <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img"></p>
-<p>   拉氏质量指标指数  <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg" alt="img"></p>
+<p>拉氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img" /></p>
+<p>拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg" alt="img" /></p>
 <p>式中，Iq表示数量指标指数；Ip表示质量指标指数；p0和p1分别表示基期和报告期的质量指标值；q0和q1分别表示基期和报告期的数量指标值。</p>
 <p>②帕氏指数</p>
 <p>帕氏指数在计算综合指数时将作为权数的同度量因素固定在报告期，相应的计算公式为：</p>
-<p>   帕氏数量指标指数  <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img"></p>
-<p>   拉氏质量指标指数  <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img"></p>
-<p><strong>2.</strong> <strong>简述抽样误差与非抽样误差的区别，并分别说明产生这两种误差的主要原因.</strong> </p>
+<p>帕氏数量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img" /></p>
+<p>拉氏质量指标指数 <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img" /></p>
+<p><strong>2.</strong> <strong>简述抽样误差与非抽样误差的区别，并分别说明产生这两种误差的主要原因.</strong></p>
 <p>抽样误差：这是由于抽样的随机性引起的样本结果与总体真值之间的误差。它描述的是所有</p>
 <p>样本可能的结果与总体真值之间的平均性差异。并且是一种随机性误差，只存在于概率抽样</p>
 <p>中。</p>
 <p>非抽样误差：指除抽样误差之外的，由于其他原因引起的样本观察结果与总体真值之间的差</p>
 <p>异。无论是概率抽样、非概率抽样，或是在全面性调查中，都有可能产生非抽样误差。</p>
 <p>产生原因：（1）抽样框误差（2）回答误差①理解误差②记忆误差③有意识误差（3）无回答误差（4）调查员误差（5）测量误差。</p>
-<p><strong>3.</strong> <strong>简述平均指标与变异指标在说明同质总体特征方面的联系和区别.</strong> </p>
-<p>联系：都能反映总体的特征 </p>
+<p><strong>3.</strong> <strong>简述平均指标与变异指标在说明同质总体特征方面的联系和区别.</strong></p>
+<p>联系：都能反映总体的特征</p>
 <p>区别：平均指标是反映客观现象总体各单位数量标志表现一般水平的综合指标，分为数值平</p>
 <p>均数（算数、调和和几何平均数）以及位置平均数（中位数、 众数、四分位数等）；变异</p>
 <p>指数是反映总体各单位标志值的差异程度的 综合指标，包括极差、平均差、标准差、变异</p>
 <p>系数、偏度和峰度。</p>
-<p><strong>4.</strong> <strong>时间序列的水平指标有哪些？试讨论时点序列平均发展水平的计算.</strong> </p>
+<p><strong>4.</strong> <strong>时间序列的水平指标有哪些？试讨论时点序列平均发展水平的计算.</strong></p>
 <p>水平指标包括发展水平、平均发展水平、增长量、平均增长量等。发展水平是指时间序列中</p>
 <p>与其所属时间相对应的反映某种现象发展变化所达到的规模、程度和水平的指标数值；平均</p>
 <p>发展水平是将一个时间序列各期发展水平加以平均而得到的平均数（又称序时平均数）。</p>
-<p><strong>5.</strong> <strong>简述方差分析的基本原理.</strong> </p>
+<p><strong>5.</strong> <strong>简述方差分析的基本原理.</strong></p>
 <p>通过检验多个总体的均值是否相等来判断分类自变量对数值型因变量是否有显著影响，</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image054.jpg" alt="img"></p>
-<ol>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image054.jpg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<ol type="1">
 <li>相关分析与回归分析的区别与联系</li>
 </ol>
 <p>联系：共同的研究对象，两者都是对变量间<strong>相关关系</strong>进行分析，两者互为补充。相关分析表明变量之间关系的性质与程度。只有当变量之间存在一定程度的相关关系时进行回归分析才具有意义。在相关分析时，要确定变量之间具体的数学关系式，有依赖于回归分析。</p>
 <p>区别：从研究目的上来看，相关分析是用数量指标度量变量之间的相互关系的方向和程度，回归分析要寻求变量之间关系的具体数学形式，根据自变量的取值来预测因变量的<strong>平均值</strong>。</p>
 <p>从对变量的处理上来看，相关分析平等对待相互关联的变量不考虑二者之间的因果关系，不区分自变量和因变量相关的变量不一定具有因果关系，均视为随机变量，而合规分析是建立在因果分析的基础上分析自变量变动对因变量变动的影响必须区分自变量和因变量，而且回归分析通常假定自变量是非随机变量，因变量是随机变量。</p>
-<ol start="2">
+<ol start="2" type="1">
 <li>线性关系检验与回归系数检验的区别与联系</li>
 </ol>
 <p>对于一元线性回归分析中回归系数检验与线性关系检验两者是等价的，而对于多元回归分析不仅要进行线性关系检验，还要对每个回归系数进行检验。线性关系检验是检验因变量同多个自变量之间的关系是否显著。只要有一个自变量同因变量线性关系显著，F检验就能通过，这并不一定意味着每个自变量因变量之间关系都显著。回归系数检验则是对每个回归系数分别进行检验，判断每个自变量对因变量的影响是否显著。当某个自变量没有通过检验就意味着该自变量对因变量影响不显著，也就没有必要将此自变量引入模型。</p>
-<ol start="3">
+<ol start="3" type="1">
 <li>调整后的多重判定系数</li>
 </ol>
-<p>多重判定系数是多元回归分析中回归平方和占总平方和的比例，它是度量多元回归方程拟合程度的一个统计量，反映了因变量变差中被回归方程所解释的部分。增加自变量时会使<strong>预测误差</strong>变小，减少残差平方和，从而<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img">)会变大。如果模型中增加一个自变量，其实这个自变量在统计上是不显著的，<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img">)也会变大。因此为避免增加自变量个数导致<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img">不适当的增加，可以用样本统计量n和自变量的个数k去调整，得到调整的多重判定系数。</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image058.gif" alt="img"></p>
-<ol start="4">
+<p>多重判定系数是多元回归分析中回归平方和占总平方和的比例，它是度量多元回归方程拟合程度的一个统计量，反映了因变量变差中被回归方程所解释的部分。增加自变量时会使<strong>预测误差</strong>变小，减少残差平方和，从而<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img" />会变大。如果模型中增加一个自变量，其实这个自变量在统计上是不显著的，<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img" />也会变大。因此为避免增加自变量个数导致<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img" />不适当的增加，可以用样本统计量n和自变量的个数k去调整，得到调整的多重判定系数。</p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image058.gif" alt="img" /><figcaption>img</figcaption>
+</figure>
+<ol start="4" type="1">
 <li>置信区间估计与预测区间估计（df=n-k-1）</li>
 </ol>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image060.gif" alt="img">   <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif" alt="img"></p>
-<ol start="5">
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image060.gif" alt="img" /> <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif" alt="img" /></p>
+<ol start="5" type="1">
 <li>判定系数与估计标准误差</li>
 </ol>
 <p>判定系数是对估计的回归方程拟合优度的检验。回归平方和占总平方和的比例被称为判定系数，反映了观测点与回归直线的接近程度。判定系数的取值范围是0-1，越接近1，回归平方和占总平方和的比例越大，回归直线与观测点就越接近，用回归方程来解释y变差部分就越多，回归直线拟合程度就越好。反之越接近于零，回归直线的拟合程度就越差。</p>
-<p> 估计标准误差是度量各实际观测点在直线周围散布状况统计量，是均方残差的平方根用来表示。估计标准误差是对误差项的标准差的估计，可以看作是排除x对y线性影响后，y<strong>随机波动</strong>大小的一个估计量。它反映了用估计回归方程预测因变量<strong>平均值</strong>时预测误差的大小。</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image064.gif" alt="img">  <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"></p>
-<ol start="6">
+<p>估计标准误差是度量各实际观测点在直线周围散布状况统计量，是均方残差的平方根用来表示。估计标准误差是对误差项的标准差的估计，可以看作是排除x对y线性影响后，y<strong>随机波动</strong>大小的一个估计量。它反映了用估计回归方程预测因变量<strong>平均值</strong>时预测误差的大小。</p>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image064.gif" alt="img" /> <img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img" /></p>
+<ol start="6" type="1">
 <li>回归分析步骤</li>
 </ol>
 <p>确定变量，相关分析，建立模型，模型检验，<strong>计算预测误差</strong>，预测。</p>
-<ol start="7">
+<ol start="7" type="1">
 <li>一元回归分析的基本假定</li>
 </ol>
 <p>自变量和因变量之间具有线性关系。</p>
@@ -402,18 +913,14 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>误差项是个期望值为0的随机变量。</p>
 <p>对所有x值，误差项的方差都相等。</p>
 <p>误差项服从正态分布且相互独立。</p>
-<ol start="8">
-<li><p>平均指标和变异指标对同质总体分析的联系和区别。（离散系数）</p>
-</li>
-<li><p>时间序列的构成要素</p>
-</li>
-<li><p>时期序列与时点序列的区别与联系</p>
-</li>
-<li><p>时期序列与时点序列平均数的计算方法</p>
-</li>
+<ol start="8" type="1">
+<li><p>平均指标和变异指标对同质总体分析的联系和区别。（离散系数）</p></li>
+<li><pre><code>时间序列的构成要素</code></pre></li>
+<li><p>时期序列与时点序列的区别与联系</p></li>
+<li><p>时期序列与时点序列平均数的计算方法</p></li>
 </ol>
 <p>连续登记的时点序列（简单平均），不连续登记的时点序列（间隔）</p>
-<ol start="12">
+<ol start="12" type="1">
 <li>时间序列的水平分析与速度分析</li>
 </ol>
 <p>发展水平，平均发展水平（时期，时点，相对数/平均数）</p>
@@ -421,7 +928,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>发展速度（环比，定基），增减速度</p>
 <p>平均发展速度，平均增减速度</p>
 <p>增长1%绝对值，速度与水平结合分析（高速度，低水平；高水平，低速度）</p>
-<ol start="13">
+<ol start="13" type="1">
 <li>时间序列编制的原则与意义</li>
 </ol>
 <p>可比性：所属时间可比，反映的总体范围可比，计算口径可比，经济内容可比</p>
@@ -429,74 +936,793 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p>认识社会经济现象变化方向，程度，为制定政策提供依据。</p>
 <p>对某些经济现象进行预测。</p>
 <p>对不同国家或地区进行对比分析。</p>
-<ol start="14">
+<ol start="14" type="1">
 <li>长期趋势：移动平均法（逐期递移求得平均值，最近k期移动平均作为下期预测值）</li>
 </ol>
 <p>指数平滑法：对过去观察值加权平均进行预测，使t+1期预测值等于t期实际观察值与t期预测值的加权平均值。</p>
 <p>趋势方程法</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image068.gif" alt="img"></p>
+<figure>
+<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image068.gif" alt="img" /><figcaption>img</figcaption>
+</figure>
 <p>季节趋势：同期平均法：计算同期平均数，计算总平均数</p>
 <p>趋势剔除法：计算移动平均值（项数与季节周期一致/偶次中心值/求得T）剔除趋势（得SI）：消除不规则变动I（求季节平均值）：调整季节指数。</p>
-<ol start="15">
-<li><p>平均指数与综合指数之间的关系</p>
-</li>
-<li><p>编制综合指数/平均指数常用的公式与特点</p>
-</li>
-<li><p>加权平均指数与加权综合指数的区别与联系</p>
-</li>
-<li><p>指数体系的特点</p>
-</li>
-<li><p>指数概念及其作用</p>
-</li>
-<li><p>指数体系概念及其作用</p>
-</li>
-</ol>
-<ol start="21">
-<li>选择综合评价指标的原则有哪些</li>
+<ol start="15" type="1">
+<li><p>平均指数与综合指数之间的关系</p></li>
+<li><p>编制综合指数/平均指数常用的公式与特点</p></li>
+<li><p>加权平均指数与加权综合指数的区别与联系</p></li>
+<li><p>指数体系的特点</p></li>
+<li><p>指数概念及其作用</p></li>
+<li><p>指数体系概念及其作用</p></li>
+<li><p>选择综合评价指标的原则有哪些</p></li>
 </ol>
 <p>综合评价指标是建立在综合评价指数体系的基础上，利用一定的方法，对各个指标进行预处理，构建综合评价模型，求得综合评价数值，据以对现象总体进行比较、分类与排序的一种统计方法。目的性，全面性，实践性。</p>
 <p>社会经济现象受诸多因素的影响，单个评价指标只能反映总体某一方面的特征，为了达到对总体的全面认识，必须建立综合反映总体各个方面的多指标组成的体系。</p>
-<ol start="22">
+<ol start="22" type="1">
 <li>综合评价指数的确立</li>
 </ol>
 <p>确定综合评价指数体系；评价指标无量纲化处理；确立各评价指标权重；计算综合评价指数</p>
-<ol start="23">
+<ol start="23" type="1">
 <li>方差分析</li>
 </ol>
 <p>组内平方：每个样本内各观测值的离散状况。各水平样本内部数据误差。</p>
 <p>组间平方：不同水平下样本之间的数据误差。</p>
-<ol start="24">
-<li>p值与<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img">值</li>
+<ol start="24" type="1">
+<li>p值与<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img" />值</li>
 </ol>
 <p>P值是指原假设为真的前提下出现样本观察结果或更极端情况出现的概率，是实际观察到的显著性水平。如果P值很小，说明这种情况发生概率很小，如果出现了，根据小概率原理，我们有理由拒绝原假设，P值越小拒绝原假设理由越充分。</p>
-<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img">)是犯第一类错误的上限控制值，只能提供检验结论可靠性的大致范围，对于一个特定的假设检验问题，无法给出观测结果与原假设之间不一致程度的精确度量。仅从显著性水平来比较，选择相同的<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img">值，检验结论可靠性都是一样的。</p>
-<ol start="25">
-<li><p>假设检验与参数估计</p>
-</li>
-<li><p>抽样平均误差及其影响因素</p>
-</li>
+<p><img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img" />是犯第一类错误的上限控制值，只能提供检验结论可靠性的大致范围，对于一个特定的假设检验问题，无法给出观测结果与原假设之间不一致程度的精确度量。仅从显著性水平来比较，选择相同的<img src="file:///C:/Users/YOGA710/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img" />值，检验结论可靠性都是一样的。</p>
+<ol start="25" type="1">
+<li><p>假设检验与参数估计</p></li>
+<li><p>抽样平均误差及其影响因素</p></li>
 </ol>
 <p>（抽样平均数与总体平均数的平均误差程度）</p>
-<ol start="27">
+<ol start="27" type="1">
 <li>统计工作过程</li>
 </ol>
 <p>统计设计：根据研究的目的，确定研究因素，研究对象与指标，用什么的方法收集资料，整理资料，统计分析进行计划安排，力争以最小的成本获得较好的效果。</p>
 <p>收集资料，整理资料</p>
 <p>分析资料：根据研究设定要求和研究目的，对整理后的数据进行统计指标计算，反映综合特征，阐明事物间内在联系与规律，得出科学结论。包括：描述统计和推断统计。‘</p>
-<ol start="28">
-<li><p>统计调查方案</p>
-</li>
-<li><p>统计整理</p>
-</li>
-<li><p>调查时间与期限</p>
-</li>
-<li><p>中位数、众数、平均数的特点与应用场合。</p>
-</li>
-<li><p>造成统计数据误差的原因有哪些</p>
-</li>
-<li><p>标志与指标</p>
-</li>
-<li><p>登记性误差与代表性误差</p>
-</li>
+<ol start="28" type="1">
+<li><p>统计调查方案</p></li>
+<li><p>统计整理</p></li>
+<li><p>调查时间与期限</p></li>
+<li><p>中位数、众数、平均数的特点与应用场合。</p></li>
+<li><p>造成统计数据误差的原因有哪些</p></li>
+<li><p>标志与指标</p></li>
+<li><p>登记性误差与代表性误差</p></li>
 </ol>
-</div></article><div class="post-view__sidebar"><div class="sidebar"><div class="tocbot"><h2>Toc</h2><div class="toc__content"></div></div><h2>Links</h2><div class="sidebar__link"><ul><li><a href="https://github.com/yours" target="_blank" rel="noopener">Github</a></li><li><a href="https://codepen.io/yours" target="_blank" rel="noopener">Codepen</a></li><li><a href="https://dribbble.com/yours" target="_blank" rel="noopener">Dribbble</a></li><li><a href="https://twitter.com/yours" target="_blank" rel="noopener">Twitter</a></li><li><a href="https://www.zhihu.com/people/yours" target="_blank" rel="noopener">知乎</a></li><li><a href="https://juejin.im/user/yours" target="_blank" rel="noopener">掘金</a></li><li><a href="mailto:xxx@yourmail.xxxx">Mail</a></li></ul></div><h2>Archives</h2><div class="sidebar__archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul></div><h2>Categories</h2><div class="sidebar__categories"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Arcmap/">-Arcmap</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/CAD/">-CAD</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Geoda/">-Geoda</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PS/">-PS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">-hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E8%80%83%E7%A0%94/">-人文地理考研</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">-其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%98%8E%E5%98%8E%E5%98%8E/">-嘎嘎嘎</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BD%E5%9C%9F%E7%A9%BA%E9%97%B4%E8%A7%84%E5%88%92/">-国土空间规划</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9C%B0%E5%9B%BE%E5%88%B6%E4%BD%9C/">-地图制作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">-考研政治</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/">-考研数学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%B8%80/">-考研英语一</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%92%E5%B9%B4%E7%94%9F%E6%80%81%E7%8E%AF%E4%BF%9D%E7%BB%84%E7%BB%87%E5%9F%B9%E8%AE%AD/">-青年生态环保组织培训</a></li></ul></div><h2>Tags</h2><div class="sidebar__tags"><ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Arcmap/" rel="tag">-Arcmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CAD%E6%B3%A8%E9%87%8A/" rel="tag">-CAD注释</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Geoda-%E7%A9%BA%E9%97%B4%E8%87%AA%E7%9B%B8%E5%85%B3/" rel="tag">-Geoda -空间自相关</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">-hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF/" rel="tag">-一带一路</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/" rel="tag">-人文地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-人文地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%9B%9B%E4%BA%94%E8%A7%84%E5%88%92/" rel="tag">-十四五规划</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BD%E5%9C%9F%E8%A7%84%E5%88%92-%E5%9C%B0%E7%90%86/" rel="tag">-国土规划 -地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E5%9B%BE%E9%85%8D%E8%89%B2/" rel="tag">-地图配色</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E7%90%86%E5%9B%BD%E6%83%85/" rel="tag">-地理国情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-城市地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD-%E5%8C%BB%E7%96%97/" rel="tag">-基础设施 -医疗</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%A0%E5%9B%BE/" rel="tag">-抠图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF%E6%B2%BB%E8%83%8C%E8%AF%B5/" rel="tag">-政治背诵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E7%82%B9/" rel="tag">-热点</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D/" rel="tag">-热词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D-%E9%95%BF%E4%B8%89%E8%A7%92/" rel="tag">-热词 -长三角</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E4%BF%9D%E4%BA%91%E5%9F%B9%E8%AE%AD-%E7%BE%8E%E4%B8%BD%E4%B8%AD%E5%9B%BD%C2%B7%E9%9D%92%E6%98%A5%E8%A1%8C%E5%8A%A8/" rel="tag">-环保云培训 -美丽中国·青春行动</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9C%9F%E9%A2%98/" rel="tag">-真题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/" rel="tag">-社会学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/" rel="tag">-第七次人口普查</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-经济地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87/" rel="tag">-英语作文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E7%BF%BB%E8%AF%91/" rel="tag">-英语翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B5%B5%E7%87%95%E8%8F%81/" rel="tag">-赵燕菁</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0/" rel="tag">-高数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E5%A4%A7%E9%A2%98/" rel="tag">-高数大题</a></li></ul></div></div></div></div><div class="horizontal-line" style="height: 1px"></div><div class="main__bottom"><div class="pre-next"><a class="pre-button" href="/2020/11/19/6-432%E7%AE%80%E7%AD%94%E9%A2%98%E6%B1%87%E6%80%BB/">6_432简答题汇总</a><a class="next-button" href="/2020/11/18/%E6%AD%A617%E8%AE%B2/">武17讲</a></div></div></div></div><div class="footer"><span>©️2019-2021 Designed By&nbsp;<strong><a href="https://github.com/random-yang" target="_blank" rel="noopener">RandomYang</a></strong> Powered By&nbsp;</span><strong><a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></strong></div><div class="darkmode-mask" id="darkmode-mask"></div><div class="sidebar__button"></div></body></html>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    未来的东东东
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://zypher.cn/2020/11/19/432%E8%83%8C%E8%AF%B5/" title="432背诵">http://zypher.cn/2020/11/19/432%E8%83%8C%E8%AF%B5/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/11/18/%E6%AD%A617%E8%AE%B2/" rel="next" title="武17讲">
+                <i class="fa fa-chevron-left"></i> 武17讲
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/11/19/6-432%E7%AE%80%E7%AD%94%E9%A2%98%E6%B1%87%E6%80%BB/" rel="prev" title="6_432简答题汇总">
+                6_432简答题汇总 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/gangqin.jpg"
+                alt="未来的东东东" />
+            
+              <p class="site-author-name" itemprop="name">未来的东东东</p>
+              <p class="site-description motion-element" itemprop="description">去摘，遥不可及的星</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ZypherRay" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">未来的东东东</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

@@ -1,113 +1,528 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><meta name="description" content="城市地理学 [ 未来的东东东 ] "><meta name="theme-color" content="#ebc65a"><title>城市地理学 [ 未来的东东东 ] </title><style>@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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BL3+M1K+NfPvjlJEHZTOrkYvtdprqx0Hka+W/IhsQoUJE0jsPVOhV2itgp3Wame8dsB73DeCOfp+FMSxp2At3aozP1zVQ/tmEpXdveum7kat3CaLXRcmTZHmOveMiqxSteCZOrGKmscOa9WycTUXtRFabrtts1Nb3e5qHtqWPMWtuEkMSdydcarhKoTcVXtBgujKwULbPFJvqywIzBjboUacECG6ajlIews5dBUMkJ/LYHa12gpRLEsBDAAA6raxOaTnbx4GG5J6hdn4twxT1DRvEQZvD6banOa3BbstVh48efHmw5cffwECBQkWIvK/LTbhIkSKEi1GrDjxEiRKkixFqjTpMmTKki1Hrjz5ChQqUqxEqTLlKlSqUq2e+hpoqJHGmmiqmeZhWGKoYfaZ7qXhxhtjnlWWxsBotw0xxWdfjDPDSEfc98l8q33z1XeLrXPKCeu10NJErZzR2kmnXXDWOee90sYVF12yQVsfTXLdVde088Y7o3TQXkedddLFQnb/qVGrq24cuuvhtZ5666WPfvraaZEB+htokLfe2+1GBDbalARuuueWzbbYboejttrmmBHW2O+AvUmRDMb6EEUsHHQoDskRjxRIiVRILev2qn1oaGpomZOB2z/jmn/eUk6tvaZda/5znbhPCguQ7wsEvd1strBI3OYR8ye01+ZO0jbH36oqKm37w90hl2v/wO5o3vIjtpoZx20H) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css"><script src="https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js" defer></script><script src="/js/paper.js" defer></script><script src="https://www.googletagmanager.com/gtag/js?id=xx-xxxxxxx-xx" async></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbot.css"><script src="/js/tocbot.js" defer></script><script>window.addEventListener('DOMContentLoaded', () => {
-  tocbot.init({
-    // Where to render the table of contents.
-    tocSelector: '.toc__content',
-    // Where to grab the headings to build the table of contents.
-    contentSelector: '.article__content',
-    // Which headings to grab inside of the contentSelector element.
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    // For headings inside relative or absolute positioned containers within content.
-    hasInnerContainers: true,
-    orderedList: false,
-    collapseDepth: 2,
-  });
-})</script><link rel="preload" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css"><link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="mask-border"></div><div class="head"><div class="head__inner"><h1><a href="/">未来的东东东</a></h1><p>去摘，遥不可及的星</p></div></div><div class="paper-container"><div class="main"><div class="location-bar"><div class="line-1"><div class="horizontal-line" style="height: 3px"></div></div><div class="line-2"><div class="horizontal-line" style="height: 1px"></div></div><p class="text">城市地理学</p><div class="switch-button"><input class="container_toggle" type="checkbox" id="switch" name="mode"><label for="switch">Toggle</label></div><div class="line-3"><div class="horizontal-line" style="height: 1px"></div></div></div><div class="main__2-col"><article class="post-view__article"><div class="article__infomation"><div class="posts-item"><h2 class="posts-item__title"><a href="">城市地理学</a></h2><span class="post__date">2020-10-04</span><a href="/tags/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/"><span class="post__tags">#-城市地理学</span></a></div></div><div class="article__content"><h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="城市地理学的研究对象"><a href="#城市地理学的研究对象" class="headerlink" title="城市地理学的研究对象"></a>城市地理学的研究对象</h2><p>==【城市】==：是具有一定人口规模，并以非农业人口为主的居民集居地，是聚落的一种特殊形态。城市是一种复杂的动态现象。城市是一种区域现象。城市具有区域性和综合性的特点，而且是一个历史范畴。</p>
-<h3 id="研究任务"><a href="#研究任务" class="headerlink" title="研究任务"></a>研究任务</h3><ol>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-simple.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="-城市地理学," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="绪论 城市地理学的研究对象 &#x3D;&#x3D;【城市】&#x3D;&#x3D;：是具有一定人口规模，并以非农业人口为主的居民集居地，是聚落的一种特殊形态。城市是一种复杂的动态现象。城市是一种区域现象。城市具有区域性和综合性的特点，而且是一个历史范畴。 研究任务  揭示和预测世界各国、各地区城市现象发展变化的规律性 揭示和掌握世界各国、各地区城市现象的规律，属于认识世界的任务；科学预测世界各国、各地区城市现象的变化规律，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="城市地理学">
+<meta property="og:url" content="http://zypher.cn/2020/10/04/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/index.html">
+<meta property="og:site_name" content="未来的东东东">
+<meta property="og:description" content="绪论 城市地理学的研究对象 &#x3D;&#x3D;【城市】&#x3D;&#x3D;：是具有一定人口规模，并以非农业人口为主的居民集居地，是聚落的一种特殊形态。城市是一种复杂的动态现象。城市是一种区域现象。城市具有区域性和综合性的特点，而且是一个历史范畴。 研究任务  揭示和预测世界各国、各地区城市现象发展变化的规律性 揭示和掌握世界各国、各地区城市现象的规律，属于认识世界的任务；科学预测世界各国、各地区城市现象的变化规律，">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055420-d1cd2900-0725-11eb-9721-55c8a6beb2ca.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055451-db569100-0725-11eb-8730-a473da839ffb.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055396-cc6fde80-0725-11eb-9fd7-ed84a1b2d35c.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055445-d98ccd80-0725-11eb-98c7-57911589c430.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055431-d42f8300-0725-11eb-98a4-eb20c4d4b137.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055455-dd205480-0725-11eb-98f7-d16e4812c997.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055439-d85ba080-0725-11eb-8e0e-1a91ffbf31de.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/95055459-deea1800-0725-11eb-97ee-7087213117d0.png">
+<meta property="article:published_time" content="2020-10-04T12:30:37.000Z">
+<meta property="article:modified_time" content="2020-10-05T08:26:50.213Z">
+<meta property="article:author" content="未来的东东东">
+<meta property="article:tag" content="-城市地理学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zypher.cn/2020/10/04/城市地理学/"/>
+
+
+
+
+
+  <title>城市地理学 | 未来的东东东</title>
+  
+
+
+
+
+
+
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">未来的东东东</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">想看的更远，你就跳跳跳跳起来吧！想和目标更近，你就跑跑跑跑起来吧！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zypher.cn/2020/10/04/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="未来的东东东">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gangqin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="未来的东东东">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">城市地理学</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-04T20:30:37+08:00">
+                2020-10-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E8%80%83%E7%A0%94/" itemprop="url" rel="index">
+                    <span itemprop="name">-人文地理考研</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  18.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  61
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="绪论">绪论</h1>
+<h2 id="城市地理学的研究对象">城市地理学的研究对象</h2>
+<p>==【城市】==：是具有一定人口规模，并以非农业人口为主的居民集居地，是聚落的一种特殊形态。城市是一种复杂的动态现象。城市是一种区域现象。城市具有区域性和综合性的特点，而且是一个历史范畴。</p>
+<h3 id="研究任务">研究任务</h3>
+<ol type="1">
 <li>揭示和预测世界各国、各地区城市现象发展变化的规律性</li>
 <li>揭示和掌握世界各国、各地区城市现象的规律，属于认识世界的任务；科学预测世界各国、各地区城市现象的变化规律，属于改造世界的任务。</li>
 </ol>
-<h3 id="研究内容"><a href="#研究内容" class="headerlink" title="研究内容"></a>研究内容</h3><ul>
+<h3 id="研究内容">研究内容</h3>
+<ul>
 <li>核心是从区域和城市两种低于系统中考察城市空间组织，即区域的城市空间组织和城市内部的空间组织。</li>
 </ul>
-<ol>
+<ol type="1">
 <li><p>城市形成发展条件研究</p>
-<p> 主要研究、评价城市的地理位置、自然条件、社会经济与历史条件对城市形成、发展和布局的影响</p>
-</li>
+<p>主要研究、评价城市的地理位置、自然条件、社会经济与历史条件对城市形成、发展和布局的影响</p></li>
 <li><p>区域的城市空间组织研究</p>
-<p> 【城市化研究】</p>
-<p> 城市化的衡量尺度、城市化过程（逆城市化）、城市化所处阶段、城市化动力机制、城市化的效果与问题、城市化水平预测、各国和各地区城市化对比研究、郊区化、乡村城市化以及全球化和信息化社会对于我国城市化过程的影响</p>
-<p> 【区域城市体系的研究】</p>
-<p> 城市体系的等级规模结构、职能结构、空间结构和发展趋势以及城市体系的理论、模型和方法。</p>
-<p> 城市带和城市群、都市区于都市连绵区的研究</p>
-<p> 区域城市发展的研究、城市经济区的划分、中心城市及不同层次城镇体系的特征</p>
-<p> 发展研究、经济全球化下的城市体系研究和新技术方法的应用</p>
-<p> 【城市分类研究】</p>
-<p> 规模分类、形态分类、只能分类</p>
-</li>
+<p>【城市化研究】</p>
+<p>城市化的衡量尺度、城市化过程（逆城市化）、城市化所处阶段、城市化动力机制、城市化的效果与问题、城市化水平预测、各国和各地区城市化对比研究、郊区化、乡村城市化以及全球化和信息化社会对于我国城市化过程的影响</p>
+<p>【区域城市体系的研究】</p>
+<p>城市体系的等级规模结构、职能结构、空间结构和发展趋势以及城市体系的理论、模型和方法。</p>
+<p>城市带和城市群、都市区于都市连绵区的研究</p>
+<p>区域城市发展的研究、城市经济区的划分、中心城市及不同层次城镇体系的特征</p>
+<p>发展研究、经济全球化下的城市体系研究和新技术方法的应用</p>
+<p>【城市分类研究】</p>
+<p>规模分类、形态分类、只能分类</p></li>
 <li><p>城市内部空间组织研究</p>
-<p> 城市功能分区、城市功能区演化、城市土地利用、社会空间、行为空间和感知空间</p>
-</li>
-<li><p>城市可持续发展研究</p>
-</li>
+<p>城市功能分区、城市功能区演化、城市土地利用、社会空间、行为空间和感知空间</p></li>
+<li><p>城市可持续发展研究</p></li>
 <li><p>新方法、新技术应用和新领域的研究</p>
-<p> 在知识经济的影响下，城市的主要发展趋势表现在：网络化的世界城市体系正在形成、大都市带的地位和作用得到强化、城市只能发生新的分化和整合以及城市地域空间结构的优化鱼重组几个方面</p>
-</li>
+<p>在知识经济的影响下，城市的主要发展趋势表现在：网络化的世界城市体系正在形成、大都市带的地位和作用得到强化、城市只能发生新的分化和整合以及城市地域空间结构的优化鱼重组几个方面</p></li>
 </ol>
-<h2 id="城市地理学与相关学科的关系"><a href="#城市地理学与相关学科的关系" class="headerlink" title="城市地理学与相关学科的关系"></a>城市地理学与相关学科的关系</h2><h3 id="城市地理学的学科性质"><a href="#城市地理学的学科性质" class="headerlink" title="城市地理学的学科性质"></a>城市地理学的学科性质</h3><ul>
+<h2 id="城市地理学与相关学科的关系">城市地理学与相关学科的关系</h2>
+<h3 id="城市地理学的学科性质">城市地理学的学科性质</h3>
+<ul>
 <li>城市地理学是地理学范畴内的三级学科，属于人文地理学的一个分支。主要研究城市现象的各种类型和过程</li>
 </ul>
-<ol>
+<ol type="1">
 <li>描述性研究——描述城市现象的空间现状</li>
 <li>解释性研究——研究城市现象的因果关系</li>
 <li>评价性研究——既要认识资源空间分配的不平衡性，又要识别那些符合效益和社会公平标准的可供选择的状态。</li>
 </ol>
-<h3 id="城市地理学与相关学科的关系-1"><a href="#城市地理学与相关学科的关系-1" class="headerlink" title="城市地理学与相关学科的关系"></a>城市地理学与相关学科的关系</h3><ul>
+<h3 id="城市地理学与相关学科的关系-1">城市地理学与相关学科的关系</h3>
+<ul>
 <li>城市是一种特殊的地域，是地理的、经济的、社会、文化的区域实体，是各种人文要素和自然要素的综合体</li>
 </ul>
-<ol>
+<ol type="1">
 <li><p>与城市经济学</p>
-<p> 城市经济学起源于城市土地利用和房地产的研究</p>
-</li>
+<p>城市经济学起源于城市土地利用和房地产的研究</p></li>
 <li><p>与城市社会学</p>
-<p> 社会学以研究社会问题为己任，而城市以人口密集为首位特征</p>
-</li>
+<p>社会学以研究社会问题为己任，而城市以人口密集为首位特征</p></li>
 <li><p>与城市规划学的关系</p>
-<p> 城市地理学需要从城市规划学的进展中汲取营养，去探讨更全面的城市地域运动规律</p>
-</li>
+<p>城市地理学需要从城市规划学的进展中汲取营养，去探讨更全面的城市地域运动规律</p></li>
 <li><p>与城市生态学</p>
-<p> 城市生态学是研究城市生态系统的科学</p>
-<p> 城市生态学的“系统”和“平衡”的思想为城市地理研究所吸取，并融入有关城镇体系、城乡关系、城市的吸引力和辐射力、城市中心作用和中心城市作用等研究之中</p>
-</li>
+<p>城市生态学是研究城市生态系统的科学</p>
+<p>城市生态学的“系统”和“平衡”的思想为城市地理研究所吸取，并融入有关城镇体系、城乡关系、城市的吸引力和辐射力、城市中心作用和中心城市作用等研究之中</p></li>
 </ol>
-<h2 id="西方城市地理学发展简史"><a href="#西方城市地理学发展简史" class="headerlink" title="西方城市地理学发展简史"></a>西方城市地理学发展简史</h2><h3 id="1920年以前"><a href="#1920年以前" class="headerlink" title="1920年以前"></a>1920年以前</h3><p>城市地理学属于聚落地理学的一个组成部分</p>
+<h2 id="西方城市地理学发展简史">西方城市地理学发展简史</h2>
+<h3 id="年以前">1920年以前</h3>
+<p>城市地理学属于聚落地理学的一个组成部分</p>
 <ul>
 <li>这一时期，地理学家从人地关系的角度研究聚落</li>
 <li>城市研究没有独立的理论和方法，深受地理环境决定论的影响，尤其强调地理位置决定城市的命运</li>
 <li>研究城市的内部时，往往描述建筑的形式、当地的自然条件、建筑与街道的组合形式、屋顶的式样、材料的种类等</li>
 </ul>
-<h3 id="1920-1950"><a href="#1920-1950" class="headerlink" title="1920-1950"></a>1920-1950</h3><p>经济活动的重心转向城市，农村逐渐成了配角</p>
+<h3 id="section">1920-1950</h3>
+<p>经济活动的重心转向城市，农村逐渐成了配角</p>
 <p>社会学家——帕克、沃思和伯吉斯创立城市结构的同心环模式，被称为“人类生态学的芝加哥学派”</p>
 <p>【两大特点】</p>
-<ol>
+<ol type="1">
 <li>把物质环境的约束条件看成城市命运的决定因素</li>
 <li>对城市做形态上的研究，忽视成因的动态分析</li>
 </ol>
-<h3 id="1950-1970"><a href="#1950-1970" class="headerlink" title="1950-1970"></a>1950-1970</h3><p>地理学经历了数量革命，城市地理学的框架建立了起来 </p>
+<h3 id="section-1">1950-1970</h3>
+<p>地理学经历了数量革命，城市地理学的框架建立了起来</p>
 <p>克里斯塔勒——中心地理论，是城市系统研究的理论家、奠基人</p>
 <p>贝里市城市系统研究的实践者和推动者</p>
 <p>【研究对象】</p>
-<ol>
+<ol type="1">
 <li>宏观城市空间，即城市之间构成的空间构成的空间，集中在城市体系研究上。主要包括空间的形成——城市化、城市规模分析、空间格局、职能结构和网络形式</li>
 <li>围观城市空间，即城市的内部空间，集中在城市土地的利用模式上。主要内容包括城市用地分异过程、各功能要素的区位分析和土地利用模式</li>
 </ol>
-<h3 id="1970年以来"><a href="#1970年以来" class="headerlink" title="1970年以来"></a>1970年以来</h3><p>城市就业、住房、交通、环境卫生、治安问题日趋严重</p>
+<h3 id="年以来">1970年以来</h3>
+<p>城市就业、住房、交通、环境卫生、治安问题日趋严重</p>
 <ul>
 <li>英国新韦伯主义社会学家致力于研究地方政府在城市发展中的作用，特别是在城市空间资源分配中恶作用。他们认为技术进步、人类特征变化会对城市发展产生重要的影响。不同意法城市中发生的问题完全归于生产方式和制度</li>
 <li>段义孚等从研究社区与人的关系出发，运用行为科学和现象学，开展了个人性格如何影响到家庭和房屋的装饰的分析，并伸展到群体的性格如何反映到所谓的“文化景观”的分析，他们特别强调“地方”这一概念不仅是一个几何空间，而且害包括了人地之间的关系。在城市地理学的发展中，段义孚等人的研究对剖析城市内居民与其邻里区域所产生的亲切感或梳理感和冷漠感作出了很大贡献，也扩大了城市地理学的领域 。在实际应用方面，段义孚对内城重建和拆迁过程中，如何破坏，或如何保存这一人地感情方面，提出了不少建设性的意见</li>
@@ -118,47 +533,52 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>20世纪80年代以来，全球化、信息化、生态化等全球性趋势更加明显，促使城市体系、城市功能、城市空间和城市社会出现了许多新特征。产生了“洛杉矶学派”。</li>
 <li>城市内部空间、城市社会地理问题意志市研究的热点。</li>
 </ul>
-<h2 id="中国城市地理学的发展"><a href="#中国城市地理学的发展" class="headerlink" title="中国城市地理学的发展"></a>中国城市地理学的发展</h2><h3 id="发展历程"><a href="#发展历程" class="headerlink" title="发展历程"></a>发展历程</h3><ul>
+<h2 id="中国城市地理学的发展">中国城市地理学的发展</h2>
+<h3 id="发展历程">发展历程</h3>
+<ul>
 <li><p>1949年以前的兴起阶段</p>
-<p>  1909张相文等效仿欧美先例创立“中国地学会”，标志着中国近代地质学和地理学的萌芽</p>
-<p>  1943年成立了中国地理学会，同年出版会刊《地理学报》</p>
-<p>  专门的城市地理学的论文始建于20世纪20年代，主要以单个城市的研究为主</p>
-</li>
-<li><p>1949-1966相对萧条</p>
-</li>
-<li><p>1967-1976停滞阶段</p>
-</li>
-<li><p>1976-1990的振兴阶段</p>
-</li>
+<p>1909张相文等效仿欧美先例创立“中国地学会”，标志着中国近代地质学和地理学的萌芽</p>
+<p>1943年成立了中国地理学会，同年出版会刊《地理学报》</p>
+<p>专门的城市地理学的论文始建于20世纪20年代，主要以单个城市的研究为主</p></li>
+<li><p>1949-1966相对萧条</p></li>
+<li><p>1967-1976停滞阶段</p></li>
+<li><p>1976-1990的振兴阶段</p></li>
 <li><p>20世纪90年代初至今的快速发展阶段</p>
-<p>  既要从单要素到综合思维观的层面、从微观分析到宏观思维方法的研究和从线性思维到网络思维观的深入</p>
-</li>
+<p>既要从单要素到综合思维观的层面、从微观分析到宏观思维方法的研究和从线性思维到网络思维观的深入</p></li>
 </ul>
-<h3 id="改革开放以来中国城市地理学研究的特点"><a href="#改革开放以来中国城市地理学研究的特点" class="headerlink" title="改革开放以来中国城市地理学研究的特点"></a>改革开放以来中国城市地理学研究的特点</h3><ol>
+<h3 id="改革开放以来中国城市地理学研究的特点">改革开放以来中国城市地理学研究的特点</h3>
+<ol type="1">
 <li>注重城市空间结构的研究</li>
 <li>注重区域城镇体系的研究</li>
 <li>注重城市化研究</li>
 <li>注重城市地理新领域与新方法的拓展和应用</li>
 </ol>
-<h3 id="中国城市地理学的研究趋势"><a href="#中国城市地理学的研究趋势" class="headerlink" title="中国城市地理学的研究趋势"></a>中国城市地理学的研究趋势</h3><ol>
+<h3 id="中国城市地理学的研究趋势">中国城市地理学的研究趋势</h3>
+<ol type="1">
 <li>对理论研究将进一步增强</li>
 <li>对经济全球化和全球城市的研究将加强</li>
 <li>对城市社会地理学的研究将加强</li>
 <li>对新领域和新方法的研究将加强</li>
 <li>城市规划等应用研究将进一步加强</li>
 </ol>
-<h1 id="城乡划分和城市地域"><a href="#城乡划分和城市地域" class="headerlink" title="城乡划分和城市地域"></a>城乡划分和城市地域</h1><h2 id="城市概念及标准"><a href="#城市概念及标准" class="headerlink" title="城市概念及标准"></a>城市概念及标准</h2><h3 id="城市和城镇"><a href="#城市和城镇" class="headerlink" title="城市和城镇"></a>城市和城镇</h3><ul>
+<h1 id="城乡划分和城市地域">城乡划分和城市地域</h1>
+<h2 id="城市概念及标准">城市概念及标准</h2>
+<h3 id="城市和城镇">城市和城镇</h3>
+<ul>
 <li>人口统计中，对应有市人口、镇人口和城镇人口，这时城市作狭义理解</li>
 <li>广义的城市，代表镇居民点的合称</li>
 </ul>
-<h3 id="定义城镇的标准"><a href="#定义城镇的标准" class="headerlink" title="定义城镇的标准"></a>定义城镇的标准</h3><h4 id="城市不同于乡村的本质特征"><a href="#城市不同于乡村的本质特征" class="headerlink" title="城市不同于乡村的本质特征"></a>城市不同于乡村的本质特征</h4><ol>
+<h3 id="定义城镇的标准">定义城镇的标准</h3>
+<h4 id="城市不同于乡村的本质特征">城市不同于乡村的本质特征</h4>
+<ol type="1">
 <li>城镇是以从事非农业活动的人口为主的居民点，在产业构成上不同于乡村</li>
 <li>城镇一般聚居有较多的人口，在规模上区别于乡村</li>
 <li>城镇具有上下水、电灯、电话、广场、街道、影剧院、博物馆等市政设施和公共设施，在物质构成上不同于乡村</li>
 <li>城镇一般是工业、商业、交通、文教的集中地，是一定地域的政治、经济、文化的中心，在职能上区别于乡村</li>
 <li>还可以从生活方式、价值观念、人口素质等许多方面寻找城乡间的差异</li>
 </ol>
-<h4 id="城市划定标准"><a href="#城市划定标准" class="headerlink" title="城市划定标准"></a>城市划定标准</h4><ol>
+<h4 id="城市划定标准">城市划定标准</h4>
+<ol type="1">
 <li>单纯用某级行政中心所在地为标准</li>
 <li>单纯以城镇特征为标准</li>
 <li>单纯以居民点下限人口数量划分城镇</li>
@@ -168,16 +588,20 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>取两个以上指标作为标准</li>
 <li>其他标准</li>
 </ol>
-<h2 id="城市地域"><a href="#城市地域" class="headerlink" title="城市地域"></a>城市地域</h2><h3 id="行政地域"><a href="#行政地域" class="headerlink" title="行政地域"></a>行政地域</h3><ul>
-<li>按一定的标准或程序在行政上分别设置市、镇和乡、村等建制，并确定他们的行政管理边界。确定行政边界主要是为了管理 </li>
+<h2 id="城市地域">城市地域</h2>
+<h3 id="行政地域">行政地域</h3>
+<ul>
+<li>按一定的标准或程序在行政上分别设置市、镇和乡、村等建制，并确定他们的行政管理边界。确定行政边界主要是为了管理</li>
 </ul>
-<h3 id="实体地域"><a href="#实体地域" class="headerlink" title="实体地域"></a>实体地域</h3><ul>
+<h3 id="实体地域">实体地域</h3>
+<ul>
 <li>城市的本质特征市对城市的实体地域即城市建成区而言的，划分城市的实体地域主要是为了区分城乡</li>
 </ul>
-<h3 id="城市功能地域"><a href="#城市功能地域" class="headerlink" title="城市功能地域"></a>城市功能地域</h3><ul>
+<h3 id="城市功能地域">城市功能地域</h3>
+<ul>
 <li><strong>都市区</strong></li>
 </ul>
-<ol>
+<ol type="1">
 <li>都市区是==国外==最常用的城市功能地域概念。</li>
 <li>是一个大的人口核心以及与这个核心具有高度的社会经济一体化倾向的邻接社区的组合，一般以县作为基本单元</li>
 <li>都市区1910——标准都市区1949——都市统计区1980，一个都市统计区至少包括一个五万人以上的中心市或者包括一个至少五万人的城市化地区，并满足都市区的总人口至少10万人</li>
@@ -187,7 +611,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>中心市和城市化地区构成都市区的核心，都市区一般比他们的核心要大，包括了连续建成区外缘以外的不连续的城镇、城郊发展区甚至一部分乡村地域，而城市化地区是不包括乡村地域的。城市化地区不一定和城镇的行政边界一致，随时间而有变化，都市区的外界与县界吻合，相对比较稳定，资料抑郁统计和收集</li>
 </ol>
 <p>==国内==【周一星】通勤指标不适合在中国使用</p>
-<ol>
+<ol type="1">
 <li>都市区是由中心市和外围非农化水平较高、与中心市存在着密切社会经济联系的邻接县（市）两部分组成</li>
 <li>凡城市实体地域内非农业人口在20万人以上的地级市可以视为中心市，有资格设立都市区</li>
 <li>都市区的外围地域以及县级区域为基本单元，外围地区原则上需要同时满足</li>
@@ -195,37 +619,42 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <ul>
 <li><strong>大都市带</strong></li>
 </ul>
-<ol>
+<ol type="1">
 <li>由许多都市区首尾连成一体，它们在经济、社会、文化等各个方面又存在着密切的交互，这样的巨大城市地域复合体叫做大都市带。</li>
 <li>特点：多核心、交通走廊、密集的交互作用、规模特别庞大、国家的核心区域</li>
 </ol>
 <ul>
 <li>都市连绵区</li>
 </ul>
-<ol>
+<ol type="1">
 <li>与都市连绵区相对应</li>
 </ol>
 <ul>
 <li>城市群</li>
 </ul>
-<ol>
+<ol type="1">
 <li>城市群市指在特定的地域范围内具有相当数量的不同性质、类型和等级规模的城市，依据一定的自然环境条件，以一个或两个超大或特大城市作为地区经济的核心，借助于现代化的交通工具和总和运输网的通达性，以及高度发达的信息网络，发生与发展着城市个体之间的内在联系，共同构成一个相对完整的城市“集合体”</li>
 <li>问题：没有界定指标，划定城市群范围的任意性太大，空间尺度的概念不明确</li>
 </ol>
 <ul>
-<li><p>都市圈</p>
-</li>
-<li><p>城镇密集区</p>
-</li>
+<li><p>都市圈</p></li>
+<li><p>城镇密集区</p></li>
 </ul>
-<ol>
+<ol type="1">
 <li>对城镇分布密集、相对发达的地理空间的一种称呼，是一个比较中性的、一般的、可以广泛使用的词汇，用“城镇密集区”做规划被误导和误解的可能性很小</li>
 </ol>
-<h2 id="中国市、镇概念和统计口径"><a href="#中国市、镇概念和统计口径" class="headerlink" title="中国市、镇概念和统计口径"></a>中国市、镇概念和统计口径</h2><h3 id="中国市、镇建制标准"><a href="#中国市、镇建制标准" class="headerlink" title="中国市、镇建制标准"></a>中国市、镇建制标准</h3><p>以现阶段标准为主</p>
+<h2 id="中国市镇概念和统计口径">中国市、镇概念和统计口径</h2>
+<h3 id="中国市镇建制标准">中国市、镇建制标准</h3>
+<p>以现阶段标准为主</p>
 <p>人口普查标准也以第七次人口普查为标准</p>
-<h1 id="城市的产生和发展"><a href="#城市的产生和发展" class="headerlink" title="城市的产生和发展"></a>城市的产生和发展</h1><h2 id="城市是社会生产力发展到一定阶段的产物"><a href="#城市是社会生产力发展到一定阶段的产物" class="headerlink" title="城市是社会生产力发展到一定阶段的产物"></a>城市是社会生产力发展到一定阶段的产物</h2><h2 id="城市产生与发展的区域基础"><a href="#城市产生与发展的区域基础" class="headerlink" title="城市产生与发展的区域基础"></a>城市产生与发展的区域基础</h2><h3 id="区域自然地理条件"><a href="#区域自然地理条件" class="headerlink" title="区域自然地理条件"></a>区域自然地理条件</h3><ul>
+<h1 id="城市的产生和发展">城市的产生和发展</h1>
+<h2 id="城市是社会生产力发展到一定阶段的产物">城市是社会生产力发展到一定阶段的产物</h2>
+<h2 id="城市产生与发展的区域基础">城市产生与发展的区域基础</h2>
+<h3 id="区域自然地理条件">区域自然地理条件</h3>
+<ul>
 <li>自然地理条件如地质、地貌、水文、土壤、植被首先作为人类生存环境，通过影响人口分布而影响城市的形成发展</li>
-<li>我国城市按照所在区域地形分类<ol>
+<li>我国城市按照所在区域地形分类
+<ol type="1">
 <li>滨海城市</li>
 <li>三角洲平原城市</li>
 <li>山前洪积、冲积平原城市</li>
@@ -234,233 +663,237 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>平原中腹城市</li>
 <li>中山谷地城市</li>
 <li>高山谷地城市</li>
-</ol>
-</li>
+</ol></li>
 <li>我国平原地区的城市多于低山丘陵地区，中山、高山地区数量极少；除了大平原中腹和三角洲平原外，城市选择两种地形过渡或交接的部位形成发展非常普遍；除了平原城市要濒临江河湖海以外，丘陵、山地区的城市多趋于河谷，临水也是普遍特点【1983】</li>
 </ul>
-<h3 id="区域经济地理条件"><a href="#区域经济地理条件" class="headerlink" title="区域经济地理条件"></a>区域经济地理条件</h3><ul>
+<h3 id="区域经济地理条件">区域经济地理条件</h3>
+<ul>
 <li>影响条件：矿产资源、淡水资源、水热资源、动植物资源的丰饶度及其组合，基础设施的状况，区域劳动力的数量和质量，经济发展的历史传统，现状经济的发展水平和结构特征，未来的开发潜力等</li>
 </ul>
-<h2 id="城市地理位置与城市的产生和发展"><a href="#城市地理位置与城市的产生和发展" class="headerlink" title="城市地理位置与城市的产生和发展"></a>城市地理位置与城市的产生和发展</h2><h3 id="城市地理位置的概念"><a href="#城市地理位置的概念" class="headerlink" title="城市地理位置的概念"></a>城市地理位置的概念</h3><ul>
+<h2 id="城市地理位置与城市的产生和发展">城市地理位置与城市的产生和发展</h2>
+<h3 id="城市地理位置的概念">城市地理位置的概念</h3>
+<ul>
 <li>城市的地理位置是城市及其外部的自然、经济、政治等客观事物在空间上的结合</li>
 <li>城市地理位置的特殊性，往往决定了城市职能性质的特殊性和规模的特殊性</li>
 <li>城市地理位置是绝对个性化的特点</li>
 </ul>
-<h3 id="城市地理位置的类型"><a href="#城市地理位置的类型" class="headerlink" title="城市地理位置的类型"></a>城市地理位置的类型</h3><ul>
-<li>大中小位置<ul>
+<h3 id="城市地理位置的类型">城市地理位置的类型</h3>
+<ul>
+<li>大中小位置
+<ul>
 <li>从不同的空间尺度来考察城市地理位置</li>
 <li>以上海为例，大位置的特点是其位于我国南、北海岸线的中点以及长江的出口处。对内它是广阔富饶的长江流域以至更大的地域门户，对外它是我国大陆向东最接近太平洋世界贸易要道城市。中位置的特点 是其位于长江三角洲的东南端和太湖流域的下游，整个长江三角洲，特别是太湖流域作为上海的直接腹地，为上海城市的形成和繁荣奠定了区域基础。黄浦江和吴淞江相汇的特点则是上海形成与发展的小位置因素</li>
-</ul>
-</li>
-<li>中心、重心位置和邻接、门户位置<ul>
+</ul></li>
+<li>中心、重心位置和邻接、门户位置
+<ul>
 <li>从城市位于某一区域的中央，则城市与其以外各个方向的方向的联系距离都比较近。</li>
 <li>这种中心位置并不一定是严格意义上的地区几何中心，很多情况下可能是地区的重心位置。</li>
 <li>与中心位置相对的是邻接位置，即城市区位追求邻接于决定其发展而读区域，不必或不可能在本区域的中央</li>
 <li>特殊的邻接位置可叫门户位置或出入口位置</li>
-</ul>
-</li>
-<li>城市沿交通线成长区位类型<ul>
+</ul></li>
+<li>城市沿交通线成长区位类型
+<ul>
 <li>河运</li>
 <li>航运</li>
 <li>海港</li>
 <li>铁路</li>
 <li>城市与铁路</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="不同类型城市的形成和发展"><a href="#不同类型城市的形成和发展" class="headerlink" title="不同类型城市的形成和发展"></a>不同类型城市的形成和发展</h2><h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><ol>
+<h2 id="不同类型城市的形成和发展">不同类型城市的形成和发展</h2>
+<h3 id="类型">类型</h3>
+<ol type="1">
 <li>为满足广大农村五自集散和总和服务的需要而形成的中心地城市，如大多数集镇、城镇、县城</li>
 <li>为满足区际贸易和交通转运的需要而形成的、以交通运输为主要职能的城市，如港口城市、铁路运输、公路中心等</li>
 <li>为满足某种专门需要，在集聚经济、规模经济的作用下而形成的以某种专门职能为主的城市，如工业城市、风景旅游城市、大学城。</li>
 </ol>
 <ul>
-<li>商品农业与中心地型城镇<ul>
+<li>商品农业与中心地型城镇
+<ul>
 <li>以交通运输职能为主的小城市，形成和发展取决于天赋和人为的交通地理位置</li>
-<li>转运功能分类<ul>
+<li>转运功能分类
+<ul>
 <li>实体转运。指货物从一种交通方式转换为另一种交通方式【港口城市】</li>
 <li>商业性转运。指商品所有权的改变</li>
 <li>政治性转运。指商品从一个国家或地区进入另一个国家和地区，这时需要支付关税</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>规模经济、集聚经济与以专门化职能为主的城市<ul>
+</ul></li>
+</ul></li>
+<li>规模经济、集聚经济与以专门化职能为主的城市
+<ul>
 <li>以专门化职能为主的城市，其产生和发展强烈地依赖于某种天赋地资源和人类某种特殊的需要，这类城市的主要特点是职能较为单一</li>
 <li>对外联系范围广，但联系内容较单一</li>
 <li>发展历史一般较短，发展速度较块，并可能有较大的起伏性</li>
 <li>按照职能类型可以分为：矿业城、工矿城、工业城、风景旅游城、科学文化城</li>
 <li>【集聚经济】指各种产业和经济活动在空间上集中后产生的经济效果和向心力，促使 城市发展，当集中程度超过某一限度后，再集聚会带来不经济，产生离心力，需抑制或减小城市规模。规模经济与集聚经济对城市发展的作用，不仅限于以专门化职能为主的城市，而且也适用于所有城市，只是以专门化职能为主的城市最为典型而已</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="信息技术革命与城市发展"><a href="#信息技术革命与城市发展" class="headerlink" title="信息技术革命与城市发展"></a>信息技术革命与城市发展</h3><ul>
+<h3 id="信息技术革命与城市发展">信息技术革命与城市发展</h3>
+<ul>
 <li>信息技术革命的基本特征和影响</li>
 <li>信息技术革命与新产业空间的形式</li>
-<li>信息革命时代世界城市体系的形成<ul>
-<li>跨国网络化城市体系<ul>
+<li>信息革命时代世界城市体系的形成
+<ul>
+<li>跨国网络化城市体系
+<ul>
 <li>西方发达国家信息技术的不断创新和广泛应用加速了经济全球化，促成了新国际劳动分工的形成</li>
 <li>为了增强竞争力，发达国家均以发展和完善基础设施为新起点，建设高速道路网</li>
 <li>由于大城市的优势，重新确立了其在发展中的地位和形象，因而国家层次城市体系进一步发展，而且出现了范围更大的、以大城市集聚发展为特色的跨国城市网络</li>
 <li>跨国网络化城市体系的主要物质基础是跨国高速道路网络和发达的电子通信设施。</li>
 <li>跨国网络化城市体系内，大都市区出现人口与经济活动再集中趋向，出现重新城市化现象</li>
-</ul>
-</li>
-<li>世界城市体系<ul>
+</ul></li>
+<li>世界城市体系
+<ul>
 <li>信息网络正成为影响城市体系发展的基本因素</li>
 <li>国家层次的信息网络正在彼此沟通，结成一个复杂而庞大的世界信息网络，城市体系由跨国城市体系迈向世界城市体系</li>
 <li>世界城市体系由各国城市组成，并有明显的等级结构</li>
 <li>世界城市是信息网络上的节点，是网络依附性城市，城市职能在不同程度上带有国际性</li>
 <li>齐次，空间极化和城市职能专门化趋势将进一步强化</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="城市化原理"><a href="#城市化原理" class="headerlink" title="城市化原理"></a>城市化原理</h1><h2 id="城市化定义"><a href="#城市化定义" class="headerlink" title="城市化定义"></a>城市化定义</h2><h3 id="城市化概念"><a href="#城市化概念" class="headerlink" title="城市化概念"></a>城市化概念</h3><ul>
+<h1 id="城市化原理">城市化原理</h1>
+<h2 id="城市化定义">城市化定义</h2>
+<h3 id="城市化概念">城市化概念</h3>
+<ul>
 <li><p>城市化一词至少包含了乡村——城市之间的四种转型</p>
 <ul>
 <li>人口结构的转型【农村人口——城市人口】</li>
 <li>经济结构的转型【农业活动——非农业活动】</li>
 <li>地域空间的转型【农村——城市】</li>
 <li>生活方式的转型【农村生活——城市生活】</li>
-</ul>
-</li>
+</ul></li>
 <li><p>城市化地域空间过程</p>
-<ol>
-<li><p>正统的城市化，既有人口和非农业活动的地域集中，城市型景观的地域推进，又有城市文化的地域扩散，他们之间协调发展</p>
-</li>
+<ol type="1">
+<li><p>正统的城市化，既有人口和非农业活动的地域集中，城市型景观的地域推进，又有城市文化的地域扩散，他们之间协调发展</p></li>
 <li><p>只有人口和非农业活动的地域集中，城市型景观的地域推进，而没有或很少有城市文化的扩散，在城市中居住着大批没有城市化的人【假城市化】如南亚、非洲的一些国家</p>
-<p> 另外如拉丁美洲的一些国家，全国人口主要集中在城市，城市化水平很高，甚至超过一些发达国家的水平，但是经济发展相对之后，城市居民的失业率很高，大量人口生活在贫民区，与南亚、非洲等国的城市类似这种情况被称之为过度城市化</p>
-</li>
-<li><p>只有城市文化的地域扩散，而没有或很少有人口和非农业活动的地域集中</p>
-</li>
-<li><p>郊区城市化</p>
-</li>
-<li><p>逆城市化</p>
-</li>
-<li><p>乡村城镇化</p>
-</li>
-</ol>
-</li>
+<p>另外如拉丁美洲的一些国家，全国人口主要集中在城市，城市化水平很高，甚至超过一些发达国家的水平，但是经济发展相对之后，城市居民的失业率很高，大量人口生活在贫民区，与南亚、非洲等国的城市类似这种情况被称之为过度城市化</p></li>
+<li><p>只有城市文化的地域扩散，而没有或很少有人口和非农业活动的地域集中</p></li>
+<li><p>郊区城市化</p></li>
+<li><p>逆城市化</p></li>
+<li><p>乡村城镇化</p></li>
+</ol></li>
 </ul>
-<h2 id="城市化机制"><a href="#城市化机制" class="headerlink" title="城市化机制"></a>城市化机制</h2><h3 id="城市兴起和成长的一般前提"><a href="#城市兴起和成长的一般前提" class="headerlink" title="城市兴起和成长的一般前提"></a>城市兴起和成长的一般前提</h3><ul>
+<h2 id="城市化机制">城市化机制</h2>
+<h3 id="城市兴起和成长的一般前提">城市兴起和成长的一般前提</h3>
+<ul>
 <li>第一前提——剩余粮食的生产能力</li>
 <li>第二前提——剩余劳动力</li>
 </ul>
-<h3 id="经济增长与城市化"><a href="#经济增长与城市化" class="headerlink" title="经济增长与城市化"></a>经济增长与城市化</h3><ol>
+<h3 id="经济增长与城市化">经济增长与城市化</h3>
+<ol type="1">
 <li>经济学人士人为，城市化的原动力就是资本的积累和循环，整个城市化过程就是资本扩大再生产过程在城市生产过程在城市地域上的体现</li>
 <li>社会学人士人为，城市化的动力除经济原因外，人类精神、个性解放、政治状态等非经济原因也都是城市化的原因</li>
 <li>城市地理学，首先注意问题的空间性，从地域秩序入手分析。现在从经济增长的角度来探讨城市化的动力机制，概括起来有以下几个方面</li>
 </ol>
 <ul>
-<li>工业化与城市化<ul>
+<li>工业化与城市化
+<ul>
 <li>地方化经济是指某行业的企业生产成本随着城市地区总产量的上升而下降</li>
 <li>地方化经济出现有三个原因：中间投入品生产的规模经济、劳动力市场共享和知识溢出</li>
-<li>地方化和城市化经济的区别：<ul>
+<li>地方化和城市化经济的区别：
+<ul>
 <li>城市化经济源于整个城市经济的规模，而不单单是某一个行业的规模</li>
 <li>城市化经济为城市中的所有企业带来效益，而并非只针对某一行业中的企业</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li>第三产业与城市化</li>
 <li>经济增长与城市化</li>
 </ul>
-<hr>
+<hr />
 <ul>
 <li><p>乡村-城市人口迁移的动因分析</p>
 <ul>
 <li>人口迁移是其原住地的推力和迁入地的拉力两种力量共同作用的结果</li>
-</ul>
-</li>
+</ul></li>
 <li><p>城市化的政治经济学解释</p>
-<p>  <strong>资本的三次循环</strong></p>
+<p><strong>资本的三次循环</strong></p>
 <ul>
 <li>第一次循环，包括在生产中，在劳动生产率不变的条件下，经过价值与剩余价值的生产，一部分以奢侈品方式满足资产阶级的奢侈消费需要，另一部分以工资货物的形式保证劳动者的再生条件，使他们的劳动力继续投入价值与剩余价值的生产。由于资产阶级追求超额利润的冬季导致资本的过度积累，表现在商品的过度生产、利润率下降和剩余资本等方面。</li>
 <li>第二次循环，包括固定资本投资和消费资金两方面。前者分为两部分，一部分包含在生产过程中，另一部分起着为生产服务的功能，哈维称之为生产性建成环境。消费资金也可以分为两部分，一部分直接包含在消费过程中（各种耐用消费品），另一部分起着为消费服务的作用，称之为消费建成环境。</li>
 <li>第三次循环，指在科研和技术以及各种社会消费，如教育和卫生等三方面的投资</li>
-</ul>
-</li>
+</ul></li>
 <li><p>采用传统理论和人口指标分析城市化相比，新的理论和指标有以下特点</p>
 <ul>
 <li>由于城市建成环境是城市化的物质体现和结果，通过对城市固定资产投资额的分析，可在一定程度上反映城市经济结构和空间结构的转换</li>
 <li>在绝大多数国家的城市化进程中，用城市人口占总人口比例衡量的城市化水平总是不断上升的，但如用投资等指标计算，却具有明显的周期性特点</li>
 <li>若干发达国家已完成人口城市化的进程，当前正处于郊区城市化和逆城市化的阶段</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="城市化的类型和测度"><a href="#城市化的类型和测度" class="headerlink" title="城市化的类型和测度"></a>城市化的类型和测度</h2><h3 id="城市化类型"><a href="#城市化类型" class="headerlink" title="城市化类型"></a>城市化类型</h3><ul>
+<h2 id="城市化的类型和测度">城市化的类型和测度</h2>
+<h3 id="城市化类型">城市化类型</h3>
+<ul>
 <li><p>向心型城市化与离心型城市化</p>
 <ul>
 <li>向心型城市化促使城市中心土地利用密度升高，向立体发展，形成中心商业事务区。离心型城市化导致城市外围农村地域变化、城市平面扩大</li>
-</ul>
-</li>
+</ul></li>
 <li><p>外延型城市化与飞地型城市化</p>
 <ul>
 <li>城市化推进过程中，出现了空间上与建成区断开，职能上与中心城市保持联系的城市扩展方式，则称为飞地型城市化</li>
 <li>正在进行外延型城市化的边缘地带被称之为城乡结合部</li>
 <li>飞地型城市化一般要在大城市的环境下才会出现</li>
 <li>在一些发展中国家，为了改变经济过分集中于沿海地区和发展内地经济的目的，将首都搬迁到内地，或在内地开辟增长中心，从广义上讲，也是飞地型城市化的一种表现形式</li>
-</ul>
-</li>
+</ul></li>
 <li><p>景观型城市化与职能型城市化</p>
 <ul>
 <li>景观型城市化，是城市化表现形式，指城市性用地逐渐覆盖地域空间的过程</li>
 <li>职能型城市化，是当代出现的一种新的城市化表现形式，指的是现代城市功能在地域系列中发挥作用的过程</li>
 <li>国外普遍采用城市功能区（即城市核心连同周围功能上有联系的区域）来替代城市行政区作为城市的地域范围，并以城市功能区的人口作为城市总人口</li>
-</ul>
-</li>
+</ul></li>
 <li><p>积极型城市化和消极型城市化</p>
 <ul>
 <li>与经济发展同步的城市化称之为积极型城市化</li>
 <li>先于经济发展水平的城市化，为消极型城市化，也称假城市化或过度城市化</li>
-</ul>
-</li>
+</ul></li>
 <li><p>自上而下型城市化和自下而上型城市化</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>主体</th>
 <th>地域</th>
 <th>层次</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>自上而下</td>
 <td>国家投资</td>
 <td>城市</td>
 <td>原有上层城市</td>
 </tr>
-<tr>
+<tr class="even">
 <td>自下而上</td>
 <td>农村地区自筹资金</td>
 <td>农村</td>
 <td>下层乡镇</td>
 </tr>
-</tbody></table>
-</li>
+</tbody>
+</table></li>
 </ul>
-<h3 id="城市化测度"><a href="#城市化测度" class="headerlink" title="城市化测度"></a>城市化测度</h3><ul>
-<li>主要指标法 ，选择对城市化表征意义最强的、又便于统计的个别指标，来描述城市化达到的水平<ul>
+<h3 id="城市化测度">城市化测度</h3>
+<ul>
+<li>主要指标法 ，选择对城市化表征意义最强的、又便于统计的个别指标，来描述城市化达到的水平
+<ul>
 <li>指标主要有：人口比例指标、土地利用状况</li>
-<li>局限性：<ul>
+<li>局限性：
+<ul>
 <li>城镇的定义不同将直接影响城镇人口数量的统计，进而影响城市化水平的计算和比较</li>
 <li>城市人口的定义不同也将影响城市化水平的计算</li>
 <li>以城市人口比重衡量城市化水平只是测度了农村人口向城市集中的数量过程，不能反映城市化的其他性质</li>
 <li>城市化水平用城市人口比重表示，反映了城市化发展的相对水平，不能反映城市化发展的总体规模</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li>复合指标法</li>
 </ul>
-<h2 id="城市化近域推进和郊区化"><a href="#城市化近域推进和郊区化" class="headerlink" title="城市化近域推进和郊区化"></a>城市化近域推进和郊区化</h2><h3 id="城市化近域推进的主要动力"><a href="#城市化近域推进的主要动力" class="headerlink" title="城市化近域推进的主要动力"></a>城市化近域推进的主要动力</h3><ol>
+<h2 id="城市化近域推进和郊区化">城市化近域推进和郊区化</h2>
+<h3 id="城市化近域推进的主要动力">城市化近域推进的主要动力</h3>
+<ol type="1">
 <li>对外交通设施的伸展与城市化</li>
 <li>工业的扩张与城市化</li>
 <li>住宅的扩散与城市化</li>
 </ol>
-<h3 id="城市化近域推进演化模型"><a href="#城市化近域推进演化模型" class="headerlink" title="城市化近域推进演化模型"></a>城市化近域推进演化模型</h3><ol>
+<h3 id="城市化近域推进演化模型">城市化近域推进演化模型</h3>
+<ol type="1">
 <li>流失中的集中</li>
 <li>绝对集中</li>
 <li>相对集中</li>
@@ -468,49 +901,74 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>绝对分散</li>
 <li>流失中的分散</li>
 </ol>
-<h3 id="再城市化"><a href="#再城市化" class="headerlink" title="再城市化"></a>再城市化</h3><ul>
+<h3 id="再城市化">再城市化</h3>
+<ul>
 <li>有些大都市区的人口又开始恢复增长。</li>
-<li>原因<ul>
+<li>原因
+<ul>
 <li>国际移民增长较为迅速</li>
 <li>城市为挽回发展的颓势，采取了大规模的都市更新</li>
-</ul>
-</li>
+</ul></li>
 <li>再城市化有关的概念绅士化</li>
 <li>绅士化：在一个街区中，较高收入的家庭取代较低收入居民的过程，在这个过程中，整个街区的本质特征和文化品位也发生了改变。</li>
-<li>绅士化【中产阶级化】特征：<ul>
+<li>绅士化【中产阶级化】特征：
+<ul>
 <li>必须有低收入的居民从他们的街区中被置换出来，而这种置换往往是非自愿的置换，也就是通过迅速升高的地租或是增加的物业税，让那些宁愿留在原居住地的居民无力负担生活开支而被迫离开</li>
 <li>不仅街区的住宅质量得到提升，而且其人群的社会经济特征也发生了改变</li>
 <li>街区文化特征的改变，因为新来者会按他们自己的文化、生活方式、消费品为来改变这个街区原有的社会文化特性</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="郊区化"><a href="#郊区化" class="headerlink" title="郊区化"></a>郊区化</h3><ul>
+<h3 id="郊区化">郊区化</h3>
+<ul>
 <li>边缘城市是中心市外围的写字楼和零售活动新的集中地带，对中心市的职能地位提出挑战</li>
 <li>制造业郊区化：制造业是最早出现郊区化的部门</li>
 <li>人口郊区化：人口郊区化首先和汽车的广泛使用有关，而制造业、零售业、办公业等各个行业中企业的郊迁进一步促使人口的郊区化</li>
 <li>零售业郊区化：零售业是为消费者服务的行业，当人口向郊区迁移，势必会带动相关的零售业向郊区的迁移</li>
-<li>办公业郊区化：传统上，城市中心的$CBD$是办公业的集聚中心，是大公司和金融机构的集中地</li>
+<li>办公业郊区化：传统上，城市中心的<span class="math inline">\(CBD\)</span>是办公业的集聚中心，是大公司和金融机构的集中地</li>
 <li>美国把位于郊区的办公区称之为“边缘城市”，它的出现使一些传统的单中心大都市区向大都市区转化</li>
 </ul>
-<h3 id="精明增长"><a href="#精明增长" class="headerlink" title="精明增长"></a>精明增长</h3><ul>
+<h3 id="精明增长">精明增长</h3>
+<ul>
 <li>主张城市发展优先考虑既有城区的再开发，采取以快速公共交通为导向的紧凑型发展方式（transit-oriented development，简称TOD模式）</li>
 </ul>
-<h1 id="城市化的历史进程"><a href="#城市化的历史进程" class="headerlink" title="城市化的历史进程"></a>城市化的历史进程</h1><h2 id="世界城市化的进程"><a href="#世界城市化的进程" class="headerlink" title="世界城市化的进程"></a>世界城市化的进程</h2><h3 id="城市产生及早起城市的发展"><a href="#城市产生及早起城市的发展" class="headerlink" title="城市产生及早起城市的发展"></a>城市产生及早起城市的发展</h3><h3 id="中世纪城市的发展"><a href="#中世纪城市的发展" class="headerlink" title="中世纪城市的发展"></a>中世纪城市的发展</h3><h3 id="工业社会时期的城市化"><a href="#工业社会时期的城市化" class="headerlink" title="工业社会时期的城市化"></a>工业社会时期的城市化</h3><h3 id="当代世界的城市化"><a href="#当代世界的城市化" class="headerlink" title="当代世界的城市化"></a>当代世界的城市化</h3><ol>
+<h1 id="城市化的历史进程">城市化的历史进程</h1>
+<h2 id="世界城市化的进程">世界城市化的进程</h2>
+<h3 id="城市产生及早起城市的发展">城市产生及早起城市的发展</h3>
+<h3 id="中世纪城市的发展">中世纪城市的发展</h3>
+<h3 id="工业社会时期的城市化">工业社会时期的城市化</h3>
+<h3 id="当代世界的城市化">当代世界的城市化</h3>
+<ol type="1">
 <li>城市化进程大大加速</li>
 <li>大都市化趋势明显</li>
 <li>大都市带成为国家的核心区域</li>
 </ol>
-<h2 id="1949年以前中国城市发展史"><a href="#1949年以前中国城市发展史" class="headerlink" title="1949年以前中国城市发展史"></a>1949年以前中国城市发展史</h2><h3 id="城市起源和初期发展时期"><a href="#城市起源和初期发展时期" class="headerlink" title="城市起源和初期发展时期"></a>城市起源和初期发展时期</h3><h3 id="封建社会城市的发展"><a href="#封建社会城市的发展" class="headerlink" title="封建社会城市的发展"></a>封建社会城市的发展</h3><ol>
+<h2 id="年以前中国城市发展史">1949年以前中国城市发展史</h2>
+<h3 id="城市起源和初期发展时期">城市起源和初期发展时期</h3>
+<h3 id="封建社会城市的发展">封建社会城市的发展</h3>
+<ol type="1">
 <li>城市商业空前发展，传统的坊市制被打破</li>
 <li>新型的城市型聚落——镇、市开始显现</li>
 <li>大中城市继续发展</li>
 </ol>
-<h3 id="近现代社会时期"><a href="#近现代社会时期" class="headerlink" title="近现代社会时期"></a>近现代社会时期</h3><ol>
+<h3 id="近现代社会时期">近现代社会时期</h3>
+<ol type="1">
 <li>二元结构的城市体系</li>
 <li>城市发展迅速，区域差异明显</li>
 </ol>
-<h2 id="当代中国城市化的进程"><a href="#当代中国城市化的进程" class="headerlink" title="当代中国城市化的进程"></a>当代中国城市化的进程</h2><h3 id="短暂发展时期（1953-1957）"><a href="#短暂发展时期（1953-1957）" class="headerlink" title="短暂发展时期（1953-1957）"></a>短暂发展时期（1953-1957）</h3><h3 id="起伏波动时期（1958-1965）"><a href="#起伏波动时期（1958-1965）" class="headerlink" title="起伏波动时期（1958-1965）"></a>起伏波动时期（1958-1965）</h3><h3 id="停滞时期（1966-1976）"><a href="#停滞时期（1966-1976）" class="headerlink" title="停滞时期（1966-1976）"></a>停滞时期（1966-1976）</h3><h3 id="过渡时期（1977-1981）"><a href="#过渡时期（1977-1981）" class="headerlink" title="过渡时期（1977-1981）"></a>过渡时期（1977-1981）</h3><h3 id="乡村城市化时期（1982-1991）"><a href="#乡村城市化时期（1982-1991）" class="headerlink" title="乡村城市化时期（1982-1991）"></a>乡村城市化时期（1982-1991）</h3><h3 id="快速城市化时期（1992-至今）"><a href="#快速城市化时期（1992-至今）" class="headerlink" title="快速城市化时期（1992-至今）"></a>快速城市化时期（1992-至今）</h3><p><img src="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png" alt="1601886394449"></p>
-<h1 id="城市职能分类"><a href="#城市职能分类" class="headerlink" title="城市职能分类"></a>城市职能分类</h1><h2 id="城市经济活动类型划分"><a href="#城市经济活动类型划分" class="headerlink" title="城市经济活动类型划分"></a>城市经济活动类型划分</h2><h3 id="城市经济活动的基本与非基本部分"><a href="#城市经济活动的基本与非基本部分" class="headerlink" title="城市经济活动的基本与非基本部分"></a>城市经济活动的基本与非基本部分</h3><ul>
+<h2 id="当代中国城市化的进程">当代中国城市化的进程</h2>
+<h3 id="短暂发展时期1953-1957">短暂发展时期（1953-1957）</h3>
+<h3 id="起伏波动时期1958-1965">起伏波动时期（1958-1965）</h3>
+<h3 id="停滞时期1966-1976">停滞时期（1966-1976）</h3>
+<h3 id="过渡时期1977-1981">过渡时期（1977-1981）</h3>
+<h3 id="乡村城市化时期1982-1991">乡村城市化时期（1982-1991）</h3>
+<h3 id="快速城市化时期1992-至今">快速城市化时期（1992-至今）</h3>
+<figure>
+<img src="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png" alt="1601886394449" /><figcaption>1601886394449</figcaption>
+</figure>
+<h1 id="城市职能分类">城市职能分类</h1>
+<h2 id="城市经济活动类型划分">城市经济活动类型划分</h2>
+<h3 id="城市经济活动的基本与非基本部分">城市经济活动的基本与非基本部分</h3>
+<ul>
 <li>按照城市全部经济活动的服务对象来分，可分成两部分，一部分是为本城市的需要服务的另一部分是为本城市以外的需要服务的。</li>
 <li>为外地服务的部分，是从城市以外为城市创造收入的部分，是城市得以存在和发展的经济基础，这一部分活动称为城市的基本活动部分，是导致城市发展的主要动力。</li>
 <li>满足城市内部需求的经济活动，随着基本部分的发展而发展，它被称为非基本活动部分。一种是为了满足本市基本部分的生产所派生的需要。另一种是为了满足本市居民正常生活所派生的需要。</li>
@@ -518,98 +976,103 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>现代城市，有时也把基本活动部分占明显优势的经济部门叫做基本经济部门，以非基本活动部分占明显优势的经济部门较非基本部门。</li>
 <li>一个城市的经济要可持续的发展下去，就要有可持续发展的基本活动部分</li>
 </ul>
-<h3 id="划分城市基本和非基本活动的方法"><a href="#划分城市基本和非基本活动的方法" class="headerlink" title="划分城市基本和非基本活动的方法"></a>划分城市基本和非基本活动的方法</h3><ol>
-<li><p>普查法</p>
-</li>
-<li><p>残差法</p>
-</li>
+<h3 id="划分城市基本和非基本活动的方法">划分城市基本和非基本活动的方法</h3>
+<ol type="1">
+<li><p>普查法</p></li>
+<li><p>残差法</p></li>
 <li><p>区位商法</p>
-<p> 区位商法只有在国家没有外贸出口和全国各城市都有相同的生产率和消费结构的前提下才能成立</p>
-</li>
-<li><p>正常城市法</p>
-</li>
-<li><p>最小需要量法</p>
-</li>
+<p>区位商法只有在国家没有外贸出口和全国各城市都有相同的生产率和消费结构的前提下才能成立</p></li>
+<li><p>正常城市法</p></li>
+<li><p>最小需要量法</p></li>
 </ol>
-<h3 id="影响基本-非基本比率的因素"><a href="#影响基本-非基本比率的因素" class="headerlink" title="影响基本/非基本比率的因素"></a>影响基本/非基本比率的因素</h3><ol>
+<h3 id="影响基本非基本比率的因素">影响基本/非基本比率的因素</h3>
+<ol type="1">
 <li>城市人口规模的增大</li>
 <li>城市专业化程度</li>
 <li>城市生产和生活的体系完善程度</li>
 <li>时间的推移</li>
 <li>城市人口在年龄、性别构成、收入水平等方面的差别对城市经济的基本/非基本结构也都有影响</li>
 </ol>
-<h3 id="城市基本与非基本活动对城市发展的影响"><a href="#城市基本与非基本活动对城市发展的影响" class="headerlink" title="城市基本与非基本活动对城市发展的影响"></a>城市基本与非基本活动对城市发展的影响</h3><ul>
+<h3 id="城市基本与非基本活动对城市发展的影响">城市基本与非基本活动对城市发展的影响</h3>
+<ul>
 <li>城市基本部分每一次的投资、收入和职工的增加，最后在城市所产生的连锁反应的结果总是数倍于原来投资、收入和职工的增加，城市基本活动所引起的这样一种放大的机制被称作“乘数效应”</li>
 </ul>
-<h2 id="城市职能及其分类"><a href="#城市职能及其分类" class="headerlink" title="城市职能及其分类"></a>城市职能及其分类</h2><h3 id="城市的三大职能"><a href="#城市的三大职能" class="headerlink" title="城市的三大职能"></a>城市的三大职能</h3><ol>
+<h2 id="城市职能及其分类">城市职能及其分类</h2>
+<h3 id="城市的三大职能">城市的三大职能</h3>
+<ol type="1">
 <li>政治：城市的行政管理作用</li>
 <li>经济：城市主要经济部门在城市内部和以外区域的作用和地位</li>
 <li>文化：【有形】城市的科学、教育职能【无形】城市的文化传统、生活方式、价值观念、对城市以外空间的影响力</li>
 </ol>
-<h3 id="城市职能分类时注意事项"><a href="#城市职能分类时注意事项" class="headerlink" title="城市职能分类时注意事项"></a>城市职能分类时注意事项</h3><ol>
+<h3 id="城市职能分类时注意事项">城市职能分类时注意事项</h3>
+<ol type="1">
 <li>既要避免把现状城市职能原封不动的照搬到规划的城市性质上，又要避免脱离现状城市职能的完全理想化地确定城市性质。</li>
 <li>城市性质的确定一定要跳出就城市论城市的狭隘观念，在方法论上一定要眼睛向外，运用区域分析方法、城市间对比的方法、城市经济结构分析的方法</li>
 <li>城市性质对主要职能的概括深度要根据使用场合的不同而区别对待，用于区域规划和城市规划时，表达不宜过泛，以便于指导实践，城市性质所代表的城市地域要明确</li>
 </ol>
-<h3 id="城市分类方法"><a href="#城市分类方法" class="headerlink" title="城市分类方法"></a>城市分类方法</h3><ol>
-<li><p>一般描述方法</p>
-</li>
-<li><p>统计描述方法</p>
-</li>
-<li><p>统计分析方法</p>
-</li>
-<li><p>城市经济基础研究的方法</p>
-</li>
-<li><p>多变量分析法</p>
-</li>
+<h3 id="城市分类方法">城市分类方法</h3>
+<ol type="1">
+<li><p>一般描述方法</p></li>
+<li><p>统计描述方法</p></li>
+<li><p>统计分析方法</p></li>
+<li><p>城市经济基础研究的方法</p></li>
+<li><p>多变量分析法</p></li>
 <li><p>新的动态</p>
-<p> 基于长波理论的城市职能分类思想</p>
-<p> 密度指数、分形维数、破碎度、形状指数</p>
-<p> 聚类分析、判别分析法</p>
-</li>
+<p>基于长波理论的城市职能分类思想</p>
+<p>密度指数、分形维数、破碎度、形状指数</p>
+<p>聚类分析、判别分析法</p></li>
 </ol>
-<h2 id="中国城市职能分类"><a href="#中国城市职能分类" class="headerlink" title="中国城市职能分类"></a>中国城市职能分类</h2><h3 id="最早的区域性城市职能分类"><a href="#最早的区域性城市职能分类" class="headerlink" title="最早的区域性城市职能分类"></a>最早的区域性城市职能分类</h3><p><img src="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png" alt=""></p>
-<h3 id="全国性城市职能分类"><a href="#全国性城市职能分类" class="headerlink" title="全国性城市职能分类"></a>全国性城市职能分类</h3><ol>
+<h2 id="中国城市职能分类">中国城市职能分类</h2>
+<h3 id="最早的区域性城市职能分类">最早的区域性城市职能分类</h3>
+<p><img src="https://user-images.githubusercontent.com/63230281/95056048-b878ac80-0726-11eb-8fd4-51e5ce87d8e4.png" /></p>
+<h3 id="全国性城市职能分类">全国性城市职能分类</h3>
+<ol type="1">
 <li><p>理论基础</p>
-<p> 一个完整的城市职能概念应该包括三个要素：专业化部门、职能强度和职能规模</p>
-</li>
+<p>一个完整的城市职能概念应该包括三个要素：专业化部门、职能强度和职能规模</p></li>
 <li><p>方法论</p>
-<p> 采取多变量聚类分析与纳尔逊统计分析相结合的方法和综合性职能分类与工业只能分类相结合的方法</p>
-</li>
-<li><p>资料矩阵</p>
-</li>
-<li><p>分类表达形式</p>
-</li>
+<p>采取多变量聚类分析与纳尔逊统计分析相结合的方法和综合性职能分类与工业只能分类相结合的方法</p></li>
+<li><p>资料矩阵</p></li>
+<li><p>分类表达形式</p></li>
 </ol>
-<h1 id="城市规模分布"><a href="#城市规模分布" class="headerlink" title="城市规模分布"></a>城市规模分布</h1><h2 id="城市规模分布理论"><a href="#城市规模分布理论" class="headerlink" title="城市规模分布理论"></a>城市规模分布理论</h2><h3 id="城市首位津"><a href="#城市首位津" class="headerlink" title="城市首位津"></a>城市首位津</h3><ul>
+<h1 id="城市规模分布">城市规模分布</h1>
+<h2 id="城市规模分布理论">城市规模分布理论</h2>
+<h3 id="城市首位津">城市首位津</h3>
+<ul>
 <li>【首位城市】在规模上与第二位城市保持巨大差距，吸引了全国城市人口的很大部分，在国家政治、经济、社会、文化生活中占据明显优势的城市定义为首位城市</li>
 <li>【首位度】一国大城市与第二位城市人口的比值，即首位度。首位度在一定程度上代表了城市体系中的城市人口在最大城市的集中程度</li>
 <li>【首位分布】首位度大的城市规模分布</li>
 <li>【首位度指数】4城市指数、11城市指数</li>
 </ul>
-<h3 id="城市金字塔"><a href="#城市金字塔" class="headerlink" title="城市金字塔"></a>城市金字塔</h3><ul>
+<h3 id="城市金字塔">城市金字塔</h3>
+<ul>
 <li>把一个国家或区域中许多大小不等的城市，按规模大小分成等级，有一种普遍存在的规律性现象，即城市数量随着规模等级而变动，规模等级越高，城市数量越少，规模等级越低，城市数量越多</li>
 <li>把这种关系用图表示出来，形成城市等级规模金字塔</li>
 <li>城市金字塔知识给我们提供了一种分析城市规模分布的简便方法</li>
 <li>头轻脚重状的金字塔形结构，是专指城市数量随规模等级而变化的一半规律</li>
 <li>世界城市体系发育的大国基本符合各规模级城市的数目随着规模级的降低而倍增的规律</li>
 </ul>
-<h3 id="位序-规模法则"><a href="#位序-规模法则" class="headerlink" title="位序-规模法则"></a>位序-规模法则</h3><ul>
+<h3 id="位序-规模法则">位序-规模法则</h3>
+<ul>
 <li>位序-规模法则从城市的规模和城市规模位序的关系来考察一个城市体系的规模分布</li>
 </ul>
-<h2 id="对城市规模分布的解释"><a href="#对城市规模分布的解释" class="headerlink" title="对城市规模分布的解释"></a>对城市规模分布的解释</h2><h3 id="城市规模分布的类型"><a href="#城市规模分布的类型" class="headerlink" title="城市规模分布的类型"></a>城市规模分布的类型</h3><img src="https://user-images.githubusercontent.com/63230281/95055420-d1cd2900-0725-11eb-9721-55c8a6beb2ca.png" />
-
-<h3 id="对城市规模分布的理论解释"><a href="#对城市规模分布的理论解释" class="headerlink" title="对城市规模分布的理论解释"></a>对城市规模分布的理论解释</h3><ol>
+<h2 id="对城市规模分布的解释">对城市规模分布的解释</h2>
+<h3 id="城市规模分布的类型">城市规模分布的类型</h3>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055420-d1cd2900-0725-11eb-9721-55c8a6beb2ca.png" /></p>
+<h3 id="对城市规模分布的理论解释">对城市规模分布的理论解释</h3>
+<ol type="1">
 <li>一种是从变量和过程中抽象出一定数学关系，如对数正态分布、帕累托分布等，来证明特定的规模分布类型</li>
 <li>另一种通常不表现出数学关系，而是提出一种关于各种变量之间的原因性论点。按理论解释的模式来分，有随机模式、城市增长模式、迁移模式、城市等级体系模式和考虑政治、经济、文化和历史诸因素的机制分析模式</li>
 </ol>
-<h3 id="城市规模分布类型的利弊"><a href="#城市规模分布类型的利弊" class="headerlink" title="城市规模分布类型的利弊"></a>城市规模分布类型的利弊</h3><h4 id="首位分布【弊】"><a href="#首位分布【弊】" class="headerlink" title="首位分布【弊】"></a>首位分布【弊】</h4><ol>
+<h3 id="城市规模分布类型的利弊">城市规模分布类型的利弊</h3>
+<h4 id="首位分布弊">首位分布【弊】</h4>
+<ol type="1">
 <li>首位分布对国家经济发展有一种寄生作用</li>
 <li>首位分布的空间集中是资源的一种低效利用方式，有损于更合理的资源利用</li>
 <li>首位分布代表了一种超国家的倾向，这种倾向不利于全国动员，因此对经济增长有害</li>
 <li>首位分布反映了许多社会方面的不公平等</li>
 </ol>
-<h4 id="首位分布【利】"><a href="#首位分布【利】" class="headerlink" title="首位分布【利】"></a>首位分布【利】</h4><ol>
+<h4 id="首位分布利">首位分布【利】</h4>
+<ol type="1">
 <li>首位分布允许资金和人才更大积累，有利于知识的更加专门化和思想的广泛交流</li>
 <li>大城市内的各种运输成本一般比城市间的运输成本低，因此大城市的劳动生产率是最高的</li>
 <li>首位城市常常是交通运输网络中效益最好的地方，是革新的源地，比乡村地区更能吸引投资</li>
@@ -617,7 +1080,13 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <ul>
 <li>一个国家或区域的城市规模分布是其社会经济发展过程所决定的，反过来，已经形成的城市规模分布又会推动或制约其社会经济的发展，因此，不能就城市规模分布论城市城市规模分布，必须紧密联系社会经济发展的实际</li>
 </ul>
-<h2 id="中国的城市规模分布"><a href="#中国的城市规模分布" class="headerlink" title="中国的城市规模分布"></a>中国的城市规模分布</h2><h3 id="我国城市位序-规模法则的验证"><a href="#我国城市位序-规模法则的验证" class="headerlink" title="我国城市位序-规模法则的验证"></a>我国城市位序-规模法则的验证</h3><h3 id="我国城市规模等级结构的变化"><a href="#我国城市规模等级结构的变化" class="headerlink" title="我国城市规模等级结构的变化"></a>我国城市规模等级结构的变化</h3><h3 id="我国不同规模城市人口增长速度的变化"><a href="#我国不同规模城市人口增长速度的变化" class="headerlink" title="我国不同规模城市人口增长速度的变化"></a>我国不同规模城市人口增长速度的变化</h3><h3 id="我国城市规模分布的省际差异"><a href="#我国城市规模分布的省际差异" class="headerlink" title="我国城市规模分布的省际差异"></a>我国城市规模分布的省际差异</h3><h4 id="六个类型"><a href="#六个类型" class="headerlink" title="六个类型"></a>六个类型</h4><ol>
+<h2 id="中国的城市规模分布">中国的城市规模分布</h2>
+<h3 id="我国城市位序-规模法则的验证">我国城市位序-规模法则的验证</h3>
+<h3 id="我国城市规模等级结构的变化">我国城市规模等级结构的变化</h3>
+<h3 id="我国不同规模城市人口增长速度的变化">我国不同规模城市人口增长速度的变化</h3>
+<h3 id="我国城市规模分布的省际差异">我国城市规模分布的省际差异</h3>
+<h4 id="六个类型">六个类型</h4>
+<ol type="1">
 <li>==高级首位型==【苏沪】沪、京、津三个超大城市所在的苏沪和京津冀两个单元，虽然首位比相当大，但是各个规模等级城镇发育完善，更有多个大中型规模的核心城市带动地方经济，小城镇也很发达。是我国的政治、经济核心区</li>
 <li>==中级首位型==【鄂、陕】首位城市武汉、西安早先就是超越本省意义的华中和西北的中心城市，省内二级中心不够发育，新中国成立后中小城镇虽有发展，仍不足以改变首位比大的特点</li>
 <li>==中级平衡型==【辽、黑、鲁、川、粤】有强大的中心城市，而且高位序城市不止一个，其他等级的城市也基本齐全。首位比和不平衡指数都属中等，是我国经济相对发达或经济规模较大的省。</li>
@@ -625,47 +1094,53 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>==初中级不平衡性==【晋、云、贵、新、甘】原来经济比较落后，除山西外，多数位于边远地区，新中共成立后开发性投资较多，省会城市的高速增长是这些省、自治区城镇体系变化的最大特点</li>
 <li>==初级首位型==【青、藏、宁】人口稀少，经济落后，城镇体系很不发育，数量不多的城镇人口高度集中在规模不大的省会城市，首位比和不平衡指数特大</li>
 </ol>
-<h4 id="推动城镇规模分布类型由低级向高级变化的动力"><a href="#推动城镇规模分布类型由低级向高级变化的动力" class="headerlink" title="推动城镇规模分布类型由低级向高级变化的动力"></a>推动城镇规模分布类型由低级向高级变化的动力</h4><ol>
+<h4 id="推动城镇规模分布类型由低级向高级变化的动力">推动城镇规模分布类型由低级向高级变化的动力</h4>
+<ol type="1">
 <li>省、自治区的城镇规模分布类型与市镇有关的人口数量因素关系最密切，职工（特别是工业职工）和城镇人口多的省、自治区就处在城镇规模分布的较高级类型</li>
 <li>与省、自治区的经济发展水平有较密切的关系，但主要取决于工商业发展水平，与农业发展水平虽然有某种正相关的联系，但相关的显著性程度很低</li>
 <li>与省、自治区交通网密度有明显关系，偏僻、闭塞、交通网稀疏的省、自治区，一般处于较低级的城镇体系类型</li>
 <li>人口密度是地区自然条件和经济开发程度的集中反映，人口密度较大的省、自治区，城镇规模分布一般处于较高级类型，西部低密度人口省、自治区处于低级类型</li>
 <li>用城镇人口比重来衡量的城镇化水平与城镇规模分布类型间没有直接联系</li>
 </ol>
-<h2 id="城市规模发展政策的讨论"><a href="#城市规模发展政策的讨论" class="headerlink" title="城市规模发展政策的讨论"></a>城市规模发展政策的讨论</h2><h3 id="我国城市发展方针的来龙去脉"><a href="#我国城市发展方针的来龙去脉" class="headerlink" title="我国城市发展方针的来龙去脉"></a>我国城市发展方针的来龙去脉</h3><h3 id="关于城市发展方针的来龙去脉"><a href="#关于城市发展方针的来龙去脉" class="headerlink" title="关于城市发展方针的来龙去脉"></a>关于城市发展方针的来龙去脉</h3><h3 id="城市规模与经济效益的关系"><a href="#城市规模与经济效益的关系" class="headerlink" title="城市规模与经济效益的关系"></a>城市规模与经济效益的关系</h3><h1 id="城市空间分布体系"><a href="#城市空间分布体系" class="headerlink" title="城市空间分布体系"></a>城市空间分布体系</h1><h2 id="空间相互作用和空间扩散"><a href="#空间相互作用和空间扩散" class="headerlink" title="空间相互作用和空间扩散"></a>空间相互作用和空间扩散</h2><h3 id="相互作用的分类"><a href="#相互作用的分类" class="headerlink" title="相互作用的分类"></a>相互作用的分类</h3><ul>
+<h2 id="城市规模发展政策的讨论">城市规模发展政策的讨论</h2>
+<h3 id="我国城市发展方针的来龙去脉">我国城市发展方针的来龙去脉</h3>
+<h3 id="关于城市发展方针的来龙去脉">关于城市发展方针的来龙去脉</h3>
+<h3 id="城市规模与经济效益的关系">城市规模与经济效益的关系</h3>
+<h1 id="城市空间分布体系">城市空间分布体系</h1>
+<h2 id="空间相互作用和空间扩散">空间相互作用和空间扩散</h2>
+<h3 id="相互作用的分类">相互作用的分类</h3>
+<ul>
 <li>空间相互作用的形式分为对流、传导和辐射三类</li>
 <li>【对流】以物质和人的移动为特征。</li>
 <li>【传导】指各种各样的交易过程，特点不是通过具体的物质流动来实现么人只是通过簿记程序来完成，表现为货币流</li>
 <li>【辐射】信息的流动和创新的扩散</li>
 </ul>
 <p>相互作用的进行，需要借助于各种媒介，其中交通通信设施时主要的手段。</p>
-<h3 id="相互作用产生的条件"><a href="#相互作用产生的条件" class="headerlink" title="相互作用产生的条件"></a>相互作用产生的条件</h3><ol>
+<h3 id="相互作用产生的条件">相互作用产生的条件</h3>
+<ol type="1">
 <li><p>互补性</p>
 <ul>
-<li><p>两个地区之中的一个有某种东西提供，而另一个对此种东西恰有需求</p>
-</li>
-<li><p>互补性侧重于两地间的贸易联系，互补性越大，两地间的流动量也越大</p>
-</li>
-</ul>
-</li>
+<li><p>两个地区之中的一个有某种东西提供，而另一个对此种东西恰有需求</p></li>
+<li><p>互补性侧重于两地间的贸易联系，互补性越大，两地间的流动量也越大</p></li>
+</ul></li>
 <li><p>中介机会</p>
 <ul>
 <li>中介机会时相互作用产生的条件，是改变原有空间相互作用的格局因素</li>
 <li>作用：节省运输费用，具有影响运输，特别是影响人口移动的过滤器作用</li>
-</ul>
-</li>
+</ul></li>
 <li><p>可运输性</p>
 <ul>
 <li>距离，影响运输时间的长短和运费</li>
 <li>不同的货物对距离的敏感性也不同，和可运输性有关。可运输行回影响人的购物出行</li>
 <li>货物的可运输性会随实践而变化</li>
-</ul>
-</li>
+</ul></li>
 </ol>
 <ul>
 <li>随着经济与社会的发展，货币流和信息流在空间相互作用中的地位将日益重要</li>
 </ul>
-<h3 id="城市间、城市和区域间的相互作用"><a href="#城市间、城市和区域间的相互作用" class="headerlink" title="城市间、城市和区域间的相互作用"></a>城市间、城市和区域间的相互作用</h3><h4 id="节点、结节区域和城市等级体系"><a href="#节点、结节区域和城市等级体系" class="headerlink" title="节点、结节区域和城市等级体系"></a>节点、结节区域和城市等级体系</h4><ol>
+<h3 id="城市间城市和区域间的相互作用">城市间、城市和区域间的相互作用</h3>
+<h4 id="节点结节区域和城市等级体系">节点、结节区域和城市等级体系</h4>
+<ol type="1">
 <li>城市就是各种网络中的聚焦点，或称节点</li>
 <li>节点连同其吸引区组成结节区域</li>
 <li>每一个结节区域的大小，取决于节点提供的商品、服务及各种机会的数量和种类。一般来说，这与节点的人口规模成正比</li>
@@ -673,104 +1148,132 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>把不同不规模的结节区域或不同层次的城市体系重叠在一起，可以发现它们具有马赛克式的镶嵌构造特征。小的结节区域总是镶嵌在大的结节区域中，大的结节区域又镶嵌在更大的结节区域中</li>
 <li>城市间的相互作用，除了不同等级城市之间的垂直联系外，还存在着与同一等级其他城市间的横向联系</li>
 </ol>
-<h4 id="城市吸引区边界的确定"><a href="#城市吸引区边界的确定" class="headerlink" title="城市吸引区边界的确定"></a>城市吸引区边界的确定</h4><ul>
+<h4 id="城市吸引区边界的确定">城市吸引区边界的确定</h4>
+<ul>
 <li>划分结节区域，确定城市吸引区的边界，是研究城市间、城市与区域相互作用中的一个重要内容。因此需要确定城市吸引区的范围，来进行城市空间分布体系规划等工作</li>
 </ul>
-<h4 id="相互作用模式"><a href="#相互作用模式" class="headerlink" title="相互作用模式"></a>相互作用模式</h4><ol>
-<li>引力模式<ul>
+<h4 id="相互作用模式">相互作用模式</h4>
+<ol type="1">
+<li>引力模式
+<ul>
 <li>认为两个城市间的相互作用与这两个城市人口规模（表示城市的质量）成正比，与他们之间的距离成反比</li>
-</ul>
-</li>
-<li>潜力模式<ul>
+</ul></li>
+<li>潜力模式
+<ul>
 <li>城市体系范围</li>
 <li>引力求和</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h3 id="空间扩散"><a href="#空间扩散" class="headerlink" title="空间扩散"></a>空间扩散</h3><ul>
+<h3 id="空间扩散">空间扩散</h3>
+<ul>
 <li>空间扩散和克里斯塔勒的中心地理论被誉为20世纪人文地理学研究中两项最重大的贡献</li>
 </ul>
-<h4 id="空间扩散基本概念"><a href="#空间扩散基本概念" class="headerlink" title="空间扩散基本概念"></a>空间扩散基本概念</h4><ol>
+<h4 id="空间扩散基本概念">空间扩散基本概念</h4>
+<ol type="1">
 <li><p>传染扩散</p>
 <ul>
-<li><p>现象从一个源生点向外做空间扩散，如果是渐进的、连续的过程，称之为传染扩散。其特征如同一块石子落入水中后产生的波纹运动</p>
-</li>
+<li><p>现象从一个源生点向外做空间扩散，如果是渐进的、连续的过程，称之为传染扩散。其特征如同一块石子落入水中后产生的波纹运动</p></li>
 <li><p>例：城市对周围农村的影响</p>
-  <img src="https://user-images.githubusercontent.com/63230281/95055451-db569100-0725-11eb-8730-a473da839ffb.png" />
-</li>
-</ul>
-</li>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055451-db569100-0725-11eb-8730-a473da839ffb.png" /></p></li>
+</ul></li>
 <li><p>等级扩散</p>
 <ul>
-<li><p>某些新思想、新技术在城市中的传播条约紧邻的小城市，在距离较远的但属同级规模的城市中首先被接受，然后向次一级的城市扩散</p>
-</li>
+<li><p>某些新思想、新技术在城市中的传播条约紧邻的小城市，在距离较远的但属同级规模的城市中首先被接受，然后向次一级的城市扩散</p></li>
 <li><p>等级扩散只产生于人文现象扩散的场合，自然现象的扩散不采取这种方式</p>
-  <img src="https://user-images.githubusercontent.com/63230281/95055396-cc6fde80-0725-11eb-9fd7-ed84a1b2d35c.png" />
-</li>
-</ul>
-</li>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055396-cc6fde80-0725-11eb-9fd7-ed84a1b2d35c.png" /></p></li>
+</ul></li>
 <li><p>重新区位扩散</p>
 <ul>
-<li><p>在传染扩散中，假设扩散导致更多的接收者，称为扩张型扩散。反之接受者的数量没有增加，仅仅发生了原有接收者的空间位移，称之为重新区位型扩散</p>
-</li>
+<li><p>在传染扩散中，假设扩散导致更多的接收者，称为扩张型扩散。反之接受者的数量没有增加，仅仅发生了原有接收者的空间位移，称之为重新区位型扩散</p></li>
 <li><p>例：移民</p>
-  <img src="https://user-images.githubusercontent.com/63230281/95055445-d98ccd80-0725-11eb-98c7-57911589c430.png" />
-
-
-
-</li>
-</ul>
-</li>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055445-d98ccd80-0725-11eb-98c7-57911589c430.png" /></p></li>
+</ul></li>
 </ol>
 <ul>
 <li>现象的空间扩散常常采取多种方式。</li>
 <li>对人文现象扩散的实践表现来说，通常呈S型曲线，即扩散的初始阶段，接收者的比率呈缓慢上升趋势，经过若干时间后，阻碍新事物传播的各种障碍被消除，接收者比率急剧增加；随着接收者的比率趋于饱和，曲线再次呈缓慢上升的趋势</li>
 </ul>
-<h4 id="空间扩散的研究"><a href="#空间扩散的研究" class="headerlink" title="空间扩散的研究"></a>空间扩散的研究</h4><ol>
+<h4 id="空间扩散的研究">空间扩散的研究</h4>
+<ol type="1">
 <li>阻力的作用</li>
 <li>阻碍的作用</li>
 <li>中心城市的空间扩散</li>
 <li>空间扩散成功的因素</li>
 </ol>
-<h2 id="中心地理论【见经济地理学】"><a href="#中心地理论【见经济地理学】" class="headerlink" title="中心地理论【见经济地理学】"></a>中心地理论【见经济地理学】</h2><h2 id="中国城市空间分布【需要整理最新情况】"><a href="#中国城市空间分布【需要整理最新情况】" class="headerlink" title="中国城市空间分布【需要整理最新情况】"></a>中国城市空间分布【需要整理最新情况】</h2><h3 id="空间分布类型"><a href="#空间分布类型" class="headerlink" title="空间分布类型"></a>空间分布类型</h3><h3 id="城镇密度"><a href="#城镇密度" class="headerlink" title="城镇密度"></a>城镇密度</h3><h3 id="城市经济区"><a href="#城市经济区" class="headerlink" title="城市经济区"></a>城市经济区</h3><h1 id="区域城镇体系规划【需整理最新情况】"><a href="#区域城镇体系规划【需整理最新情况】" class="headerlink" title="区域城镇体系规划【需整理最新情况】"></a>区域城镇体系规划【需整理最新情况】</h1><h2 id="城镇体系规划的提出"><a href="#城镇体系规划的提出" class="headerlink" title="城镇体系规划的提出"></a>城镇体系规划的提出</h2><h3 id="城镇体系的基本特征"><a href="#城镇体系的基本特征" class="headerlink" title="城镇体系的基本特征"></a>城镇体系的基本特征</h3><h3 id="我国城镇体系规划的演变"><a href="#我国城镇体系规划的演变" class="headerlink" title="我国城镇体系规划的演变"></a>我国城镇体系规划的演变</h3><h2 id="区域城镇体系规划的主要内容"><a href="#区域城镇体系规划的主要内容" class="headerlink" title="区域城镇体系规划的主要内容"></a>区域城镇体系规划的主要内容</h2><h3 id="早期的内容"><a href="#早期的内容" class="headerlink" title="早期的内容"></a>早期的内容</h3><h3 id="现在的内容"><a href="#现在的内容" class="headerlink" title="现在的内容"></a>现在的内容</h3><h2 id="城镇体系规划流程和工作方法"><a href="#城镇体系规划流程和工作方法" class="headerlink" title="城镇体系规划流程和工作方法"></a>城镇体系规划流程和工作方法</h2><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><h3 id="工作方法"><a href="#工作方法" class="headerlink" title="工作方法"></a>工作方法</h3><h1 id="城市土地利用【可参考土地管理笔记，结合最新分类】"><a href="#城市土地利用【可参考土地管理笔记，结合最新分类】" class="headerlink" title="城市土地利用【可参考土地管理笔记，结合最新分类】"></a>城市土地利用【可参考土地管理笔记，结合最新分类】</h1><h2 id="城市土地的特征与土地利用类型"><a href="#城市土地的特征与土地利用类型" class="headerlink" title="城市土地的特征与土地利用类型"></a>城市土地的特征与土地利用类型</h2><h3 id="城市土地的概念"><a href="#城市土地的概念" class="headerlink" title="城市土地的概念"></a>城市土地的概念</h3><ul>
+<h2 id="中心地理论见经济地理学">中心地理论【见经济地理学】</h2>
+<h2 id="中国城市空间分布需要整理最新情况">中国城市空间分布【需要整理最新情况】</h2>
+<h3 id="空间分布类型">空间分布类型</h3>
+<h3 id="城镇密度">城镇密度</h3>
+<h3 id="城市经济区">城市经济区</h3>
+<h1 id="区域城镇体系规划需整理最新情况">区域城镇体系规划【需整理最新情况】</h1>
+<h2 id="城镇体系规划的提出">城镇体系规划的提出</h2>
+<h3 id="城镇体系的基本特征">城镇体系的基本特征</h3>
+<h3 id="我国城镇体系规划的演变">我国城镇体系规划的演变</h3>
+<h2 id="区域城镇体系规划的主要内容">区域城镇体系规划的主要内容</h2>
+<h3 id="早期的内容">早期的内容</h3>
+<h3 id="现在的内容">现在的内容</h3>
+<h2 id="城镇体系规划流程和工作方法">城镇体系规划流程和工作方法</h2>
+<h3 id="工作流程">工作流程</h3>
+<h3 id="工作方法">工作方法</h3>
+<h1 id="城市土地利用可参考土地管理笔记结合最新分类">城市土地利用【可参考土地管理笔记，结合最新分类】</h1>
+<h2 id="城市土地的特征与土地利用类型">城市土地的特征与土地利用类型</h2>
+<h3 id="城市土地的概念">城市土地的概念</h3>
+<ul>
 <li>城市土地是城市区域内的陆地、水面以及它们上下一定空间所构成的自然综合体</li>
-<li>按照开发程度<ol>
+<li>按照开发程度
+<ol type="1">
 <li>城市建成区的土地</li>
 <li>城市规划区的土地</li>
 <li>城市行政区划辖区范围内的土地</li>
-</ol>
-</li>
+</ol></li>
 </ul>
-<h3 id="城市土地的特征"><a href="#城市土地的特征" class="headerlink" title="城市土地的特征"></a>城市土地的特征</h3><h4 id="自然特征"><a href="#自然特征" class="headerlink" title="自然特征"></a>自然特征</h4><ol>
+<h3 id="城市土地的特征">城市土地的特征</h3>
+<h4 id="自然特征">自然特征</h4>
+<ol type="1">
 <li>位置固定性</li>
 <li>面积有限性</li>
 <li>质量差异性</li>
 <li>功能永久性</li>
 </ol>
-<h4 id="经济特征"><a href="#经济特征" class="headerlink" title="经济特征"></a>经济特征</h4><ol>
+<h4 id="经济特征">经济特征</h4>
+<ol type="1">
 <li>土地资源的稀缺性</li>
 <li>区位的效益性</li>
 <li>边际效益递减性</li>
 <li>土地利用方式变更的困难性</li>
 <li>市场交易的低效性</li>
 </ol>
-<h4 id="法律特征"><a href="#法律特征" class="headerlink" title="法律特征"></a>法律特征</h4><h3 id="城市土地利用类型【见文件】"><a href="#城市土地利用类型【见文件】" class="headerlink" title="城市土地利用类型【见文件】"></a>城市土地利用类型【见文件】</h3><h2 id="自然环境与城市土地利用"><a href="#自然环境与城市土地利用" class="headerlink" title="自然环境与城市土地利用"></a>自然环境与城市土地利用</h2><img src="https://user-images.githubusercontent.com/63230281/95055431-d42f8300-0725-11eb-98a4-eb20c4d4b137.png" />
-
-<h3 id="城市地理位置的选择"><a href="#城市地理位置的选择" class="headerlink" title="城市地理位置的选择"></a>城市地理位置的选择</h3><ul>
+<h4 id="法律特征">法律特征</h4>
+<h3 id="城市土地利用类型见文件">城市土地利用类型【见文件】</h3>
+<h2 id="自然环境与城市土地利用">自然环境与城市土地利用</h2>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055431-d42f8300-0725-11eb-98a4-eb20c4d4b137.png" /></p>
+<h3 id="城市地理位置的选择">城市地理位置的选择</h3>
+<ul>
 <li>地理位置包括相对位置（大位置）和城址（小位置）</li>
 <li>相对位置是指某城市对该城市周围的一切物质的空间关系，是一种随着社会经济发展而变化的地理因素，它决定了城市的个性和城市的发展前途，但对城市形态和空间结构并不一定又直接影响</li>
 <li>地址是城市所在的地点，地址主要受自然地理要素影响，作为城市建设的自然条件，不仅影响城市发展，而且影响城市形态和内部结构。</li>
 </ul>
 <p><strong>选址要求</strong>【地震带】</p>
-<ol>
+<ol type="1">
 <li>避免在活动性大断裂带的两端和拐弯的部位、两条活动断裂带交汇处以及容易引起次生灾害的地区建设城市或布置主要项目</li>
 <li>选择抗震能力较强的基地来建设城市</li>
 <li>加固建筑物，提高抗震能力</li>
 </ol>
 <p><strong>河流</strong>沿岸的城市，必须注意河流对河岸的冲刷，如果为了防止城市被冲刷，在城市上有筑坝改变水流，那么就有可能改变主流线，港口被废弃，影响城市用地的发展。因为河流两岸的城市往往呈带状或者被河流分割成组团状发展，最初可能靠河岸发展，但随着发展，城市可能离开河岸，在阶地上发展。</p>
-<img src="https://user-images.githubusercontent.com/63230281/95055455-dd205480-0725-11eb-98f7-d16e4812c997.png" />
-
-<h3 id="城市地形"><a href="#城市地形" class="headerlink" title="城市地形"></a>城市地形</h3><h3 id="城市气候"><a href="#城市气候" class="headerlink" title="城市气候"></a>城市气候</h3><h3 id="城市植被"><a href="#城市植被" class="headerlink" title="城市植被"></a>城市植被</h3><h3 id="地基承载力"><a href="#地基承载力" class="headerlink" title="地基承载力"></a>地基承载力</h3><h3 id="城市地下空间"><a href="#城市地下空间" class="headerlink" title="城市地下空间"></a>城市地下空间</h3><h2 id="地租、土地制度与城市土地利用"><a href="#地租、土地制度与城市土地利用" class="headerlink" title="地租、土地制度与城市土地利用"></a>地租、土地制度与城市土地利用</h2><h3 id="地租的基本理论"><a href="#地租的基本理论" class="headerlink" title="地租的基本理论"></a>地租的基本理论</h3><h3 id="我国的土地制度"><a href="#我国的土地制度" class="headerlink" title="我国的土地制度"></a>我国的土地制度</h3><h3 id="地租、土地制度对我国城市土地利用的影响"><a href="#地租、土地制度对我国城市土地利用的影响" class="headerlink" title="地租、土地制度对我国城市土地利用的影响"></a>地租、土地制度对我国城市土地利用的影响</h3><h1 id="城市内部地域结构"><a href="#城市内部地域结构" class="headerlink" title="城市内部地域结构"></a>城市内部地域结构</h1><h2 id="城市地域结构模式"><a href="#城市地域结构模式" class="headerlink" title="城市地域结构模式"></a>城市地域结构模式</h2><h3 id="均质性和均值地域"><a href="#均质性和均值地域" class="headerlink" title="均质性和均值地域"></a>均质性和均值地域</h3><p><strong>均质性</strong></p>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055455-dd205480-0725-11eb-98f7-d16e4812c997.png" /></p>
+<h3 id="城市地形">城市地形</h3>
+<h3 id="城市气候">城市气候</h3>
+<h3 id="城市植被">城市植被</h3>
+<h3 id="地基承载力">地基承载力</h3>
+<h3 id="城市地下空间">城市地下空间</h3>
+<h2 id="地租土地制度与城市土地利用">地租、土地制度与城市土地利用</h2>
+<h3 id="地租的基本理论">地租的基本理论</h3>
+<h3 id="我国的土地制度">我国的土地制度</h3>
+<h3 id="地租土地制度对我国城市土地利用的影响">地租、土地制度对我国城市土地利用的影响</h3>
+<h1 id="城市内部地域结构">城市内部地域结构</h1>
+<h2 id="城市地域结构模式">城市地域结构模式</h2>
+<h3 id="均质性和均值地域">均质性和均值地域</h3>
+<p><strong>均质性</strong></p>
 <ul>
 <li>均质性是指城市地域在职能分化中表现出来的一种保持等质、排斥异质的特性。均质性是动态的和相对的，并非地域本身所固有的职能特性</li>
 </ul>
@@ -784,89 +1287,103 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>均质地域是由以某项职能为主构成的地域（其他职能或为这一主要职能服务，或被这一主要职能排斥），研究各类职能地域的共性——职能均衡现象的生成和布局</li>
 <li>各种区域划分在地图上标出的边界线，都是这个过渡带的抽象表示</li>
 </ul>
-<h3 id="伯吉斯的同心环模式"><a href="#伯吉斯的同心环模式" class="headerlink" title="伯吉斯的同心环模式"></a>伯吉斯的同心环模式</h3><h3 id="霍伊特的扇形模式"><a href="#霍伊特的扇形模式" class="headerlink" title="霍伊特的扇形模式"></a>霍伊特的扇形模式</h3><h3 id="哈里斯和厄尔曼的多核心模式"><a href="#哈里斯和厄尔曼的多核心模式" class="headerlink" title="哈里斯和厄尔曼的多核心模式"></a>哈里斯和厄尔曼的多核心模式</h3><h3 id="城市地域结构三模式的发展"><a href="#城市地域结构三模式的发展" class="headerlink" title="城市地域结构三模式的发展"></a>城市地域结构三模式的发展</h3><h2 id="城市中心商务区"><a href="#城市中心商务区" class="headerlink" title="城市中心商务区"></a>城市中心商务区</h2><h3 id="概念与特征"><a href="#概念与特征" class="headerlink" title="概念与特征"></a>概念与特征</h3><ul>
-<li><p>central business district——中心商务区</p>
-</li>
-<li><p>是城市中上述上午活动和人流最集中、交通最便捷、建筑密度最高、吸引力和服务范围最大的地区，同时它也是城市中地价最高的地区</p>
-</li>
-<li><p>现代城市的CBD是城市、区域乃至全国经济发展的中枢。是城市及其腹地发展与繁荣的标志</p>
-</li>
+<h3 id="伯吉斯的同心环模式">伯吉斯的同心环模式</h3>
+<h3 id="霍伊特的扇形模式">霍伊特的扇形模式</h3>
+<h3 id="哈里斯和厄尔曼的多核心模式">哈里斯和厄尔曼的多核心模式</h3>
+<h3 id="城市地域结构三模式的发展">城市地域结构三模式的发展</h3>
+<h2 id="城市中心商务区">城市中心商务区</h2>
+<h3 id="概念与特征">概念与特征</h3>
+<ul>
+<li><p>central business district——中心商务区</p></li>
+<li>是城市中上述上午活动和人流最集中、交通最便捷、建筑密度最高、吸引力和服务范围最大的地区，同时它也是城市中地价最高的地区</li>
+<li><p>现代城市的CBD是城市、区域乃至全国经济发展的中枢。是城市及其腹地发展与繁荣的标志</p></li>
 </ul>
-<h3 id="CBD的界定"><a href="#CBD的界定" class="headerlink" title="CBD的界定"></a>CBD的界定</h3><h3 id="CBD的内部地域结构"><a href="#CBD的内部地域结构" class="headerlink" title="CBD的内部地域结构"></a>CBD的内部地域结构</h3><p><strong>1955年墨菲、万斯和爱泼斯坦分类</strong></p>
-<ol>
+<h3 id="cbd的界定">CBD的界定</h3>
+<h3 id="cbd的内部地域结构">CBD的内部地域结构</h3>
+<p><strong>1955年墨菲、万斯和爱泼斯坦分类</strong></p>
+<ol type="1">
 <li>【第一圈】零售业集中区，以大型百货商场和高档购物商店为主，围绕PLVI分布</li>
 <li>【第二圈】零售服务业，其底层为金融业、高层为办公机构的多层建筑集中区</li>
 <li>【第三圈】办公机构，旅馆业多见</li>
 <li>【第四圈】以商业性较弱的活动为主，家具店、汽车厂等需要大面积地价土地的商务活动</li>
 </ol>
 <p><strong>1959年斯科特</strong>【三大功能圈】</p>
-<ol>
+<ol type="1">
 <li>零售业内圈，以百货店和女装店集中为特征</li>
 <li>零售业外圈，以杂品店、服务业等专业化较弱的多种零售活动为主</li>
 <li>办公事务圈</li>
 <li>零售业内圈总是环绕PLVI及城市的地理中心，而零售业外圈并不总是围绕着第一圈，办公事务圈则总在CBD的一侧发展</li>
 </ol>
-<h3 id="CBD的演变"><a href="#CBD的演变" class="headerlink" title="CBD的演变"></a>CBD的演变</h3><p><strong>影响CBD空间结构变化的三种增长方式</strong></p>
-<ol>
-<li><p>在人口增长缓慢的情况下，通过周边增长方式，即通过新增加功能圈层或已有圈层向外围的发展来实现</p>
-</li>
-<li><p>爆发式增长方式，在城市快速增长时期，CBD在短期内迅速扩张，这种扩张主要发生在同化圈层，其功能变化的典型过程为：从金融区开始向服务业扩展，如此循环以达到新的动态平衡</p>
-</li>
+<h3 id="cbd的演变">CBD的演变</h3>
+<p><strong>影响CBD空间结构变化的三种增长方式</strong></p>
+<ol type="1">
+<li><p>在人口增长缓慢的情况下，通过周边增长方式，即通过新增加功能圈层或已有圈层向外围的发展来实现</p></li>
+<li><p>爆发式增长方式，在城市快速增长时期，CBD在短期内迅速扩张，这种扩张主要发生在同化圈层，其功能变化的典型过程为：从金融区开始向服务业扩展，如此循环以达到新的动态平衡</p></li>
 <li><p>分化模式，若城市在一定的时间内保持较高增长速度的划，再次情况下，每一主要功能将向市中心拥有其运作优势的特定区位发展，零售业可能随着市场的扩展而变化，而商业和巩固管理机构及批发业留在原区位，从而造成不同功能圈层的更大的空间分化。</p>
-<p> 在特大城市，这种分化的状态将是CBD的固定形态</p>
-</li>
+<p>在特大城市，这种分化的状态将是CBD的固定形态</p></li>
 </ol>
 <p><strong>CBD演变阶段</strong></p>
-<ol>
+<ol type="1">
 <li>商业办公混合</li>
 <li>CBD和商业中心分化</li>
 <li>CBD和商业中心相脱离</li>
 <li>CBD网络的形成</li>
 </ol>
-<h2 id="城市开发区"><a href="#城市开发区" class="headerlink" title="城市开发区"></a>城市开发区</h2><h3 id="城市开发区的概念"><a href="#城市开发区的概念" class="headerlink" title="城市开发区的概念"></a>城市开发区的概念</h3><ul>
+<h2 id="城市开发区">城市开发区</h2>
+<h3 id="城市开发区的概念">城市开发区的概念</h3>
+<ul>
 <li>开发区是为实现地方产业发展目标，由政府或企业通过完整而周全的规划来建设适于产业实体进驻的有一定规模的区位环境。城市开发区是指以城市为依托的开发区</li>
 </ul>
 <p><strong>开发区特征</strong></p>
-<ol>
+<ol type="1">
 <li>是为实现地方产业发展目标而建的区域，是区域发展政策的工具</li>
 <li>是按规划进行建设的区域</li>
 <li>具有内部统一性的区域，体现为产业间具有联系；拥有生产、居住、游憩等多样化功能；统一由一个行政主管单位或公司对进入园区的企业提供必要的基础设施、服务、管理等</li>
 <li>具有一定规模的区域</li>
 <li>是一个动态的、不断演进的区域</li>
 </ol>
-<h3 id="世界开发区的历史演进"><a href="#世界开发区的历史演进" class="headerlink" title="世界开发区的历史演进"></a>世界开发区的历史演进</h3><h3 id="中国开发区的发展历程"><a href="#中国开发区的发展历程" class="headerlink" title="中国开发区的发展历程"></a>中国开发区的发展历程</h3><h3 id="开发区的区位特征"><a href="#开发区的区位特征" class="headerlink" title="开发区的区位特征"></a>开发区的区位特征</h3><h2 id="城中村"><a href="#城中村" class="headerlink" title="城中村"></a>城中村</h2><h3 id="城中村的概念与类型"><a href="#城中村的概念与类型" class="headerlink" title="城中村的概念与类型"></a>城中村的概念与类型</h3><ul>
+<h3 id="世界开发区的历史演进">世界开发区的历史演进</h3>
+<h3 id="中国开发区的发展历程">中国开发区的发展历程</h3>
+<h3 id="开发区的区位特征">开发区的区位特征</h3>
+<h2 id="城中村">城中村</h2>
+<h3 id="城中村的概念与类型">城中村的概念与类型</h3>
+<ul>
 <li>城中村是位于城乡边缘带，一方面具有城市的某些特征，也享有城市的某些基础设施和生活方式，另一方面还保持着乡村的某些景观，以及小农经济思想和价值观念的农村社区</li>
 <li>有的定义是城市边缘区，乃至城市内部，普遍存在的农村自然居住聚落现象</li>
 </ul>
-<hr>
+<hr />
 <ul>
-<li>有人提出城中村是城市发展用地范围内转型中的农村居民点<ul>
-<li>界定<ul>
+<li>有人提出城中村是城市发展用地范围内转型中的农村居民点
+<ul>
+<li>界定
+<ul>
 <li>空间界定：城中村处于城市发展用地范围内，村建设用地被城市用地所包围或与城市用地互相交错</li>
 <li>区域类型界定：城中村是转型中的农村居民点，它在经济、社会、土地利用、建设景观等各方面处于明显的乡-城转型过程中，既具有较高程度的城市化特征，又保留浓厚的农村社区特征</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 </ul>
 <p><strong>城中村的类型</strong></p>
-<ol>
+<ol type="1">
 <li>基础设施优越型</li>
 <li>集体经济实力型</li>
 <li>土地资源充足型</li>
 </ol>
-<h3 id="城中村的地域特征及成因"><a href="#城中村的地域特征及成因" class="headerlink" title="城中村的地域特征及成因"></a>城中村的地域特征及成因</h3><h4 id="城中村的地域特征"><a href="#城中村的地域特征" class="headerlink" title="城中村的地域特征"></a>城中村的地域特征</h4><ul>
+<h3 id="城中村的地域特征及成因">城中村的地域特征及成因</h3>
+<h4 id="城中村的地域特征">城中村的地域特征</h4>
+<ul>
 <li>【景观特征】建筑密度高、层数低，建筑结构以砖混结构为主，基础设施不完善。城中村由于缺乏规划管理，各类用地犬牙交错、杂乱无章，村屋密布犹如蜂房，道路狭隘曲折、不成系统，配套公共设施不完备。同时城中村也存在一些良好的自然景观和人文景观，可以结合这些景观改造村庄的整体景观</li>
 <li>【社会特征】主体人口以农业人为主，但从事农业活动的人很少，流动人口集中，职业人口构成复杂；居民文化程度不高，缺乏现代化意识，小农思想严重，治安混乱，社会问题众多。城中村具有浓厚的农村社会特征，但又存在着严重的城市病</li>
 <li>【经济特征】集体经济实力强大，第三产业发达，以发展房屋租赁为村主要经济模式</li>
 </ul>
-<h4 id="城中村形成原因"><a href="#城中村形成原因" class="headerlink" title="城中村形成原因"></a>城中村形成原因</h4><ol>
+<h4 id="城中村形成原因">城中村形成原因</h4>
+<ol type="1">
 <li>改革开放提供了农村城市化的大背景，为城中村的形成铺垫了“温床”</li>
 <li>城市发展提供了外部动力，土地使用制度是核心</li>
 <li>规划的失误和管理的不善是直接原因</li>
 <li>传统的城乡二元体制是根本原因。在二元格局下城市、乡村各自发展方式的缺陷是i城中村形成的具体背景，而社会调节系统的局限则是城中村形成的社会因素</li>
 </ol>
-<h3 id="城中村的改造模式"><a href="#城中村的改造模式" class="headerlink" title="城中村的改造模式"></a>城中村的改造模式</h3><ol>
+<h3 id="城中村的改造模式">城中村的改造模式</h3>
+<ol type="1">
 <li>市政基础设施带动模式</li>
 <li>整体搬迁改造模式</li>
 <li>周转地块改造模式</li>
@@ -875,69 +1392,68 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <ul>
 <li>城中村改造，不能仅停留在物质空间形态的改造，要注意保证原村民收入不减少，保障外来低收入人群的廉价住房要求得到满足，保护和利用城中村的本土文化和社会资本，要注意促进城中村居民在角色意识、思想观念、文化素质、职业技能、行为模式和生活方式的转变和提升，加快城中村居民融入城市社会。</li>
 </ul>
-<h1 id="城市市场空间、社会空间和感应空间"><a href="#城市市场空间、社会空间和感应空间" class="headerlink" title="城市市场空间、社会空间和感应空间"></a>城市市场空间、社会空间和感应空间</h1><h2 id="城市内部市场空间结构"><a href="#城市内部市场空间结构" class="headerlink" title="城市内部市场空间结构"></a>城市内部市场空间结构</h2><h3 id="城市内部市场空间的构成"><a href="#城市内部市场空间的构成" class="headerlink" title="城市内部市场空间的构成"></a>城市内部市场空间的构成</h3><p><strong>城市内部商业布局</strong></p>
-<ol>
+<h1 id="城市市场空间社会空间和感应空间">城市市场空间、社会空间和感应空间</h1>
+<h2 id="城市内部市场空间结构">城市内部市场空间结构</h2>
+<h3 id="城市内部市场空间的构成">城市内部市场空间的构成</h3>
+<p><strong>城市内部商业布局</strong></p>
+<ol type="1">
 <li>多层次商业中心</li>
 <li>带状商业网点</li>
 <li>专门化商业区</li>
 </ol>
-<img src="https://user-images.githubusercontent.com/63230281/95055439-d85ba080-0725-11eb-8e0e-1a91ffbf31de.png" />
-
-<h3 id="加纳的商业中心空间模式"><a href="#加纳的商业中心空间模式" class="headerlink" title="加纳的商业中心空间模式"></a>加纳的商业中心空间模式</h3><p><strong>模式要点</strong></p>
-<ol>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055439-d85ba080-0725-11eb-8e0e-1a91ffbf31de.png" /></p>
+<h3 id="加纳的商业中心空间模式">加纳的商业中心空间模式</h3>
+<p><strong>模式要点</strong></p>
+<ol type="1">
 <li>门槛大小的系列在空间上可以表示为：最高门槛的活动靠近地价峰值区，它占据了地价最高的土地，在它的周围，将按照门槛递减的顺序，依次环绕其他职能活动</li>
 <li>任何商业中心的核心区，总是被那些能够显示商业中心最高级别的职能部门占据</li>
 <li>随着商业中心级别的提高，低级职能部门占据的位置将越来越被排斥到商业中心的边缘，即地价较低的地方</li>
 <li>在任何一级商业中心的典型职能组内，每一项职能的位置也按照门槛的大小的系列排列。如在街区级职能中，门槛最高的活动将占据所有街区级职能中地价最高的土地</li>
 </ol>
-<hr>
+<hr />
 <p>该模式具有一定的指导意义，但是实际上商店的位置并不总是与地价峰值区的距离有关，地价也不完全取决于距离核心区的距离。还有其他因素影响地价，如土地面积的大小、人口和收入分布、交通和便捷性的不规则状况等。加纳模式有较大的局限性</p>
-<h3 id="赫夫的商业零售引力模式"><a href="#赫夫的商业零售引力模式" class="headerlink" title="赫夫的商业零售引力模式"></a>赫夫的商业零售引力模式</h3><h3 id="我国城市内部市场空间分析"><a href="#我国城市内部市场空间分析" class="headerlink" title="我国城市内部市场空间分析"></a>我国城市内部市场空间分析</h3><p><strong>上海市区商业中心的等级体系</strong></p>
-<ol>
+<h3 id="赫夫的商业零售引力模式">赫夫的商业零售引力模式</h3>
+<h3 id="我国城市内部市场空间分析">我国城市内部市场空间分析</h3>
+<p><strong>上海市区商业中心的等级体系</strong></p>
+<ol type="1">
 <li><p>商业中心的形状</p>
-<p> 上海市商业服务部门的分布格局，通常有两种形式：一种是集中于一段街道两旁，形成条带形商业街，这是一种主要的形状，如南京东路、淮海中路等；另一种是围绕交叉路口发展，形成一个商业聚集区，如曹家渡等。一条商业街或一个商业聚集区往往就形成一个商业中心</p>
-</li>
+<p>上海市商业服务部门的分布格局，通常有两种形式：一种是集中于一段街道两旁，形成条带形商业街，这是一种主要的形状，如南京东路、淮海中路等；另一种是围绕交叉路口发展，形成一个商业聚集区，如曹家渡等。一条商业街或一个商业聚集区往往就形成一个商业中心</p></li>
 <li><p>商业中心的分类</p>
-<p> 聚类分析的最短距离法</p>
-</li>
-<li><p>商业中心的职能构成</p>
-</li>
+<p>聚类分析的最短距离法</p></li>
+<li><p>商业中心的职能构成</p></li>
 <li><p>影响商业中心区位的因素</p>
-<p> 历史、交通网络、房地产建设、人口迁移、旧区改造</p>
-</li>
+<p>历史、交通网络、房地产建设、人口迁移、旧区改造</p></li>
 </ol>
 <p><strong>广州市成区零售商业区位布局研究</strong></p>
 <p>未来广州市商业中心发展的关建：</p>
-<ol>
+<ol type="1">
 <li>利用优势的交通和购买力条件，培育内部特色化的商业中心的发展，关建在于利用优势的交通和购买力条件，培育内部特色化的商业中心，最终形成现代商务区、高尚住宅区、高级金融区、高新技术区等产业一体化的现代城市综合中心</li>
 <li>未来商业中心区是传统商业大城市迈向国际化的孵化器，商业功能综合化是其发展的方向</li>
 </ol>
-<h2 id="城市社会空间"><a href="#城市社会空间" class="headerlink" title="城市社会空间"></a>城市社会空间</h2><h3 id="邻里、社区、社会区和社会空间"><a href="#邻里、社区、社会区和社会空间" class="headerlink" title="邻里、社区、社会区和社会空间"></a>邻里、社区、社会区和社会空间</h3><p><strong>邻里</strong></p>
+<h2 id="城市社会空间">城市社会空间</h2>
+<h3 id="邻里社区社会区和社会空间">邻里、社区、社会区和社会空间</h3>
+<p><strong>邻里</strong></p>
 <ul>
-<li><p>邻里（neighborhood）是城市社会的基本单位，是相同社会特征的人群的汇集。个人交往的大部分内容在邻里内进行，这种交往只需要步行即可以完成，比需要交通工具才能完成的交往要频繁的多，其形式以面对面接触为主。</p>
-</li>
-<li><p>社区（community）是指占据一定地域，彼此相互作用，不同社会特征的人类生活共同体。社区是一个相对独立的地区性社会，类似植物群落。社区人口之间本质上是一种共生体，有明显的相互依存关系。社区由邻里构成，但具有比邻里更复杂的动态特征与空间特征</p>
-</li>
+<li><p>邻里（neighborhood）是城市社会的基本单位，是相同社会特征的人群的汇集。个人交往的大部分内容在邻里内进行，这种交往只需要步行即可以完成，比需要交通工具才能完成的交往要频繁的多，其形式以面对面接触为主。</p></li>
+<li><p>社区（community）是指占据一定地域，彼此相互作用，不同社会特征的人类生活共同体。社区是一个相对独立的地区性社会，类似植物群落。社区人口之间本质上是一种共生体，有明显的相互依存关系。社区由邻里构成，但具有比邻里更复杂的动态特征与空间特征</p></li>
 <li><p>社会空间（social space）：社会学所致社会空间是【英美】社会分化，包括社会地位、宗教和种族的变化，地理学所致社会空间，具有明显的地域意义，最小单位为家庭，较大的邻里、社区，最大的为城市区域或国家。</p>
 <ul>
 <li><p>城市地理学所研究的社会空间通常包括邻里、社区和社会区三个层次，而以社会区为主</p>
-  <img src="https://user-images.githubusercontent.com/63230281/95055459-deea1800-0725-11eb-97ee-7087213117d0.png" />
-
-</li>
+<p><img src="https://user-images.githubusercontent.com/63230281/95055459-deea1800-0725-11eb-97ee-7087213117d0.png" /></p></li>
+</ul></li>
 </ul>
-</li>
+<h3 id="社会区分析">社会区分析</h3>
+<h3 id="因子生态分析">因子生态分析</h3>
+<h2 id="城市感应空间分析">城市感应空间分析</h2>
+<h3 id="感应环境和行为">感应、环境和行为</h3>
+<ul>
+<li>【感应】是指人们从实际中感觉的（听觉、视觉、嗅觉）以及对整个过程的反映。只要是社会人都会对环境产生感应，而只有对环境产生了一种稳定概念，才能真正产生感应。产生感应的过程实际上是对环境的一个人市过程。</li>
+<li>【环境】指一个人以外的所有能影响感应的部分。环境可分成四部分，从小到大的顺序：行为环境、感应环境、操作环境（人类活动的部分）、绝对客观环境。行为地理学感兴趣的是行为环境和感应环境</li>
+<li><p>【行为】一般是人们对环境做出行动上的反映。包括态度、动机、信念和期望。人们在空间的活动称为空间行为</p></li>
+<li><p>行为地理学关于感应空间的研究，不是取代土地利用功能区和社会区的分析，而是提供另一种关于人与环境关系的解释，是对城市土地利用功能区和社会区分析的补充</p></li>
 </ul>
-<h3 id="社会区分析"><a href="#社会区分析" class="headerlink" title="社会区分析"></a>社会区分析</h3><h3 id="因子生态分析"><a href="#因子生态分析" class="headerlink" title="因子生态分析"></a>因子生态分析</h3><h2 id="城市感应空间分析"><a href="#城市感应空间分析" class="headerlink" title="城市感应空间分析"></a>城市感应空间分析</h2><h3 id="感应、环境和行为"><a href="#感应、环境和行为" class="headerlink" title="感应、环境和行为"></a>感应、环境和行为</h3><ul>
-<li><p>【感应】是指人们从实际中感觉的（听觉、视觉、嗅觉）以及对整个过程的反映。只要是社会人都会对环境产生感应，而只有对环境产生了一种稳定概念，才能真正产生感应。产生感应的过程实际上是对环境的一个人市过程。</p>
-</li>
-<li><p>【环境】指一个人以外的所有能影响感应的部分。环境可分成四部分，从小到大的顺序：行为环境、感应环境、操作环境（人类活动的部分）、绝对客观环境。行为地理学感兴趣的是行为环境和感应环境</p>
-</li>
-<li><p>【行为】一般是人们对环境做出行动上的反映。包括态度、动机、信念和期望。人们在空间的活动称为空间行为</p>
-</li>
-<li><p>行为地理学关于感应空间的研究，不是取代土地利用功能区和社会区的分析，而是提供另一种关于人与环境关系的解释，是对城市土地利用功能区和社会区分析的补充</p>
-</li>
-</ul>
-<h3 id="居民构想图（城市意向图）"><a href="#居民构想图（城市意向图）" class="headerlink" title="居民构想图（城市意向图）"></a>居民构想图（城市意向图）</h3><ul>
+<h3 id="居民构想图城市意向图">居民构想图（城市意向图）</h3>
+<ul>
 <li>【感应空间】三个层次：结构性的、评估性的、个人感情性的。</li>
 <li>居民构想图由受调查居民画出其各自城市的略图，结果它们勾勒得简图省略了许多重要细节，并将复杂的几何形状简略为更容易理解的直线或直角。</li>
 </ul>
@@ -947,62 +1463,72 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>【构成要素】路径（paths）、界限或边沿（edges）、区或区域（districts）、枢纽或节点（nodes）、标志（landmarks）</li>
 <li>五项要素并非界限分明。</li>
 </ul>
-<h3 id="研究实例介绍"><a href="#研究实例介绍" class="headerlink" title="研究实例介绍"></a>研究实例介绍</h3><h3 id="研究感应空间的作用"><a href="#研究感应空间的作用" class="headerlink" title="研究感应空间的作用"></a>研究感应空间的作用</h3><ol>
+<h3 id="研究实例介绍">研究实例介绍</h3>
+<h3 id="研究感应空间的作用">研究感应空间的作用</h3>
+<ol type="1">
 <li>城市功能区和各种用地的布局应尽可能为居民构想图增加美丽的印象，深刻的要素，突出各具特色的功能区，从而增加居民对城市的好感</li>
 <li>城市功能区的布局要增加适当的标志，枢纽和区域的布局亦要考虑其辨认性，以便扩大市民的感应空间</li>
 <li>如果市民的感应空间扩大了，构想图的内容丰富了，就有助于市民参与城市管理和规划，从而使城市管理和规划不仅仅知识规划师的事务</li>
 </ol>
-<h1 id="城市问题"><a href="#城市问题" class="headerlink" title="城市问题"></a>城市问题</h1><h2 id="城市的主要问题"><a href="#城市的主要问题" class="headerlink" title="城市的主要问题"></a>城市的主要问题</h2><h3 id="城市环境问题"><a href="#城市环境问题" class="headerlink" title="城市环境问题"></a>城市环境问题</h3><ol>
+<h1 id="城市问题">城市问题</h1>
+<h2 id="城市的主要问题">城市的主要问题</h2>
+<h3 id="城市环境问题">城市环境问题</h3>
+<ol type="1">
 <li>大气污染</li>
 <li>水污染</li>
 <li>噪声污染</li>
 <li>垃圾污染</li>
 </ol>
-<h3 id="城市交通问题"><a href="#城市交通问题" class="headerlink" title="城市交通问题"></a>城市交通问题</h3><ol>
+<h3 id="城市交通问题">城市交通问题</h3>
+<ol type="1">
 <li>交通堵塞</li>
 <li>交通事故</li>
 <li>公共交通问题</li>
 <li>停车问题</li>
 <li>交通污染问题</li>
 </ol>
-<h3 id="城市住宅问题"><a href="#城市住宅问题" class="headerlink" title="城市住宅问题"></a>城市住宅问题</h3><ul>
-<li>国外城市住宅问题<ol>
+<h3 id="城市住宅问题">城市住宅问题</h3>
+<ul>
+<li>国外城市住宅问题
+<ol type="1">
 <li>住宅质量低劣</li>
 <li>高比例空房率</li>
 <li>灰区的大量存在</li>
 <li>贫民窟与棚户区</li>
 <li>住房费用的飞涨</li>
-</ol>
-</li>
-<li>中国城市住宅问题<ol>
+</ol></li>
+<li>中国城市住宅问题
+<ol type="1">
 <li>计划经济条件下，长期实行住房实物分配，公房租金低，租不上房，加上政府和企业财力不足，缺乏以财政为主的长期的稳定的资金来源渠道，无法大量剑方，造成恶性循环，居住条件难以改善</li>
 <li>市场经济，与大多数市民的收入相比，房价偏高</li>
 <li>房地产项目结构不合理，保障性住房发展缓慢表现为城市非住宅供应量过大，有的城市非住宅供应量占总量的1/3</li>
 <li>当前住房困难人群主要是新增流动人口中低收入人群、城市拆迁释放处中低端猪肚、低收入新组建家庭，老国有企业职工工资为包括住房支出，无法支付导致住房困难，也属于住房困难人群</li>
 <li>收入两级分化导致低收入人群无法自身改善住房</li>
-</ol>
-</li>
+</ol></li>
 </ul>
-<h3 id="城市社会问题"><a href="#城市社会问题" class="headerlink" title="城市社会问题"></a>城市社会问题</h3><ol>
+<h3 id="城市社会问题">城市社会问题</h3>
+<ol type="1">
 <li>就业问题</li>
 <li>贫困问题</li>
 <li>老年人问题</li>
 <li>种族与社会争端</li>
 <li>内城问题</li>
 </ol>
-<h3 id="城市安全问题"><a href="#城市安全问题" class="headerlink" title="城市安全问题"></a>城市安全问题</h3><ol>
-<li><p>安全防灾问题</p>
-</li>
+<h3 id="城市安全问题">城市安全问题</h3>
+<ol type="1">
+<li><p>安全防灾问题</p></li>
 <li><p>防卫问题</p>
-<p> 治安性犯罪问题</p>
-<p> 恐怖袭击问题</p>
-</li>
-<li><p>公共卫生问题</p>
-</li>
-<li><p>化学品事故问题</p>
-</li>
+<p>治安性犯罪问题</p>
+<p>恐怖袭击问题</p></li>
+<li><p>公共卫生问题</p></li>
+<li><p>化学品事故问题</p></li>
 </ol>
-<h2 id="构建可持续发展的城市"><a href="#构建可持续发展的城市" class="headerlink" title="构建可持续发展的城市"></a>构建可持续发展的城市</h2><h3 id="可持续发展的城市"><a href="#可持续发展的城市" class="headerlink" title="可持续发展的城市"></a>可持续发展的城市</h3><h3 id="可持续发展的相关问题"><a href="#可持续发展的相关问题" class="headerlink" title="可持续发展的相关问题"></a>可持续发展的相关问题</h3><h3 id="可持续的交通"><a href="#可持续的交通" class="headerlink" title="可持续的交通"></a>可持续的交通</h3><h3 id="可持续的生态"><a href="#可持续的生态" class="headerlink" title="可持续的生态"></a>可持续的生态</h3><ol>
+<h2 id="构建可持续发展的城市">构建可持续发展的城市</h2>
+<h3 id="可持续发展的城市">可持续发展的城市</h3>
+<h3 id="可持续发展的相关问题">可持续发展的相关问题</h3>
+<h3 id="可持续的交通">可持续的交通</h3>
+<h3 id="可持续的生态">可持续的生态</h3>
+<ol type="1">
 <li>生态化</li>
 </ol>
 <ul>
@@ -1013,29 +1539,794 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>生态化发展是城市生态可持续发展地核心内容，也是生态城市的标志</li>
 </ul>
 <p><strong>生态城市建设的五个层面</strong></p>
-<ol>
+<ol type="1">
 <li>生态安全</li>
 <li>生态卫生</li>
 <li>生态产业代谢</li>
 <li>生态景观整合</li>
 <li>生态意识的培养</li>
 </ol>
-<hr>
-<ol start="2">
+<hr />
+<ol start="2" type="1">
 <li><p>系统性</p>
-<p> 生态化必须是各个系统所构成的整体的生态化发展，强调三方面的协调统一。其中自然环境的生态可持续发展是基础，经济生态化是条件，社会生态可持续发展是目的，复合生态化是前提</p>
-</li>
+<p>生态化必须是各个系统所构成的整体的生态化发展，强调三方面的协调统一。其中自然环境的生态可持续发展是基础，经济生态化是条件，社会生态可持续发展是目的，复合生态化是前提</p></li>
 <li><p>区域性</p>
-<p> 生态城市应当是一种城市化区域或城乡复合体，表现为一种城市与乡村融合发展的新的城乡关系格局，形成城乡网络结构，两者只有分工上的不同</p>
-<p> 生态城市补一农业、非农业作为划分聚居的标准，而是强调了聚居作为人类生活场所本质上的同一性，这与传统城市和乡村对立的二元经济模式有本质区别</p>
-</li>
+<p>生态城市应当是一种城市化区域或城乡复合体，表现为一种城市与乡村融合发展的新的城乡关系格局，形成城乡网络结构，两者只有分工上的不同</p>
+<p>生态城市补一农业、非农业作为划分聚居的标准，而是强调了聚居作为人类生活场所本质上的同一性，这与传统城市和乡村对立的二元经济模式有本质区别</p></li>
 </ol>
 <ul>
-<li>生态城市规划和建设应以生态学理论为指导<ul>
+<li>生态城市规划和建设应以生态学理论为指导
+<ul>
 <li>推行循环经济，提倡封闭式循环工艺系统</li>
 <li>发展有机农业，改善居住条件，提高居民寿命，在城市发展过程中，保护城市文化和历史古迹</li>
 <li>在生产活动中，不能利用自然资源，应处理好保护与发展的关系</li>
+</ul></li>
 </ul>
-</li>
+<h3 id="可持续的社会">可持续的社会</h3>
+<h3 id="加强城市公共安全">加强城市公共安全</h3>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    未来的东东东
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://zypher.cn/2020/10/04/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/" title="城市地理学">http://zypher.cn/2020/10/04/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
 </ul>
-<h3 id="可持续的社会"><a href="#可持续的社会" class="headerlink" title="可持续的社会"></a>可持续的社会</h3><h3 id="加强城市公共安全"><a href="#加强城市公共安全" class="headerlink" title="加强城市公共安全"></a>加强城市公共安全</h3></div></article><div class="post-view__sidebar"><div class="sidebar"><div class="tocbot"><h2>Toc</h2><div class="toc__content"></div></div><h2>Links</h2><div class="sidebar__link"><ul><li><a href="https://github.com/yours" target="_blank" rel="noopener">Github</a></li><li><a href="https://codepen.io/yours" target="_blank" rel="noopener">Codepen</a></li><li><a href="https://dribbble.com/yours" target="_blank" rel="noopener">Dribbble</a></li><li><a href="https://twitter.com/yours" target="_blank" rel="noopener">Twitter</a></li><li><a href="https://www.zhihu.com/people/yours" target="_blank" rel="noopener">知乎</a></li><li><a href="https://juejin.im/user/yours" target="_blank" rel="noopener">掘金</a></li><li><a href="mailto:xxx@yourmail.xxxx">Mail</a></li></ul></div><h2>Archives</h2><div class="sidebar__archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul></div><h2>Categories</h2><div class="sidebar__categories"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Arcmap/">-Arcmap</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/CAD/">-CAD</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Geoda/">-Geoda</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PS/">-PS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">-hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E8%80%83%E7%A0%94/">-人文地理考研</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">-其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%98%8E%E5%98%8E%E5%98%8E/">-嘎嘎嘎</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BD%E5%9C%9F%E7%A9%BA%E9%97%B4%E8%A7%84%E5%88%92/">-国土空间规划</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9C%B0%E5%9B%BE%E5%88%B6%E4%BD%9C/">-地图制作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">-考研政治</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/">-考研数学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%B8%80/">-考研英语一</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%92%E5%B9%B4%E7%94%9F%E6%80%81%E7%8E%AF%E4%BF%9D%E7%BB%84%E7%BB%87%E5%9F%B9%E8%AE%AD/">-青年生态环保组织培训</a></li></ul></div><h2>Tags</h2><div class="sidebar__tags"><ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Arcmap/" rel="tag">-Arcmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CAD%E6%B3%A8%E9%87%8A/" rel="tag">-CAD注释</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Geoda-%E7%A9%BA%E9%97%B4%E8%87%AA%E7%9B%B8%E5%85%B3/" rel="tag">-Geoda -空间自相关</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">-hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF/" rel="tag">-一带一路</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/" rel="tag">-人文地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-人文地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%9B%9B%E4%BA%94%E8%A7%84%E5%88%92/" rel="tag">-十四五规划</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BD%E5%9C%9F%E8%A7%84%E5%88%92-%E5%9C%B0%E7%90%86/" rel="tag">-国土规划 -地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E5%9B%BE%E9%85%8D%E8%89%B2/" rel="tag">-地图配色</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E7%90%86%E5%9B%BD%E6%83%85/" rel="tag">-地理国情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-城市地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD-%E5%8C%BB%E7%96%97/" rel="tag">-基础设施 -医疗</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%A0%E5%9B%BE/" rel="tag">-抠图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF%E6%B2%BB%E8%83%8C%E8%AF%B5/" rel="tag">-政治背诵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E7%82%B9/" rel="tag">-热点</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D/" rel="tag">-热词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D-%E9%95%BF%E4%B8%89%E8%A7%92/" rel="tag">-热词 -长三角</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E4%BF%9D%E4%BA%91%E5%9F%B9%E8%AE%AD-%E7%BE%8E%E4%B8%BD%E4%B8%AD%E5%9B%BD%C2%B7%E9%9D%92%E6%98%A5%E8%A1%8C%E5%8A%A8/" rel="tag">-环保云培训 -美丽中国·青春行动</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9C%9F%E9%A2%98/" rel="tag">-真题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/" rel="tag">-社会学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/" rel="tag">-第七次人口普查</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-经济地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87/" rel="tag">-英语作文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E7%BF%BB%E8%AF%91/" rel="tag">-英语翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B5%B5%E7%87%95%E8%8F%81/" rel="tag">-赵燕菁</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0/" rel="tag">-高数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E5%A4%A7%E9%A2%98/" rel="tag">-高数大题</a></li></ul></div></div></div></div><div class="horizontal-line" style="height: 1px"></div><div class="main__bottom"><div class="pre-next"><a class="pre-button" href="/2020/10/04/CAD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E9%87%8A%E6%A0%B7%E5%BC%8F%E8%BE%93%E5%87%BA%E5%92%8C%E8%BE%93%E5%85%A5/">CAD自定义注释样式输出和输入</a><a class="next-button" href="/2020/04/27/%E2%80%9C%E7%A4%BE%E4%BC%9A%E2%80%9C%E4%B8%8E%E2%80%9D%E5%85%AC%E5%85%B1%E2%80%9C%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E7%9A%84%E7%A4%BE%E4%BC%9A%E5%AD%A6%E6%80%9D%E8%80%83/">“社会“与”公共“新冠肺炎疫情的社会学思考</a></div></div></div></div><div class="footer"><span>©️2019-2021 Designed By&nbsp;<strong><a href="https://github.com/random-yang" target="_blank" rel="noopener">RandomYang</a></strong> Powered By&nbsp;</span><strong><a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></strong></div><div class="darkmode-mask" id="darkmode-mask"></div><div class="sidebar__button"></div></body></html>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag"># -城市地理学</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/04/27/%E2%80%9C%E7%A4%BE%E4%BC%9A%E2%80%9C%E4%B8%8E%E2%80%9D%E5%85%AC%E5%85%B1%E2%80%9C%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E7%9A%84%E7%A4%BE%E4%BC%9A%E5%AD%A6%E6%80%9D%E8%80%83/" rel="next" title="“社会“与”公共“新冠肺炎疫情的社会学思考">
+                <i class="fa fa-chevron-left"></i> “社会“与”公共“新冠肺炎疫情的社会学思考
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/10/04/CAD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E9%87%8A%E6%A0%B7%E5%BC%8F%E8%BE%93%E5%87%BA%E5%92%8C%E8%BE%93%E5%85%A5/" rel="prev" title="CAD自定义注释样式输出和输入">
+                CAD自定义注释样式输出和输入 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/gangqin.jpg"
+                alt="未来的东东东" />
+            
+              <p class="site-author-name" itemprop="name">未来的东东东</p>
+              <p class="site-description motion-element" itemprop="description">去摘，遥不可及的星</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ZypherRay" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#绪论"><span class="nav-number">1.</span> <span class="nav-text">绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市地理学的研究对象"><span class="nav-number">1.1.</span> <span class="nav-text">城市地理学的研究对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#研究任务"><span class="nav-number">1.1.1.</span> <span class="nav-text">研究任务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#研究内容"><span class="nav-number">1.1.2.</span> <span class="nav-text">研究内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市地理学与相关学科的关系"><span class="nav-number">1.2.</span> <span class="nav-text">城市地理学与相关学科的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地理学的学科性质"><span class="nav-number">1.2.1.</span> <span class="nav-text">城市地理学的学科性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地理学与相关学科的关系-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">城市地理学与相关学科的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#西方城市地理学发展简史"><span class="nav-number">1.3.</span> <span class="nav-text">西方城市地理学发展简史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#年以前"><span class="nav-number">1.3.1.</span> <span class="nav-text">1920年以前</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section"><span class="nav-number">1.3.2.</span> <span class="nav-text">1920-1950</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-1"><span class="nav-number">1.3.3.</span> <span class="nav-text">1950-1970</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#年以来"><span class="nav-number">1.3.4.</span> <span class="nav-text">1970年以来</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国城市地理学的发展"><span class="nav-number">1.4.</span> <span class="nav-text">中国城市地理学的发展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#发展历程"><span class="nav-number">1.4.1.</span> <span class="nav-text">发展历程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改革开放以来中国城市地理学研究的特点"><span class="nav-number">1.4.2.</span> <span class="nav-text">改革开放以来中国城市地理学研究的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中国城市地理学的研究趋势"><span class="nav-number">1.4.3.</span> <span class="nav-text">中国城市地理学的研究趋势</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城乡划分和城市地域"><span class="nav-number">2.</span> <span class="nav-text">城乡划分和城市地域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市概念及标准"><span class="nav-number">2.1.</span> <span class="nav-text">城市概念及标准</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市和城镇"><span class="nav-number">2.1.1.</span> <span class="nav-text">城市和城镇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义城镇的标准"><span class="nav-number">2.1.2.</span> <span class="nav-text">定义城镇的标准</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#城市不同于乡村的本质特征"><span class="nav-number">2.1.2.1.</span> <span class="nav-text">城市不同于乡村的本质特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#城市划定标准"><span class="nav-number">2.1.2.2.</span> <span class="nav-text">城市划定标准</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市地域"><span class="nav-number">2.2.</span> <span class="nav-text">城市地域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#行政地域"><span class="nav-number">2.2.1.</span> <span class="nav-text">行政地域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实体地域"><span class="nav-number">2.2.2.</span> <span class="nav-text">实体地域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市功能地域"><span class="nav-number">2.2.3.</span> <span class="nav-text">城市功能地域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国市镇概念和统计口径"><span class="nav-number">2.3.</span> <span class="nav-text">中国市、镇概念和统计口径</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#中国市镇建制标准"><span class="nav-number">2.3.1.</span> <span class="nav-text">中国市、镇建制标准</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市的产生和发展"><span class="nav-number">3.</span> <span class="nav-text">城市的产生和发展</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市是社会生产力发展到一定阶段的产物"><span class="nav-number">3.1.</span> <span class="nav-text">城市是社会生产力发展到一定阶段的产物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市产生与发展的区域基础"><span class="nav-number">3.2.</span> <span class="nav-text">城市产生与发展的区域基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#区域自然地理条件"><span class="nav-number">3.2.1.</span> <span class="nav-text">区域自然地理条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区域经济地理条件"><span class="nav-number">3.2.2.</span> <span class="nav-text">区域经济地理条件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市地理位置与城市的产生和发展"><span class="nav-number">3.3.</span> <span class="nav-text">城市地理位置与城市的产生和发展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地理位置的概念"><span class="nav-number">3.3.1.</span> <span class="nav-text">城市地理位置的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地理位置的类型"><span class="nav-number">3.3.2.</span> <span class="nav-text">城市地理位置的类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不同类型城市的形成和发展"><span class="nav-number">3.4.</span> <span class="nav-text">不同类型城市的形成和发展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类型"><span class="nav-number">3.4.1.</span> <span class="nav-text">类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信息技术革命与城市发展"><span class="nav-number">3.4.2.</span> <span class="nav-text">信息技术革命与城市发展</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市化原理"><span class="nav-number">4.</span> <span class="nav-text">城市化原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市化定义"><span class="nav-number">4.1.</span> <span class="nav-text">城市化定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市化概念"><span class="nav-number">4.1.1.</span> <span class="nav-text">城市化概念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市化机制"><span class="nav-number">4.2.</span> <span class="nav-text">城市化机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市兴起和成长的一般前提"><span class="nav-number">4.2.1.</span> <span class="nav-text">城市兴起和成长的一般前提</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#经济增长与城市化"><span class="nav-number">4.2.2.</span> <span class="nav-text">经济增长与城市化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市化的类型和测度"><span class="nav-number">4.3.</span> <span class="nav-text">城市化的类型和测度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市化类型"><span class="nav-number">4.3.1.</span> <span class="nav-text">城市化类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市化测度"><span class="nav-number">4.3.2.</span> <span class="nav-text">城市化测度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市化近域推进和郊区化"><span class="nav-number">4.4.</span> <span class="nav-text">城市化近域推进和郊区化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市化近域推进的主要动力"><span class="nav-number">4.4.1.</span> <span class="nav-text">城市化近域推进的主要动力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市化近域推进演化模型"><span class="nav-number">4.4.2.</span> <span class="nav-text">城市化近域推进演化模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再城市化"><span class="nav-number">4.4.3.</span> <span class="nav-text">再城市化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#郊区化"><span class="nav-number">4.4.4.</span> <span class="nav-text">郊区化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精明增长"><span class="nav-number">4.4.5.</span> <span class="nav-text">精明增长</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市化的历史进程"><span class="nav-number">5.</span> <span class="nav-text">城市化的历史进程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#世界城市化的进程"><span class="nav-number">5.1.</span> <span class="nav-text">世界城市化的进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市产生及早起城市的发展"><span class="nav-number">5.1.1.</span> <span class="nav-text">城市产生及早起城市的发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中世纪城市的发展"><span class="nav-number">5.1.2.</span> <span class="nav-text">中世纪城市的发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工业社会时期的城市化"><span class="nav-number">5.1.3.</span> <span class="nav-text">工业社会时期的城市化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当代世界的城市化"><span class="nav-number">5.1.4.</span> <span class="nav-text">当代世界的城市化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#年以前中国城市发展史"><span class="nav-number">5.2.</span> <span class="nav-text">1949年以前中国城市发展史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市起源和初期发展时期"><span class="nav-number">5.2.1.</span> <span class="nav-text">城市起源和初期发展时期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封建社会城市的发展"><span class="nav-number">5.2.2.</span> <span class="nav-text">封建社会城市的发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#近现代社会时期"><span class="nav-number">5.2.3.</span> <span class="nav-text">近现代社会时期</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#当代中国城市化的进程"><span class="nav-number">5.3.</span> <span class="nav-text">当代中国城市化的进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#短暂发展时期1953-1957"><span class="nav-number">5.3.1.</span> <span class="nav-text">短暂发展时期（1953-1957）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#起伏波动时期1958-1965"><span class="nav-number">5.3.2.</span> <span class="nav-text">起伏波动时期（1958-1965）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#停滞时期1966-1976"><span class="nav-number">5.3.3.</span> <span class="nav-text">停滞时期（1966-1976）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过渡时期1977-1981"><span class="nav-number">5.3.4.</span> <span class="nav-text">过渡时期（1977-1981）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乡村城市化时期1982-1991"><span class="nav-number">5.3.5.</span> <span class="nav-text">乡村城市化时期（1982-1991）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速城市化时期1992-至今"><span class="nav-number">5.3.6.</span> <span class="nav-text">快速城市化时期（1992-至今）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市职能分类"><span class="nav-number">6.</span> <span class="nav-text">城市职能分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市经济活动类型划分"><span class="nav-number">6.1.</span> <span class="nav-text">城市经济活动类型划分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市经济活动的基本与非基本部分"><span class="nav-number">6.1.1.</span> <span class="nav-text">城市经济活动的基本与非基本部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#划分城市基本和非基本活动的方法"><span class="nav-number">6.1.2.</span> <span class="nav-text">划分城市基本和非基本活动的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#影响基本非基本比率的因素"><span class="nav-number">6.1.3.</span> <span class="nav-text">影响基本&#x2F;非基本比率的因素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市基本与非基本活动对城市发展的影响"><span class="nav-number">6.1.4.</span> <span class="nav-text">城市基本与非基本活动对城市发展的影响</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市职能及其分类"><span class="nav-number">6.2.</span> <span class="nav-text">城市职能及其分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市的三大职能"><span class="nav-number">6.2.1.</span> <span class="nav-text">城市的三大职能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市职能分类时注意事项"><span class="nav-number">6.2.2.</span> <span class="nav-text">城市职能分类时注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市分类方法"><span class="nav-number">6.2.3.</span> <span class="nav-text">城市分类方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国城市职能分类"><span class="nav-number">6.3.</span> <span class="nav-text">中国城市职能分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最早的区域性城市职能分类"><span class="nav-number">6.3.1.</span> <span class="nav-text">最早的区域性城市职能分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全国性城市职能分类"><span class="nav-number">6.3.2.</span> <span class="nav-text">全国性城市职能分类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市规模分布"><span class="nav-number">7.</span> <span class="nav-text">城市规模分布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市规模分布理论"><span class="nav-number">7.1.</span> <span class="nav-text">城市规模分布理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市首位津"><span class="nav-number">7.1.1.</span> <span class="nav-text">城市首位津</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市金字塔"><span class="nav-number">7.1.2.</span> <span class="nav-text">城市金字塔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#位序-规模法则"><span class="nav-number">7.1.3.</span> <span class="nav-text">位序-规模法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对城市规模分布的解释"><span class="nav-number">7.2.</span> <span class="nav-text">对城市规模分布的解释</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市规模分布的类型"><span class="nav-number">7.2.1.</span> <span class="nav-text">城市规模分布的类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对城市规模分布的理论解释"><span class="nav-number">7.2.2.</span> <span class="nav-text">对城市规模分布的理论解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市规模分布类型的利弊"><span class="nav-number">7.2.3.</span> <span class="nav-text">城市规模分布类型的利弊</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首位分布弊"><span class="nav-number">7.2.3.1.</span> <span class="nav-text">首位分布【弊】</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#首位分布利"><span class="nav-number">7.2.3.2.</span> <span class="nav-text">首位分布【利】</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国的城市规模分布"><span class="nav-number">7.3.</span> <span class="nav-text">中国的城市规模分布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我国城市位序-规模法则的验证"><span class="nav-number">7.3.1.</span> <span class="nav-text">我国城市位序-规模法则的验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我国城市规模等级结构的变化"><span class="nav-number">7.3.2.</span> <span class="nav-text">我国城市规模等级结构的变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我国不同规模城市人口增长速度的变化"><span class="nav-number">7.3.3.</span> <span class="nav-text">我国不同规模城市人口增长速度的变化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我国城市规模分布的省际差异"><span class="nav-number">7.3.4.</span> <span class="nav-text">我国城市规模分布的省际差异</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#六个类型"><span class="nav-number">7.3.4.1.</span> <span class="nav-text">六个类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#推动城镇规模分布类型由低级向高级变化的动力"><span class="nav-number">7.3.4.2.</span> <span class="nav-text">推动城镇规模分布类型由低级向高级变化的动力</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市规模发展政策的讨论"><span class="nav-number">7.4.</span> <span class="nav-text">城市规模发展政策的讨论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我国城市发展方针的来龙去脉"><span class="nav-number">7.4.1.</span> <span class="nav-text">我国城市发展方针的来龙去脉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于城市发展方针的来龙去脉"><span class="nav-number">7.4.2.</span> <span class="nav-text">关于城市发展方针的来龙去脉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市规模与经济效益的关系"><span class="nav-number">7.4.3.</span> <span class="nav-text">城市规模与经济效益的关系</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市空间分布体系"><span class="nav-number">8.</span> <span class="nav-text">城市空间分布体系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#空间相互作用和空间扩散"><span class="nav-number">8.1.</span> <span class="nav-text">空间相互作用和空间扩散</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#相互作用的分类"><span class="nav-number">8.1.1.</span> <span class="nav-text">相互作用的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相互作用产生的条件"><span class="nav-number">8.1.2.</span> <span class="nav-text">相互作用产生的条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市间城市和区域间的相互作用"><span class="nav-number">8.1.3.</span> <span class="nav-text">城市间、城市和区域间的相互作用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#节点结节区域和城市等级体系"><span class="nav-number">8.1.3.1.</span> <span class="nav-text">节点、结节区域和城市等级体系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#城市吸引区边界的确定"><span class="nav-number">8.1.3.2.</span> <span class="nav-text">城市吸引区边界的确定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相互作用模式"><span class="nav-number">8.1.3.3.</span> <span class="nav-text">相互作用模式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空间扩散"><span class="nav-number">8.1.4.</span> <span class="nav-text">空间扩散</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#空间扩散基本概念"><span class="nav-number">8.1.4.1.</span> <span class="nav-text">空间扩散基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#空间扩散的研究"><span class="nav-number">8.1.4.2.</span> <span class="nav-text">空间扩散的研究</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中心地理论见经济地理学"><span class="nav-number">8.2.</span> <span class="nav-text">中心地理论【见经济地理学】</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国城市空间分布需要整理最新情况"><span class="nav-number">8.3.</span> <span class="nav-text">中国城市空间分布【需要整理最新情况】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#空间分布类型"><span class="nav-number">8.3.1.</span> <span class="nav-text">空间分布类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城镇密度"><span class="nav-number">8.3.2.</span> <span class="nav-text">城镇密度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市经济区"><span class="nav-number">8.3.3.</span> <span class="nav-text">城市经济区</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区域城镇体系规划需整理最新情况"><span class="nav-number">9.</span> <span class="nav-text">区域城镇体系规划【需整理最新情况】</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城镇体系规划的提出"><span class="nav-number">9.1.</span> <span class="nav-text">城镇体系规划的提出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城镇体系的基本特征"><span class="nav-number">9.1.1.</span> <span class="nav-text">城镇体系的基本特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我国城镇体系规划的演变"><span class="nav-number">9.1.2.</span> <span class="nav-text">我国城镇体系规划的演变</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区域城镇体系规划的主要内容"><span class="nav-number">9.2.</span> <span class="nav-text">区域城镇体系规划的主要内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#早期的内容"><span class="nav-number">9.2.1.</span> <span class="nav-text">早期的内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#现在的内容"><span class="nav-number">9.2.2.</span> <span class="nav-text">现在的内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城镇体系规划流程和工作方法"><span class="nav-number">9.3.</span> <span class="nav-text">城镇体系规划流程和工作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流程"><span class="nav-number">9.3.1.</span> <span class="nav-text">工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作方法"><span class="nav-number">9.3.2.</span> <span class="nav-text">工作方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市土地利用可参考土地管理笔记结合最新分类"><span class="nav-number">10.</span> <span class="nav-text">城市土地利用【可参考土地管理笔记，结合最新分类】</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市土地的特征与土地利用类型"><span class="nav-number">10.1.</span> <span class="nav-text">城市土地的特征与土地利用类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市土地的概念"><span class="nav-number">10.1.1.</span> <span class="nav-text">城市土地的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市土地的特征"><span class="nav-number">10.1.2.</span> <span class="nav-text">城市土地的特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自然特征"><span class="nav-number">10.1.2.1.</span> <span class="nav-text">自然特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#经济特征"><span class="nav-number">10.1.2.2.</span> <span class="nav-text">经济特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#法律特征"><span class="nav-number">10.1.2.3.</span> <span class="nav-text">法律特征</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市土地利用类型见文件"><span class="nav-number">10.1.3.</span> <span class="nav-text">城市土地利用类型【见文件】</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自然环境与城市土地利用"><span class="nav-number">10.2.</span> <span class="nav-text">自然环境与城市土地利用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地理位置的选择"><span class="nav-number">10.2.1.</span> <span class="nav-text">城市地理位置的选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地形"><span class="nav-number">10.2.2.</span> <span class="nav-text">城市地形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市气候"><span class="nav-number">10.2.3.</span> <span class="nav-text">城市气候</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市植被"><span class="nav-number">10.2.4.</span> <span class="nav-text">城市植被</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地基承载力"><span class="nav-number">10.2.5.</span> <span class="nav-text">地基承载力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地下空间"><span class="nav-number">10.2.6.</span> <span class="nav-text">城市地下空间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#地租土地制度与城市土地利用"><span class="nav-number">10.3.</span> <span class="nav-text">地租、土地制度与城市土地利用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#地租的基本理论"><span class="nav-number">10.3.1.</span> <span class="nav-text">地租的基本理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我国的土地制度"><span class="nav-number">10.3.2.</span> <span class="nav-text">我国的土地制度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地租土地制度对我国城市土地利用的影响"><span class="nav-number">10.3.3.</span> <span class="nav-text">地租、土地制度对我国城市土地利用的影响</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市内部地域结构"><span class="nav-number">11.</span> <span class="nav-text">城市内部地域结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市地域结构模式"><span class="nav-number">11.1.</span> <span class="nav-text">城市地域结构模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#均质性和均值地域"><span class="nav-number">11.1.1.</span> <span class="nav-text">均质性和均值地域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伯吉斯的同心环模式"><span class="nav-number">11.1.2.</span> <span class="nav-text">伯吉斯的同心环模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#霍伊特的扇形模式"><span class="nav-number">11.1.3.</span> <span class="nav-text">霍伊特的扇形模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#哈里斯和厄尔曼的多核心模式"><span class="nav-number">11.1.4.</span> <span class="nav-text">哈里斯和厄尔曼的多核心模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市地域结构三模式的发展"><span class="nav-number">11.1.5.</span> <span class="nav-text">城市地域结构三模式的发展</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市中心商务区"><span class="nav-number">11.2.</span> <span class="nav-text">城市中心商务区</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念与特征"><span class="nav-number">11.2.1.</span> <span class="nav-text">概念与特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cbd的界定"><span class="nav-number">11.2.2.</span> <span class="nav-text">CBD的界定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cbd的内部地域结构"><span class="nav-number">11.2.3.</span> <span class="nav-text">CBD的内部地域结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cbd的演变"><span class="nav-number">11.2.4.</span> <span class="nav-text">CBD的演变</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市开发区"><span class="nav-number">11.3.</span> <span class="nav-text">城市开发区</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市开发区的概念"><span class="nav-number">11.3.1.</span> <span class="nav-text">城市开发区的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#世界开发区的历史演进"><span class="nav-number">11.3.2.</span> <span class="nav-text">世界开发区的历史演进</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中国开发区的发展历程"><span class="nav-number">11.3.3.</span> <span class="nav-text">中国开发区的发展历程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发区的区位特征"><span class="nav-number">11.3.4.</span> <span class="nav-text">开发区的区位特征</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城中村"><span class="nav-number">11.4.</span> <span class="nav-text">城中村</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城中村的概念与类型"><span class="nav-number">11.4.1.</span> <span class="nav-text">城中村的概念与类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城中村的地域特征及成因"><span class="nav-number">11.4.2.</span> <span class="nav-text">城中村的地域特征及成因</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#城中村的地域特征"><span class="nav-number">11.4.2.1.</span> <span class="nav-text">城中村的地域特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#城中村形成原因"><span class="nav-number">11.4.2.2.</span> <span class="nav-text">城中村形成原因</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城中村的改造模式"><span class="nav-number">11.4.3.</span> <span class="nav-text">城中村的改造模式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市市场空间社会空间和感应空间"><span class="nav-number">12.</span> <span class="nav-text">城市市场空间、社会空间和感应空间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市内部市场空间结构"><span class="nav-number">12.1.</span> <span class="nav-text">城市内部市场空间结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市内部市场空间的构成"><span class="nav-number">12.1.1.</span> <span class="nav-text">城市内部市场空间的构成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加纳的商业中心空间模式"><span class="nav-number">12.1.2.</span> <span class="nav-text">加纳的商业中心空间模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#赫夫的商业零售引力模式"><span class="nav-number">12.1.3.</span> <span class="nav-text">赫夫的商业零售引力模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#我国城市内部市场空间分析"><span class="nav-number">12.1.4.</span> <span class="nav-text">我国城市内部市场空间分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市社会空间"><span class="nav-number">12.2.</span> <span class="nav-text">城市社会空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#邻里社区社会区和社会空间"><span class="nav-number">12.2.1.</span> <span class="nav-text">邻里、社区、社会区和社会空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会区分析"><span class="nav-number">12.2.2.</span> <span class="nav-text">社会区分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#因子生态分析"><span class="nav-number">12.2.3.</span> <span class="nav-text">因子生态分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#城市感应空间分析"><span class="nav-number">12.3.</span> <span class="nav-text">城市感应空间分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#感应环境和行为"><span class="nav-number">12.3.1.</span> <span class="nav-text">感应、环境和行为</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#居民构想图城市意向图"><span class="nav-number">12.3.2.</span> <span class="nav-text">居民构想图（城市意向图）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#研究实例介绍"><span class="nav-number">12.3.3.</span> <span class="nav-text">研究实例介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#研究感应空间的作用"><span class="nav-number">12.3.4.</span> <span class="nav-text">研究感应空间的作用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#城市问题"><span class="nav-number">13.</span> <span class="nav-text">城市问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#城市的主要问题"><span class="nav-number">13.1.</span> <span class="nav-text">城市的主要问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#城市环境问题"><span class="nav-number">13.1.1.</span> <span class="nav-text">城市环境问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市交通问题"><span class="nav-number">13.1.2.</span> <span class="nav-text">城市交通问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市住宅问题"><span class="nav-number">13.1.3.</span> <span class="nav-text">城市住宅问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市社会问题"><span class="nav-number">13.1.4.</span> <span class="nav-text">城市社会问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#城市安全问题"><span class="nav-number">13.1.5.</span> <span class="nav-text">城市安全问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构建可持续发展的城市"><span class="nav-number">13.2.</span> <span class="nav-text">构建可持续发展的城市</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#可持续发展的城市"><span class="nav-number">13.2.1.</span> <span class="nav-text">可持续发展的城市</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可持续发展的相关问题"><span class="nav-number">13.2.2.</span> <span class="nav-text">可持续发展的相关问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可持续的交通"><span class="nav-number">13.2.3.</span> <span class="nav-text">可持续的交通</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可持续的生态"><span class="nav-number">13.2.4.</span> <span class="nav-text">可持续的生态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可持续的社会"><span class="nav-number">13.2.5.</span> <span class="nav-text">可持续的社会</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加强城市公共安全"><span class="nav-number">13.2.6.</span> <span class="nav-text">加强城市公共安全</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">未来的东东东</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

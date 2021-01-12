@@ -1,92 +1,508 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><meta name="description" content="人文地理学补充 [ 未来的东东东 ] "><meta name="theme-color" content="#ebc65a"><title>人文地理学补充 [ 未来的东东东 ] </title><style>@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(data:font/woff2;base64,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BL3+M1K+NfPvjlJEHZTOrkYvtdprqx0Hka+W/IhsQoUJE0jsPVOhV2itgp3Wame8dsB73DeCOfp+FMSxp2At3aozP1zVQ/tmEpXdveum7kat3CaLXRcmTZHmOveMiqxSteCZOrGKmscOa9WycTUXtRFabrtts1Nb3e5qHtqWPMWtuEkMSdydcarhKoTcVXtBgujKwULbPFJvqywIzBjboUacECG6ajlIews5dBUMkJ/LYHa12gpRLEsBDAAA6raxOaTnbx4GG5J6hdn4twxT1DRvEQZvD6banOa3BbstVh48efHmw5cffwECBQkWIvK/LTbhIkSKEi1GrDjxEiRKkixFqjTpMmTKki1Hrjz5ChQqUqxEqTLlKlSqUq2e+hpoqJHGmmiqmeZhWGKoYfaZ7qXhxhtjnlWWxsBotw0xxWdfjDPDSEfc98l8q33z1XeLrXPKCeu10NJErZzR2kmnXXDWOee90sYVF12yQVsfTXLdVde088Y7o3TQXkedddLFQnb/qVGrq24cuuvhtZ5666WPfvraaZEB+htokLfe2+1GBDbalARuuueWzbbYboejttrmmBHW2O+AvUmRDMb6EEUsHHQoDskRjxRIiVRILev2qn1oaGpomZOB2z/jmn/eUk6tvaZda/5znbhPCguQ7wsEvd1strBI3OYR8ye01+ZO0jbH36oqKm37w90hl2v/wO5o3vIjtpoZx20H) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css"><script src="https://cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js" defer></script><script src="/js/paper.js" defer></script><script src="https://www.googletagmanager.com/gtag/js?id=xx-xxxxxxx-xx" async></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbot.css"><script src="/js/tocbot.js" defer></script><script>window.addEventListener('DOMContentLoaded', () => {
-  tocbot.init({
-    // Where to render the table of contents.
-    tocSelector: '.toc__content',
-    // Where to grab the headings to build the table of contents.
-    contentSelector: '.article__content',
-    // Which headings to grab inside of the contentSelector element.
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    // For headings inside relative or absolute positioned containers within content.
-    hasInnerContainers: true,
-    orderedList: false,
-    collapseDepth: 2,
-  });
-})</script><link rel="preload" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css"><link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="mask-border"></div><div class="head"><div class="head__inner"><h1><a href="/">未来的东东东</a></h1><p>去摘，遥不可及的星</p></div></div><div class="paper-container"><div class="main"><div class="location-bar"><div class="line-1"><div class="horizontal-line" style="height: 3px"></div></div><div class="line-2"><div class="horizontal-line" style="height: 1px"></div></div><p class="text">人文地理学补充</p><div class="switch-button"><input class="container_toggle" type="checkbox" id="switch" name="mode"><label for="switch">Toggle</label></div><div class="line-3"><div class="horizontal-line" style="height: 1px"></div></div></div><div class="main__2-col"><article class="post-view__article"><div class="article__infomation"><div class="posts-item"><h2 class="posts-item__title"><a href="">人文地理学补充</a></h2><span class="post__date">2020-12-09</span></div></div><div class="article__content"><h1 id="人文地理学课本补充"><a href="#人文地理学课本补充" class="headerlink" title="人文地理学课本补充"></a>人文地理学课本补充</h1><h2 id="人文地理学研究的方法论"><a href="#人文地理学研究的方法论" class="headerlink" title="人文地理学研究的方法论"></a>人文地理学研究的方法论</h2><p><img src="https://user-images.githubusercontent.com/63230281/101629189-eb5b5b80-3a5b-11eb-9e4f-cd9eaa155405.png" alt="1"></p>
-<h3 id="经验主义方法论"><a href="#经验主义方法论" class="headerlink" title="经验主义方法论"></a>经验主义方法论</h3><ul>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-simple.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="人文地理学课本补充 人文地理学研究的方法论  1  经验主义方法论  归纳法是经验主义的方法论基础 人文地理学研究的基本途径是通过调查，收集各地区的基础资料，进行整理、归纳，采用地理学的研究思路进行表述，进而解释地区差异，揭示地理要素之间的相互关系 经验主义方法的特征，  一方面观察是其重点，通过调查及师弟研究，进行经验判断与评价，得出结论 另一方面强调综合和归纳的作用。人">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人文地理学补充">
+<meta property="og:url" content="http://zypher.cn/2020/12/09/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6%E8%A1%A5%E5%85%85/index.html">
+<meta property="og:site_name" content="未来的东东东">
+<meta property="og:description" content="人文地理学课本补充 人文地理学研究的方法论  1  经验主义方法论  归纳法是经验主义的方法论基础 人文地理学研究的基本途径是通过调查，收集各地区的基础资料，进行整理、归纳，采用地理学的研究思路进行表述，进而解释地区差异，揭示地理要素之间的相互关系 经验主义方法的特征，  一方面观察是其重点，通过调查及师弟研究，进行经验判断与评价，得出结论 另一方面强调综合和归纳的作用。人">
+<meta property="og:image" content="https://user-images.githubusercontent.com/63230281/101629189-eb5b5b80-3a5b-11eb-9e4f-cd9eaa155405.png">
+<meta property="article:published_time" content="2020-12-09T12:18:16.000Z">
+<meta property="article:modified_time" content="2020-12-09T12:20:43.600Z">
+<meta property="article:author" content="未来的东东东">
+<meta property="article:tag" content="随记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/63230281/101629189-eb5b5b80-3a5b-11eb-9e4f-cd9eaa155405.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zypher.cn/2020/12/09/人文地理学补充/"/>
+
+
+
+
+
+  <title>人文地理学补充 | 未来的东东东</title>
+  
+
+
+
+
+
+
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">未来的东东东</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">想看的更远，你就跳跳跳跳起来吧！想和目标更近，你就跑跑跑跑起来吧！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zypher.cn/2020/12/09/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6%E8%A1%A5%E5%85%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="未来的东东东">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gangqin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="未来的东东东">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">人文地理学补充</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-09T20:18:16+08:00">
+                2020-12-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E8%80%83%E7%A0%94/" itemprop="url" rel="index">
+                    <span itemprop="name">-人文地理考研</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  9.7k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  32
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="人文地理学课本补充">人文地理学课本补充</h1>
+<h2 id="人文地理学研究的方法论">人文地理学研究的方法论</h2>
+<figure>
+<img src="https://user-images.githubusercontent.com/63230281/101629189-eb5b5b80-3a5b-11eb-9e4f-cd9eaa155405.png" alt="1" /><figcaption>1</figcaption>
+</figure>
+<h3 id="经验主义方法论">经验主义方法论</h3>
+<ul>
 <li>归纳法是经验主义的方法论基础</li>
 <li>人文地理学研究的基本途径是通过调查，收集各地区的基础资料，进行整理、归纳，采用地理学的研究思路进行表述，进而解释地区差异，揭示地理要素之间的相互关系</li>
-<li>经验主义方法的特征，<ul>
+<li>经验主义方法的特征，
+<ul>
 <li>一方面观察是其重点，通过调查及师弟研究，进行经验判断与评价，得出结论</li>
 <li>另一方面强调综合和归纳的作用。人文地理学加常常从观察人文地理现象的某个方面开始，通过分析研究资料，以求发现具有普遍意义的模式</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="实证主义方法论"><a href="#实证主义方法论" class="headerlink" title="实证主义方法论"></a>实证主义方法论</h3><ul>
+<h3 id="实证主义方法论">实证主义方法论</h3>
+<ul>
 <li>主要是20世纪50年代末到60年代地理学的计量与理论革命。</li>
 <li>一方面，与地理学相近的一些学科的渗透，如产生于经济学界的区位论引入了人文地理学，一些非地理学者尝试用新方法应用到地理问题的解释上</li>
 <li>另一方面，一些地理工作者开始寻求可以应用到地理问题的定量方法，发展地理学的理论，以解决传统地理学的诸多弊端</li>
 <li>研究重点从原先的区域方面转到空间分析和空间联系上，并寻求空间相互作用规律</li>
 </ul>
-<h3 id="人本主义方法论"><a href="#人本主义方法论" class="headerlink" title="人本主义方法论"></a>人本主义方法论</h3><ul>
+<h3 id="人本主义方法论">人本主义方法论</h3>
+<ul>
 <li>针对实证主义人文地理学忽视人这个主体的倾向，一些西方人文地理学者受人本主义思想的影响，加强了对人的研究，以人这个主体为出发点，重视了人类行为的丰富意义和社会价值观念体系中的非经济成分</li>
 <li>在历史地理学领域，实证主义方法是行不通的，因为历史结论已存在，无需再通过分析归纳得出，故再这个领域只能依靠唯心主义方法，为了理解一个历史上的特殊区域背景下的人文景观或事件，人文地理学家必须思考位于人类活动背后的动机</li>
 <li>文化地理学方面。重点是地方观念的研究，即人于地点之间的联系。在人本主义地理学看来，人预期生活经历的地点之间可以心理和情感联系，即人对地方的看法，如归属感，地方赋予人的安全感、地位等。</li>
 <li>人本主义地理学还研究人们的日常生活世界，即研究主体的人和课题的环境之间的相互作用，认为人的行为受制于主体的感知环境，而不是客观环境，为了解释人的行为就，就要研究环境对于行为者的主管意义</li>
 <li>人本主义地理学弥补了实证主义研究的不足，但最大的弱点在于它的唯心主义倾向，把一切客观存在看作人的心里构造，事实上构成人的感应行为的基础是客观环境世界</li>
 </ul>
-<h3 id="结构主义方法论"><a href="#结构主义方法论" class="headerlink" title="结构主义方法论"></a>结构主义方法论</h3><ul>
+<h3 id="结构主义方法论">结构主义方法论</h3>
+<ul>
 <li>结构概念与系统、功能、元素等紧密联系在一起，是某一系统中各要素的相互关系和相互联系的方式，结构式由各个部分互相依存而构成的一个整体，而部分只能在整体上才有意义</li>
 <li>结构主义是根据诸因素之间的关系，而不是根据事物和社会事实来解释显示</li>
 <li>基本原理是，可观察的事物，只有当把它用一个潜在结构或秩序联系在一起时，才是有意义的</li>
-<li>对人文地理学两点主要影响：<ul>
+<li>对人文地理学两点主要影响：
+<ul>
 <li>从结构的整体性取认识事物，者从地理学家强调研究区域的整体性和人地关系系统中可以看出</li>
 <li>试图超越地理因素寻求深层结构来解释地理现象</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="文化生态学"><a href="#文化生态学" class="headerlink" title="文化生态学"></a>文化生态学</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
+<h2 id="文化生态学">文化生态学</h2>
+<h3 id="概念">概念</h3>
+<ul>
 <li>文化生态学主要研究地域文化系统的组成、功能、结构、空间特性和时间动态，系统要素之间与系统内部发生的各种过程及其相互作用的机制。系统的相互作用关系包括：文化与文化之间、文化与环境之间、各种过程之间的相互关系</li>
-<li>“人-文化系统-环境”共同构成地域文化系统用，在人地关系中，“人”处于主动地位，是主体，“地”处于被动地位，是客体。<ul>
+<li>“人-文化系统-环境”共同构成地域文化系统用，在人地关系中，“人”处于主动地位，是主体，“地”处于被动地位，是客体。
+<ul>
 <li>地域中的环境包括自然地理环境和社会文化环境。</li>
 <li>地域文化系统的结构就是人类活动、文化系统和地理环境相互作用结构体系，在此机构体系中才产生出文化力量和文化结构的发展动力</li>
 <li>文化系统是人类与环境联系的纽带，人通过文化系统对环境产生作用，环境又通过文化系统对人产生作用，其相互机制表现在文化与环境、文化与文化的互动关系中。</li>
 <li>地域文化系统的性质、形成、发展机制的基本推动力是文化与环境的互动关系</li>
 <li>人地关系越复杂，文化系统越先进</li>
-</ul>
-</li>
+</ul></li>
 <li>文化生态是应用生态学的观点研究人与自然环境之间的相互关系，既研究自然地理环境在文化发展中的作用，也研究人的文化作用对自然地理环境的影响</li>
 </ul>
-<h2 id="文化整合"><a href="#文化整合" class="headerlink" title="文化整合"></a>文化整合</h2><ul>
+<h2 id="文化整合">文化整合</h2>
+<ul>
 <li>在一个文化系统内，各文化层次，各层次的文化特质在功能上形成协调，这就是该文化系统实现了文化整合。如果在功能上是不协调的，就没有实现文化整合。</li>
-<li>文化整合是人类历史上客观存在的一种普遍现象，文化整合的前提条件是对对方文化的意义和价值的肯定。<ul>
+<li>文化整合是人类历史上客观存在的一种普遍现象，文化整合的前提条件是对对方文化的意义和价值的肯定。
+<ul>
 <li>由于文化具备高度的地域性和民族性，再加上文化所处的时代性等条件，就产生了人类不同文化经常所具有的非常强烈的排他性，这容易导致人类文化整体之间类的间断</li>
 <li>文化整合的道路上充满了重重障碍</li>
-</ul>
-</li>
+</ul></li>
 <li>文化整合过程是再矛盾与斗争的反复交替中不断前进的。最先发生的是文化冲突，冲突是文化进步的重要动力。文化在经历了冲突、调整和适应之后，就达到了整合趋向。文化整合的结果往往促进新文化的产生，给社会进步提供了巨大的动力</li>
 <li>物质文化、制度文化与精神文化要相应变化，协调进行，形成整合，才能顺利的实现工业化和现代化</li>
 </ul>
-<h2 id="制度文化"><a href="#制度文化" class="headerlink" title="制度文化"></a>制度文化</h2><p><strong>制度文化</strong>是指人类在生产活动和相互关系中所形成的运动原则和机制的总称，是一系列人为制定出来的规则、程序和道德、伦理的行为规范。包括经济制度、政治制度、法律制度、军事制度、教育制度等。 </p>
+<h2 id="制度文化">制度文化</h2>
+<p><strong>制度文化</strong>是指人类在生产活动和相互关系中所形成的运动原则和机制的总称，是一系列人为制定出来的规则、程序和道德、伦理的行为规范。包括经济制度、政治制度、法律制度、军事制度、教育制度等。</p>
 <p><strong>物质文化</strong>，是人类活动作用于自然界的产物，是人类在物质生产活动中所创造的文化，是人类在物质生产领域中认识和改造自然的能力和水平。</p>
 <p><strong>精神文化</strong>，是人类在精神生产活动中所创造的精神财富的总称，包括社会心理和思想体系两部分。社会心理是人类在长期日常生活中在意识里普遍积淀起来的对于社会的物质生活条件和社会制度的客观内容的反映，包括风俗习惯、价值观念、道德情操、审美意识、宗教情绪、感觉认识、民族性格等等。思想体系是系统化、理论化、理性化的社会意识形式，如政治法律理论、伦理道德、科学理论、文学艺术、哲学、宗教等。</p>
-<h2 id="文化景观解释遵循原则"><a href="#文化景观解释遵循原则" class="headerlink" title="文化景观解释遵循原则"></a>文化景观解释遵循原则</h2><ol>
+<h2 id="文化景观解释遵循原则">文化景观解释遵循原则</h2>
+<ol type="1">
 <li>景观是文化的线索，可以提供占据景观的人的类型的证据</li>
 <li>景观的所有要素都反映文化，所有要素都同等重要</li>
 <li>通常被看作理所当然的普通景观很难通过传统的学术方法进行研究，因而需要新方法，如人文主义观点所提供的那些方法</li>
@@ -95,12 +511,15 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>因为绝大多数文化景观与自然环境关系密切，所以景观的解释依赖于对该处自然景观的认识</li>
 <li>景观中的几乎全部客体都可以传输某种信息，尽管不一定以明显的方式传输</li>
 </ol>
-<h2 id="农业的起源和发展"><a href="#农业的起源和发展" class="headerlink" title="农业的起源和发展"></a>农业的起源和发展</h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><ul>
+<h2 id="农业的起源和发展">农业的起源和发展</h2>
+<h3 id="概念-1">概念</h3>
+<ul>
 <li>农业属于第一产业范畴，其产品基本上都是从自然界直接获取的，即通过动植物本身的生长、繁殖来完成其生产过程</li>
 <li>农业的生产分布与自然、技术、社会经济条件有不可分割的联系。</li>
 <li>狭义的农业指耕作业，也称种植业。广义的农业则包括种植业、林业、牧业、副业、渔业等五个生产部门【更换】</li>
 </ul>
-<h3 id="传统农业基础理论"><a href="#传统农业基础理论" class="headerlink" title="传统农业基础理论"></a>传统农业基础理论</h3><ol>
+<h3 id="传统农业基础理论">传统农业基础理论</h3>
+<ol type="1">
 <li>农业是粮食等基本生活必需品的来源</li>
 <li>农业是发展工业和其他产业所需劳动力的主要来源</li>
 <li>农业是工业特别是轻工业所需原料的来源</li>
@@ -109,7 +528,8 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>农业是出口物资的重要来源</li>
 <li>农业人口占全国总人口的绝大多数</li>
 </ol>
-<h3 id="索尔的推论"><a href="#索尔的推论" class="headerlink" title="索尔的推论"></a>索尔的推论</h3><ol>
+<h3 id="索尔的推论">索尔的推论</h3>
+<ol type="1">
 <li>植物驯化不可能发生在食物不足的区域</li>
 <li>驯化中心必然位于一个动植物种类繁多的区域</li>
 <li>驯化不可能首先出现在大和的河谷内</li>
@@ -120,12 +540,15 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <ul>
 <li>因此植物的驯化最初的中心在东南也。石器时代捕鱼为生，河水沿岸鱼类丰富，故人类可以定居。热带地区生态环境多样化，具有食用价值的植物种类繁多，可以常年生长，为那些具有无性繁殖的食用植物提供被人类选择进行驯化的机会</li>
 </ul>
-<h2 id="现代农业"><a href="#现代农业" class="headerlink" title="现代农业"></a>现代农业</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ol>
+<h2 id="现代农业">现代农业</h2>
+<h3 id="特点">特点</h3>
+<ol type="1">
 <li>生产机械化</li>
 <li>专业化</li>
 <li>地域化</li>
 </ol>
-<h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><ol>
+<h3 id="类型">类型</h3>
+<ol type="1">
 <li>种植园农业</li>
 <li>谷物农业</li>
 <li>牲畜育肥农业</li>
@@ -133,38 +556,44 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>市场园艺农业</li>
 <li>大牧场</li>
 </ol>
-<h2 id="民族"><a href="#民族" class="headerlink" title="民族"></a>民族</h2><h3 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h3><ul>
+<h2 id="民族">民族</h2>
+<h3 id="概念-2">概念</h3>
+<ul>
 <li>民族是在历史上形成的一个有共同语言、共同地域、共同经济生活以及表现在共同文化上的共同心理素质的稳定的共同体，是人们最主要的社会划分形式之一，属于历史学、社会学范畴</li>
 </ul>
-<h3 id="民族的形成"><a href="#民族的形成" class="headerlink" title="民族的形成"></a>民族的形成</h3><ul>
+<h3 id="民族的形成">民族的形成</h3>
+<ul>
 <li>民族的形成经历了氏族、胞族、部落、部落联盟、和民族等五个发展阶段</li>
 <li>民族是个历史范畴，民族在一定的社会物质生产条件下产生，也会在一定的社会物质生活条件下趋于消亡。</li>
 <li>民族是随着社会发展的顺序发展的，不同的社会发展阶段决定了民族发展的不同的水平和类型</li>
 </ul>
-<h3 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h3><ol>
-<li>共同语言<ul>
+<h3 id="特征">特征</h3>
+<ol type="1">
+<li>共同语言
+<ul>
 <li>语言是人们交流思想的重要工具，共同的语言，可以促使人们政治、经济、文化等各方面的接触与交流，促进民族的形成，维系民族的统一和发展</li>
 <li>如果一个民族改变了自己的语言，那么就意味着该民族同化过程的开始</li>
 <li>语言与民族并非是一一对应的关系，也有多民族使用同一种语言的现象</li>
-</ul>
-</li>
-<li>共同的地域<ul>
+</ul></li>
+<li>共同的地域
+<ul>
 <li>民族的形成与地理环境的关系极为密切</li>
 <li>在同一地域内，由于七自然和社会环境的相似性，长期生活在一起的人们逐步形成了稳定的统一体，所以任何民族都有其形成的共同的地域</li>
 <li>尽管由于人口的迁移等原因，民族混杂居住的现象业比较普遍，但各民族仍然保留自己相对集中的聚居区</li>
-</ul>
-</li>
-<li>共同的经济生活<ul>
+</ul></li>
+<li>共同的经济生活
+<ul>
 <li>由于长期生活在一个地区，使用同种语言，相互交往频繁，同一民族就形成了共同的经济生活方式和生活习惯</li>
-</ul>
-</li>
-<li>共同心理素质<ul>
+</ul></li>
+<li>共同心理素质
+<ul>
 <li>共同的生活环境和历史进程，形成了各民族特有的文化艺术、风俗习惯及心理情感等。</li>
 <li>共同的心里素质是最稳定的民族特征。</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h3 id="民族的分布区"><a href="#民族的分布区" class="headerlink" title="民族的分布区"></a>民族的分布区</h3><h3 id="民族形式分布区"><a href="#民族形式分布区" class="headerlink" title="民族形式分布区"></a><strong>民族形式分布区</strong></h3><ul>
+<h3 id="民族的分布区">民族的分布区</h3>
+<h3 id="民族形式分布区"><strong>民族形式分布区</strong></h3>
+<ul>
 <li><ul>
 <li><p>对大多数民族来说，其民族形式分布区都是一个集中的、并相连成片的区域。</p>
 <pre><code>**隔坨**
@@ -176,33 +605,36 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 
 - 是指按民族的聚居地域而建立的行政管理机制
 - 例如我国是一个多民族的国家，为实行民族区域自治，在少数民族聚地区建立不同等级的自治机构，行使自治权</code></pre></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h2><h3 id="概念-3"><a href="#概念-3" class="headerlink" title="概念"></a>概念</h3><ul>
+<h2 id="语言">语言</h2>
+<h3 id="概念-3">概念</h3>
+<ul>
 <li>声音和意义是语言的两大组成部分</li>
 <li>声音材料和意义要素都是在劳动过程中形成的</li>
 </ul>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><ol>
-<li>社会性<ul>
+<h3 id="属性">属性</h3>
+<ol type="1">
+<li>社会性
+<ul>
 <li>语言是社会约定俗称的，是所有成员以不同形式参与、约定和服从这种约定的结果</li>
 <li>语言依赖于社会，社会也同样需要语言</li>
 <li>表现在语言中语音和语意间的结合是由社会所决定的</li>
-</ul>
-</li>
-<li>交际性<ul>
+</ul></li>
+<li>交际性
+<ul>
 <li>语言的存在价值就在于交际</li>
 <li>语言首先是适应人们的交际需要而产生的，离开了这种交际需要，语言也就没有存在的必要</li>
 <li>语言不是唯一的交际工具，却是最主要的交际工具</li>
-</ul>
-</li>
-<li>工具性<ul>
+</ul></li>
+<li>工具性
+<ul>
 <li>语言是人类重要的信息载体。在所有的载体中，声音是最方便、最灵活、成本最低的载体</li>
 <li>语言是人类的一种思维工具</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h3 id="语言的社会功能"><a href="#语言的社会功能" class="headerlink" title="语言的社会功能"></a>语言的社会功能</h3><ol>
+<h3 id="语言的社会功能">语言的社会功能</h3>
+<ol type="1">
 <li>语言是人类一种思维工具</li>
 <li>语言是人类认知交流的媒介</li>
 <li>语言是人类开发智力的工具</li>
@@ -210,30 +642,34 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>语言是民族心理的寄托</li>
 <li>语言是促进生产力发展的工具</li>
 </ol>
-<h2 id="语言的传播与环境"><a href="#语言的传播与环境" class="headerlink" title="语言的传播与环境"></a>语言的传播与环境</h2><ul>
+<h2 id="语言的传播与环境">语言的传播与环境</h2>
+<ul>
 <li>语言发展，主要是指语言结构体系的变化。语言的发展使其更加适应社会发展的需要，称为更丰富、更完善的交际工具和思维工具</li>
 <li>语言传播是由迁移扩散和扩展扩散造成的</li>
 </ul>
-<h3 id="自然因素的影响"><a href="#自然因素的影响" class="headerlink" title="自然因素的影响"></a>自然因素的影响</h3><ul>
+<h3 id="自然因素的影响">自然因素的影响</h3>
+<ul>
 <li>自然因素主要是通过影响人口的迁移流动来对语言扩散施加影响的，表现为在自然地理条件良好、通达性强的地理区域语言扩散传播状况好，而在自然条件差、通达性弱的地理区域语言扩散传播状况差</li>
 </ul>
-<h3 id="社会人文因素"><a href="#社会人文因素" class="headerlink" title="社会人文因素"></a>社会人文因素</h3><ol>
-<li>行政区划的影响<ul>
+<h3 id="社会人文因素">社会人文因素</h3>
+<ol type="1">
+<li>行政区划的影响
+<ul>
 <li>一般人们的语言心理总是尽量接近行政中心，这样促使行政中心的语言很快传播到周围地域</li>
 <li>一般来说，一个地区的城镇同另一个地区的城镇之间的交往，远多于同该地区乡村之间的交往，因此语言形式的传播往往越过乡村从一个城镇飞跃到另一个城镇，然后再以这些城镇为中心，传播到周围地区</li>
-</ul>
-</li>
-<li>经济条件的影响<ul>
+</ul></li>
+<li>经济条件的影响
+<ul>
 <li>不同地区在政治经济上的联系越来越小，语言的差差别就会越来越大</li>
-</ul>
-</li>
-<li>人口迁移的影响<ul>
+</ul></li>
+<li>人口迁移的影响
+<ul>
 <li>认识语言的载体，语言的传播扩散是通过人的交谈、移动来完成的，没有人口移动，在通讯条件比较落的时代，语言的传播扩散几乎无法实现</li>
 <li>移民所带的语言有时虽不能取代当地的语言，但其语言成分往往能渗透到当地的语言中，对当地的语言产生影响</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h3 id="语言扩散及其结果"><a href="#语言扩散及其结果" class="headerlink" title="语言扩散及其结果"></a>语言扩散及其结果</h3><ol>
+<h3 id="语言扩散及其结果">语言扩散及其结果</h3>
+<ol type="1">
 <li>新来语言取代当地的语言</li>
 <li>新来移民接受当地的语言</li>
 <li>新来移民带来的语言先存在，后影响下降或消失</li>
@@ -241,42 +677,36 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>新来的移民到新地后最终随着环境条件变化形成新的语言</li>
 <li>多语言国家出现</li>
 </ol>
-<h2 id="人类活动的行为空间"><a href="#人类活动的行为空间" class="headerlink" title="人类活动的行为空间"></a>人类活动的行为空间</h2><h3 id="行为空间"><a href="#行为空间" class="headerlink" title="行为空间"></a>行为空间</h3><ul>
+<h2 id="人类活动的行为空间">人类活动的行为空间</h2>
+<h3 id="行为空间">行为空间</h3>
+<ul>
 <li>指人们活动的地域界限，它既包括人类直接活动的空间范围，也包括人们间接活动的空间范围</li>
 <li>直接活动空间是指人们日常生活、工作、学习所经历的场所和通路，是人们通过直接经验所了解的空间</li>
 <li>间接活动空间是指人们通过间接的交流所了解到的空间范围</li>
 <li>人们的间接活动空间的范围要比直接活动空间的范围大的多</li>
 </ul>
-<h3 id="日常活动的行为空间"><a href="#日常活动的行为空间" class="headerlink" title="日常活动的行为空间"></a>日常活动的行为空间</h3><ul>
+<h3 id="日常活动的行为空间">日常活动的行为空间</h3>
+<ul>
 <li><p>人类的社会日常活动行为主要涉及人们的通勤、购物、闲暇等活动行为。这些活动行为具有一定的目的指向性，具有不同的空间行为规律，从而形成不同的行为空间</p>
-<p>  <strong>通勤活动的行为空间</strong></p>
-</li>
-<li><p>由于人们的居住场所与工作或上学场所处于不同的地点，这样上班和下班，上学和放学所经由的路线和地点就构成了人们通勤活动的行为空间</p>
-</li>
-<li><p>这一行为空间是由持相同目的的通勤者和通学者所构成的，与购物者和闲暇者不同，是在城市运输高峰时间由居住地移向工作地点或者学校</p>
-</li>
+<p><strong>通勤活动的行为空间</strong></p></li>
+<li><p>由于人们的居住场所与工作或上学场所处于不同的地点，这样上班和下班，上学和放学所经由的路线和地点就构成了人们通勤活动的行为空间</p></li>
+<li><p>这一行为空间是由持相同目的的通勤者和通学者所构成的，与购物者和闲暇者不同，是在城市运输高峰时间由居住地移向工作地点或者学校</p></li>
 <li><p>居住地和工作地、学校的场所，以及可以利用的交通手段决定通勤和通学的行为空间的特点</p>
-<p>  <strong>时空棱柱体</strong></p>
-</li>
-<li><p>为了探求人们日常通勤活动的行为空间问题，瑞典学者哈格斯特朗厂里了时空棱柱体模式</p>
-</li>
-<li><p>主要利用时间、空间分析发研究人们通勤的行为空间范围</p>
-</li>
-<li><p>通常一个人的日常行为空间主要有居住地、工作地、交通手段和活动时间来决定。</p>
-</li>
-<li><p>一个人在一天中外出活动的时间是有限的，花在通勤路途上的时间越多,用于其他活动上的时间就愈少</p>
-</li>
-<li><p>工作和睡眠是两种特殊的活动，需要一定的时间总量</p>
-</li>
-<li><p>通勤和通学的行为空间，就要受制于居住地点与行程速度两方面的因素</p>
-</li>
-<li><p>棱柱体规模的大萧也反映个人工作、生活环境的状况，以及个人爱好、态度等多种多样的限制因素，这些限制因素可分为三种类型</p>
-</li>
+<p><strong>时空棱柱体</strong></p></li>
+<li><p>为了探求人们日常通勤活动的行为空间问题，瑞典学者哈格斯特朗厂里了时空棱柱体模式</p></li>
+<li><p>主要利用时间、空间分析发研究人们通勤的行为空间范围</p></li>
+<li><p>通常一个人的日常行为空间主要有居住地、工作地、交通手段和活动时间来决定。</p></li>
+<li><p>一个人在一天中外出活动的时间是有限的，花在通勤路途上的时间越多,用于其他活动上的时间就愈少</p></li>
+<li><p>工作和睡眠是两种特殊的活动，需要一定的时间总量</p></li>
+<li><p>通勤和通学的行为空间，就要受制于居住地点与行程速度两方面的因素</p></li>
+<li><p>棱柱体规模的大萧也反映个人工作、生活环境的状况，以及个人爱好、态度等多种多样的限制因素，这些限制因素可分为三种类型</p></li>
 </ul>
-<h2 id="宗教"><a href="#宗教" class="headerlink" title="宗教"></a>宗教</h2><ul>
+<h2 id="宗教">宗教</h2>
+<ul>
 <li>宗教属于社会意识形态之一，最大的特点是相信现实世界之外还存在一个超自然、超人间的神秘境界和力量，这个力量主宰着自然和人类社会，同时也是一种文化现象。</li>
 </ul>
-<h3 id="佛教"><a href="#佛教" class="headerlink" title="佛教"></a>佛教</h3><ul>
+<h3 id="佛教">佛教</h3>
+<ul>
 <li>相传公元前6世纪至前5世纪，悉达多·乔达摩创立了佛教。</li>
 <li>佛教的基本教义把人生断定为“无常”、“无我”、“苦”，苦的原因不在外部世界，而由个人的“惑”、“业”所致。</li>
 <li>佛教经典繁多，总体可归为经、律、论三藏。</li>
@@ -285,7 +715,8 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>传入今斯里兰卡、缅甸、泰国、柬埔寨、老挝以及中国云南西双版纳地区，以小乘佛教为主，称为南传佛教，经典属于巴利文系统</li>
 <li>主要分布在东亚、东南亚</li>
 </ul>
-<h3 id="基督教"><a href="#基督教" class="headerlink" title="基督教"></a><strong>基督教</strong></h3><ul>
+<h3 id="基督教"><strong>基督教</strong></h3>
+<ul>
 <li>基督教为奉耶稣基督为救世主的各教派的统称，其中包括天主教、正教、新教和其他一些较小的教派</li>
 <li>基督教公园1世纪起源于巴勒斯坦地区，信仰上帝创造并主宰世界，认为人类从始祖起就犯有罪，并在罪中受苦，只有信仰上帝及其儿子耶稣基督才能获救</li>
 <li>基督教以《旧约全书》《新约全书》为圣经</li>
@@ -293,122 +724,129 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>16世纪西部教会脱离分化除一些新教派，称为“新教”，在教义、组织、礼仪等方面仍有共同的特征</li>
 <li>基督教遍及欧洲、美洲、亚洲北部大部分、南非、大洋洲，是世界上信奉者最多的宗教</li>
 </ul>
-<h3 id="伊斯兰教"><a href="#伊斯兰教" class="headerlink" title="伊斯兰教"></a><strong>伊斯兰教</strong></h3><ul>
+<h3 id="伊斯兰教"><strong>伊斯兰教</strong></h3>
+<ul>
 <li>为公元7世纪初穆罕默德于阿拉伯半岛创建的一神教</li>
-<li>伊斯兰教教义<ul>
+<li>伊斯兰教教义
+<ul>
 <li>除安拉外，再无神灵，穆罕默德是安拉的试着，并信仰死后复活与末日审判</li>
 <li>信一切由安拉前定</li>
-</ul>
-</li>
+</ul></li>
 <li>教义规定穆斯林必须严格遵循礼拜和斋戒制度，行善并为“安拉之道”征战</li>
 <li>《古兰经》为伊斯兰教的根本经典</li>
-<li>派别<ul>
+<li>派别
+<ul>
 <li><strong>逊尼派</strong>注重实用性和世俗知识，信奉家庭和社会群体的力量，比较保守，主要分布在伊朗</li>
 <li><strong>什叶派</strong>强调理想主义和超自然的力量，坚信永无谬误的伊玛目，激进、冲动，分布遍布欧亚非各大洲</li>
-</ul>
-</li>
+</ul></li>
 <li>主要分布在亚洲、非洲、欧洲以及美洲</li>
 </ul>
-<h2 id="旅游地理"><a href="#旅游地理" class="headerlink" title="旅游地理"></a>旅游地理</h2><h3 id="旅游者"><a href="#旅游者" class="headerlink" title="旅游者"></a>旅游者</h3><ol>
-<li>游客<ul>
+<h2 id="旅游地理">旅游地理</h2>
+<h3 id="旅游者">旅游者</h3>
+<ol type="1">
+<li>游客
+<ul>
 <li>指任何一个因为休闲、娱乐、观光、度假、探亲访友、就以辽阳、购物、参加会议或从事经济、文化、体育、宗教活动，离开长住地到其他国家，连续逗留不超过12个月，并且在其他国家的主要目的不是通过所从事的活动获得报酬的人</li>
-</ul>
-</li>
+</ul></li>
 <li>海外旅游者</li>
 <li>海外一日游旅客</li>
 <li>国内旅游者</li>
 <li>国内一日游游客</li>
 </ol>
-<h3 id="客源地与目的地"><a href="#客源地与目的地" class="headerlink" title="客源地与目的地"></a>客源地与目的地</h3><p><strong>旅游业</strong></p>
+<h3 id="客源地与目的地">客源地与目的地</h3>
+<p><strong>旅游业</strong></p>
 <ul>
 <li>是指为旅游者自居住地到目的地再回到居住地的旅游活动的全过程服务的全部相关企业的综合</li>
-<li>应把旅游视为一个系统，是旅游者通过旅游媒介到达旅游目的地的活动系统，其构成要素<ul>
+<li>应把旅游视为一个系统，是旅游者通过旅游媒介到达旅游目的地的活动系统，其构成要素
+<ul>
 <li>旅游客体——旅游产品</li>
 <li>旅游主体——旅游者</li>
 <li>旅游媒介——旅游业和贯穿在其中的旅游活动</li>
 <li>旅游系统具有地域和功能的完整性，以空间表现形势来看，旅游系统是旅游客源地与目的地通过旅游通道相互作用的一个空间系统</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h4 id="客源地"><a href="#客源地" class="headerlink" title="客源地"></a>客源地</h4><ul>
+<h4 id="客源地">客源地</h4>
+<ul>
 <li>是产生旅游者的地域，即游客的来源。客源地的形成是经济发展的产品</li>
 </ul>
-<h4 id="目的地"><a href="#目的地" class="headerlink" title="目的地"></a>目的地</h4><ul>
+<h4 id="目的地">目的地</h4>
+<ul>
 <li>是旅游吸引物比较集中，有旅游接待服务设施，具备旅游功能的区域，它是旅游流指向的目的区域</li>
 </ul>
-<h4 id="客源地和目的地的关系"><a href="#客源地和目的地的关系" class="headerlink" title="客源地和目的地的关系"></a>客源地和目的地的关系</h4><ol>
+<h4 id="客源地和目的地的关系">客源地和目的地的关系</h4>
+<ol type="1">
 <li>客源地和目的地相一致</li>
 <li>客源地和目的地相对应</li>
 <li>客源地与目的地的分散与集中</li>
 </ol>
-<h2 id="旅游区域影响"><a href="#旅游区域影响" class="headerlink" title="旅游区域影响"></a>旅游区域影响</h2><h3 id="对区域经济的影响"><a href="#对区域经济的影响" class="headerlink" title="对区域经济的影响"></a>对区域经济的影响</h3><ol>
-<li>旅游业的经济特征<ul>
+<h2 id="旅游区域影响">旅游区域影响</h2>
+<h3 id="对区域经济的影响">对区域经济的影响</h3>
+<ol type="1">
+<li>旅游业的经济特征
+<ul>
 <li>旅游业是一种无形的出口产业，把社会上的物质产品组合起来，向旅游者提供服务</li>
 <li>旅游是一种零散的综合产品。由多种经济部门组合而成，同时受多种经济部门的影响</li>
-<li>旅游业是一项极不稳定的出口产业。<ul>
+<li>旅游业是一项极不稳定的出口产业。
+<ul>
 <li>旅游产品不能贮存，旅游需求季节变化大</li>
 <li>旅游需求受外部不可预测的因素的影响</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>旅游与经济发展<ul>
+</ul></li>
+</ul></li>
+<li>旅游与经济发展
+<ul>
 <li>旅游开发在不同的地区所需的成本和取得的收益，取决于开发地区的资源状况、经济结构和地理区位</li>
-</ul>
-</li>
-<li>旅游于收支平衡<ul>
+</ul></li>
+<li>旅游于收支平衡
+<ul>
 <li>不论是发达国家还是发展中国家，发展旅游业的一个主要目的是赚取外汇，改善收支平衡状况</li>
-</ul>
-</li>
-<li>旅游于就业<ul>
+</ul></li>
+<li>旅游于就业
+<ul>
 <li>旅游业是一项劳动密集型的行业</li>
 <li>季节性工作多是一大特点</li>
 <li>从事国际旅游的员工，要求懂外语，员工结构与其他行业不同</li>
-</ul>
-</li>
-<li>旅游与税收<ul>
+</ul></li>
+<li>旅游与税收
+<ul>
 <li>旅游业通过本身的经营活动，在增加外汇收入的同时，还能够带来盈利，在资本主义国家，政府从旅游业发展中所获得的经济利益主要是税收</li>
-</ul>
-</li>
-<li>旅游与经济结构<ul>
+</ul></li>
+<li>旅游与经济结构
+<ul>
 <li>旅游业的发展能够促进目的区域产业的经济结构发生改变</li>
 <li>调整最为明显的是直接提供旅游消费资料的部门，即各重工业部门</li>
-</ul>
-</li>
-<li>消极影响<ul>
-<li>旅游过度超前发展<ul>
+</ul></li>
+<li>消极影响
+<ul>
+<li>旅游过度超前发展
+<ul>
 <li>只有在与旅游业有关的产业可以承受的范围内，旅游业才能得到正常发展</li>
-</ul>
-</li>
-<li>通货膨胀和土地价格<ul>
+</ul></li>
+<li>通货膨胀和土地价格
+<ul>
 <li>旅游者往往能以较高的价格购买商品，零售商为旅游者服务可以极大的提高边际利润</li>
 <li>本地居民由于土地价格上升不得不为购房、租房增加开支</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 </ol>
-<h3 id="旅游与环境的关系"><a href="#旅游与环境的关系" class="headerlink" title="旅游与环境的关系"></a>旅游与环境的关系</h3><ol>
+<h3 id="旅游与环境的关系">旅游与环境的关系</h3>
+<ol type="1">
 <li><p>独立关系</p>
 <ul>
 <li>旅游和环境保护各自发展，互相没有接触和干扰</li>
-</ul>
-</li>
+</ul></li>
 <li><p>冲突关系</p>
-<p> 旅游对环境产生有害影响</p>
-</li>
+<p>旅游对环境产生有害影响</p></li>
 <li><p>旅游与环境的共生关系</p>
 <ul>
 <li>环境是旅游业的基础，保护重要的旅游资源也就是对潜在的旅游业投资</li>
-<li>旅游促进环境<ul>
+<li>旅游促进环境
+<ul>
 <li>促进历史遗迹、古建筑、纪念馆的修复</li>
 <li>促进旧建筑改造为新的旅游设施</li>
 <li>对自然资源的保护提供了推动力</li>
 <li>为了保持环境质量和保证向旅游者提供满意的体验，旅游使采取行政的和规划的控制成为可能</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 </ol>
 <p><strong>对自然环境</strong></p>
 <ul>
@@ -441,109 +879,100 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <p><strong>旅游与语言</strong></p>
 <p><strong>旅游与健康</strong></p>
 <p><strong>旅游对文化区的影响</strong></p>
-<ol>
+<ol type="1">
 <li><p>文化的变更和交流</p>
-<p> 原因</p>
+<p>原因</p>
 <ul>
-<li><p>生态环境的改变</p>
-</li>
-<li><p>两种不同文化的接触</p>
-</li>
-<li><p>社会进化过程</p>
+<li>生态环境的改变</li>
+<li>两种不同文化的接触</li>
+<li>社会进化过程</li>
+</ul>
 <p>影响文化交流成功的因素</p>
-</li>
-<li><p>游客</p>
-</li>
-<li><p>时间、空间、交流</p>
-</li>
-<li><p>文化经纪人</p>
+<ul>
+<li>游客</li>
+<li>时间、空间、交流</li>
+<li>文化经纪人
 <ul>
 <li>能使用两种语言的人</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><p>以工艺美术品为例</p>
 <ul>
 <li>传统艺术形式的复兴</li>
 <li>传统艺术形式的退化</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h2 id="国家"><a href="#国家" class="headerlink" title="国家"></a>国家</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<h2 id="国家">国家</h2>
+<h3 id="定义">定义</h3>
+<ul>
 <li>一个具有保持内部稳定、不受外来控制和侵入能力的独立主权政府领导下，占有一定领土的、有组织的政治地理单元</li>
 </ul>
-<h3 id="特征-1"><a href="#特征-1" class="headerlink" title="特征"></a>特征</h3><ol>
-<li>拥有确定的领土<ul>
+<h3 id="特征-1">特征</h3>
+<ol type="1">
+<li>拥有确定的领土
+<ul>
 <li>领土是国家存在的天然地理基础，只有拥有被多数国家及本国国民承认的领土，其居民才能定居，才能进行各种必要的活动，在其领土内，其政府和人民拥有自主权</li>
-</ul>
-</li>
-<li>具有一定数量的定居人口<ul>
+</ul></li>
+<li>具有一定数量的定居人口
+<ul>
 <li>定居人口是国家从事一切国家活动的行为主体，只有有了定居人口，才能建立统治国家的政治结构，才能从事社会经济活动，才有可能形成国家</li>
-</ul>
-</li>
-<li>拥有被其他国民需要和承认、行使诸如国家、外交等职能的政府<ul>
+</ul></li>
+<li>拥有被其他国民需要和承认、行使诸如国家、外交等职能的政府
+<ul>
 <li>政府是执行国家职能的政权组织机构，只有有了合法而富有能力的政府，才能对内进行统治与管理，对外实行各种交往，谋求国家安全</li>
-</ul>
-</li>
-<li>拥有主权<ul>
+</ul></li>
+<li>拥有主权
+<ul>
 <li>主权是国家不受外部任何实力控制的权利。只有拥有主权，国家才能独立的处理内外部事务</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h2 id="推拉理论"><a href="#推拉理论" class="headerlink" title="推拉理论"></a>推拉理论</h2><ul>
-<li><p><strong>推拉理论</strong>是指有利于改善生活条件的因素成为促使人口流动的拉力，而流出地不利的生活条件就是推力。人口流动是由拉力、推力、中间障碍三因素综合作用的结果。 </p>
-</li>
-<li><p>“推—拉”理论是最为全面、更能解释关于人口城乡迁移特别是农民工向城市流动动因的理论。</p>
-</li>
-<li><p>按照“推—拉”理论的观点，在完全市场经济条件下，农民工向城市流动的过程，简单地说，是市场机制自发地对劳动力资源进行重新配置的过程。</p>
-</li>
-<li><p>不过，农民工本身既是理性的经济人，也是劳动力资源的物质承担者，农民工向城市流动，就是农民工同时作为理性的经济人和作为劳动力资源的双重身份在行业和地区间的自由流动，这既是农民工重新选择就业的过程，也是劳动力资源由农村向城市流动的过程。</p>
-</li>
-<li><p>农民工自身的价值选择和劳动力资源的逐利性决定了劳动力自由流动的方向和数量。从农民工个体来看，他的价值选择过程和流动就业过程是市场中同时存在着的推力和拉力共同作。 </p>
-</li>
+<h2 id="推拉理论">推拉理论</h2>
+<ul>
+<li><p><strong>推拉理论</strong>是指有利于改善生活条件的因素成为促使人口流动的拉力，而流出地不利的生活条件就是推力。人口流动是由拉力、推力、中间障碍三因素综合作用的结果。</p></li>
+<li>“推—拉”理论是最为全面、更能解释关于人口城乡迁移特别是农民工向城市流动动因的理论。</li>
+<li>按照“推—拉”理论的观点，在完全市场经济条件下，农民工向城市流动的过程，简单地说，是市场机制自发地对劳动力资源进行重新配置的过程。</li>
+<li>不过，农民工本身既是理性的经济人，也是劳动力资源的物质承担者，农民工向城市流动，就是农民工同时作为理性的经济人和作为劳动力资源的双重身份在行业和地区间的自由流动，这既是农民工重新选择就业的过程，也是劳动力资源由农村向城市流动的过程。</li>
+<li><p>农民工自身的价值选择和劳动力资源的逐利性决定了劳动力自由流动的方向和数量。从农民工个体来看，他的价值选择过程和流动就业过程是市场中同时存在着的推力和拉力共同作。</p></li>
 </ul>
-<h2 id="第四产业"><a href="#第四产业" class="headerlink" title="第四产业"></a>第四产业</h2><ul>
-<li><p><strong>第四产业</strong>是资本主义国家中对产业结构的一种划分。</p>
-</li>
-<li><p>所谓“第四”，并非是第一、二、三产业的顺序排列，而是与第二产业]密切相关。“四”表示“二”的乘方，是第二产业中需要高度脑力劳动的部门。</p>
-</li>
-<li><p>日本学者认为，第四产业是一个最重要的产业群，主要生产、加工信息知识并进行服务。</p>
-</li>
-<li><p>可分为信息产业、知识产业、情绪产业、伦理产业4类。它主要包括设计和生产电子计算机软件、应用微电脑、光纤、激光、遗传工程等新技术部门。 </p>
-</li>
+<h2 id="第四产业">第四产业</h2>
+<ul>
+<li><p><strong>第四产业</strong>是资本主义国家中对产业结构的一种划分。</p></li>
+<li><p>所谓“第四”，并非是第一、二、三产业的顺序排列，而是与第二产业]密切相关。“四”表示“二”的乘方，是第二产业中需要高度脑力劳动的部门。</p></li>
+<li><p>日本学者认为，第四产业是一个最重要的产业群，主要生产、加工信息知识并进行服务。</p></li>
+<li><p>可分为信息产业、知识产业、情绪产业、伦理产业4类。它主要包括设计和生产电子计算机软件、应用微电脑、光纤、激光、遗传工程等新技术部门。</p></li>
 </ul>
-<h2 id="第五产业"><a href="#第五产业" class="headerlink" title="第五产业"></a>第五产业</h2><ul>
-<li><p>第五产业为文化产业</p>
-</li>
-<li><p>它是按照工业标准生产、再生产\存储以及分配文化产品和服务的一系列活动统称。</p>
-</li>
-<li><p>第五产业是属于智慧产业范畴，包括咨询、策划、广告、文艺、科学、教育等,它是直接获取和利用人自身的智慧资源，满足人或机构在知识、文化、技术等方面的需要。 </p>
-</li>
-<li><p>文化产业基本上可以划分为三类</p>
+<h2 id="第五产业">第五产业</h2>
+<ul>
+<li><p>第五产业为文化产业</p></li>
+<li>它是按照工业标准生产、再生产。</li>
+<li><p>第五产业是属于智慧产业范畴，包括咨询、策划、广告、文艺、科学、教育等,它是直接获取和利用人自身的智慧资源，满足人或机构在知识、文化、技术等方面的需要。</p></li>
+<li>文化产业基本上可以划分为三类
 <ul>
 <li>其一，是生产与销售以相对独立的物态形式呈现的文化产品的行业（如生产与销售图书、报刊、影视、音像制品等行业）；</li>
 <li>其二，是以劳务形式出现的文化服务行业（如戏剧舞蹈的演出、体育、娱乐、策划、经纪业等）；</li>
 <li>其三，是向其他商品和行业提供文化附加值的行业（如装潢、装饰、形象设计、文化旅游等）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="第六产业"><a href="#第六产业" class="headerlink" title="第六产业"></a>第六产业</h2><ul>
+<h2 id="第六产业">第六产业</h2>
+<ul>
 <li>“<strong>第六产业</strong>”概念源于日本，就是通过鼓励农户搞多种经营，即不仅种植农作物(第一产业)，而且从事农产品的加工(第二产业)与销售农产品及加工产品[第三产业)，获得更多的增值价值。</li>
 <li>其本质是将一、二、三产业相互融合，应用“1+2+3”等于6、“1<em>2</em>3”等于6的原理，使原本作为一产的农业变身为综合产业，提升农业附加值。</li>
-<li>“第六产业”的术语在我国虽为新鲜事物，但各地类似的发展模式早已存在，我们所熟悉的观光农业、农家乐等创意农业，都属于“第六产业”范畴。 </li>
+<li>“第六产业”的术语在我国虽为新鲜事物，但各地类似的发展模式早已存在，我们所熟悉的观光农业、农家乐等创意农业，都属于“第六产业”范畴。</li>
 </ul>
-<h2 id="区域创新系统"><a href="#区域创新系统" class="headerlink" title="区域创新系统"></a>区域创新系统</h2><ul>
+<h2 id="区域创新系统">区域创新系统</h2>
+<ul>
 <li>区域创新系统是指在一定的地理范围内，经常地､密切地与区域企业的创新投入相互作用的创新网络和制度的行政性支撑安排。区域创新系统的概念主要来源于创新系统和区域科学的研究成果。</li>
 </ul>
-<h3 id="内涵"><a href="#内涵" class="headerlink" title="内涵"></a>内涵</h3><ol>
+<h3 id="内涵">内涵</h3>
+<ol type="1">
 <li>具有一定的地域空间和开放的边界</li>
 <li>以生产企业､研究与开发机构､高等院校､地方政府机构和服务机构为主要的创新主体</li>
 <li>不同创新主体之间的社会交互作用，构成了创新系统的组织和空间结构，从而形成一个社会系统</li>
 <li>把制度因素摆在突出的位置上加以考虑，强调制度因素和治理安排对于知识的形成､利用和扩散的重要作用</li>
 <li>以促进区域内创新活动为目的，鼓励区域内的企业充分利用地域范围内的社会关系､规范､价值和交互作用等来形成特殊形式的资本以增强区域创新能力和竞争力</li>
 </ol>
-<h3 id="构成要素"><a href="#构成要素" class="headerlink" title="构成要素"></a>构成要素</h3><ol>
+<h3 id="构成要素">构成要素</h3>
+<ol type="1">
 <li><strong>主体要素</strong></li>
 </ol>
 <ul>
@@ -552,7 +981,7 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>作为由五大行动主体构成的网络型组织，存在着清晰的区域创新网络，区域创新体系的形成要依赖各个参与者在创新活动中所结成的网络关系</li>
 <li>区域创新体系的参与者借助产业网络和社会网络或者遵循共同的技术范式形成了一个创新网络，在这个网络中企业运用所掌握的创新资源开发新的产品和技术，形成区域创新体系的产出</li>
 </ul>
-<ol start="2">
+<ol start="2" type="1">
 <li><strong>功能要素</strong></li>
 </ol>
 <ul>
@@ -560,50 +989,804 @@ gtag('config', 'xx-xxxxxxx-xx');</script><link rel="stylesheet" href="/css/tocbo
 <li>第一层次是各主体的内部运行机制，主要是激励机制</li>
 <li>第二层次是在主体之间构建联系紧密、运行高效的“管道”机制，关键是解决好信息、知识存量的高效流动、创新合作和技术外溢等问题，形成企业、科研机构与学校、政府以及中介机构之间的信息高效流动、资源合理分配、能够发挥各自优势的机制</li>
 </ul>
-<ol start="3">
+<ol start="3" type="1">
 <li><strong>环境要素</strong></li>
 </ol>
 <ul>
 <li>即创新环境，包括体制、基础设施、社会文化心理和保障条件等</li>
 <li>环境要素是企业创新活动的基本背景，是维系和促进创新的保障因素</li>
-<li>环境要素一般可以分为硬环境和软环境两个方面<ul>
+<li>环境要素一般可以分为硬环境和软环境两个方面
+<ul>
 <li>其中硬环境主要是指科技基础设施</li>
 <li>软环境包括市场环境、社会历史文化和制度环境</li>
-</ul>
-</li>
+</ul></li>
 <li>处理好要素与要素、要素与系统的结合关系，对于发挥区域创新系统的功能、提高区域创新体系的效率至关重要</li>
 </ul>
-<h3 id="体系特点"><a href="#体系特点" class="headerlink" title="体系特点"></a>体系特点</h3><ol>
-<li><p><strong>区域邻近性</strong></p>
+<h3 id="体系特点">体系特点</h3>
+<ol type="1">
+<li><strong>区域邻近性</strong>
 <ul>
 <li>一是区域创新体系是某一特定空间范围内的经济现象。由于地理邻近，节约了信息传递的时间和成本，使得技术外溢在区域创新体系中发挥出更大的作用</li>
-</ul>
-</li>
-<li><p><strong>主体多元性</strong></p>
+</ul></li>
+<li><strong>主体多元性</strong>
 <ul>
 <li>区域创新体系是一定区域内与创新全过程相关的各种主体组成的系统</li>
-</ul>
-</li>
-<li><p><strong>文化根植性</strong></p>
+</ul></li>
+<li><strong>文化根植性</strong>
 <ul>
 <li>根植性代表一组适合于系统创新的特征，反映了社会社区按照共同的合作规范、互信的相互作用以及非贸易的相互依赖进行运作的程度</li>
-</ul>
-</li>
-<li><p><strong>系统集成性</strong></p>
+</ul></li>
+<li><strong>系统集成性</strong>
 <ul>
 <li>区域创新体系由区域范围内产业体系、科技体系、教育体系、资金体系、政府部门等子系统构成，其互动关联影响着区域经济的整体发展</li>
-</ul>
-</li>
-<li><p><strong>网络开放性</strong></p>
+</ul></li>
+<li><strong>网络开放性</strong>
 <ul>
 <li>区域创新体系是特定区域创新资源在创新主体之间流动的网络</li>
 <li>成功的区域创新体系应当充分挖掘利用域内要素，并尽量吸引域外可利用的要素，以增强创新能力和保持竞争力</li>
-</ul>
-</li>
-<li><p><strong>创新集群性</strong></p>
+</ul></li>
+<li><strong>创新集群性</strong>
 <ul>
 <li>产业集群带来了各类创新要素的集聚，为区域创新体系的形成提供了必不可少的条件，从某种角度讲，产业集群是一个天然的区域创新体系</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-</div></article><div class="post-view__sidebar"><div class="sidebar"><div class="tocbot"><h2>Toc</h2><div class="toc__content"></div></div><h2>Links</h2><div class="sidebar__link"><ul><li><a href="https://github.com/yours" target="_blank" rel="noopener">Github</a></li><li><a href="https://codepen.io/yours" target="_blank" rel="noopener">Codepen</a></li><li><a href="https://dribbble.com/yours" target="_blank" rel="noopener">Dribbble</a></li><li><a href="https://twitter.com/yours" target="_blank" rel="noopener">Twitter</a></li><li><a href="https://www.zhihu.com/people/yours" target="_blank" rel="noopener">知乎</a></li><li><a href="https://juejin.im/user/yours" target="_blank" rel="noopener">掘金</a></li><li><a href="mailto:xxx@yourmail.xxxx">Mail</a></li></ul></div><h2>Archives</h2><div class="sidebar__archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li></ul></div><h2>Categories</h2><div class="sidebar__categories"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Arcmap/">-Arcmap</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/CAD/">-CAD</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Geoda/">-Geoda</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/PS/">-PS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">-hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E8%80%83%E7%A0%94/">-人文地理考研</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">-其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%98%8E%E5%98%8E%E5%98%8E/">-嘎嘎嘎</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%BD%E5%9C%9F%E7%A9%BA%E9%97%B4%E8%A7%84%E5%88%92/">-国土空间规划</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9C%B0%E5%9B%BE%E5%88%B6%E4%BD%9C/">-地图制作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB/">-考研政治</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/">-考研数学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94%E8%8B%B1%E8%AF%AD%E4%B8%80/">-考研英语一</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%92%E5%B9%B4%E7%94%9F%E6%80%81%E7%8E%AF%E4%BF%9D%E7%BB%84%E7%BB%87%E5%9F%B9%E8%AE%AD/">-青年生态环保组织培训</a></li></ul></div><h2>Tags</h2><div class="sidebar__tags"><ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Arcmap/" rel="tag">-Arcmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CAD%E6%B3%A8%E9%87%8A/" rel="tag">-CAD注释</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Geoda-%E7%A9%BA%E9%97%B4%E8%87%AA%E7%9B%B8%E5%85%B3/" rel="tag">-Geoda -空间自相关</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">-hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF/" rel="tag">-一带一路</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86/" rel="tag">-人文地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-人文地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%81%E5%9B%9B%E4%BA%94%E8%A7%84%E5%88%92/" rel="tag">-十四五规划</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BD%E5%9C%9F%E8%A7%84%E5%88%92-%E5%9C%B0%E7%90%86/" rel="tag">-国土规划 -地理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E5%9B%BE%E9%85%8D%E8%89%B2/" rel="tag">-地图配色</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9C%B0%E7%90%86%E5%9B%BD%E6%83%85/" rel="tag">-地理国情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%8E%E5%B8%82%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-城市地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD-%E5%8C%BB%E7%96%97/" rel="tag">-基础设施 -医疗</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%A0%E5%9B%BE/" rel="tag">-抠图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%BF%E6%B2%BB%E8%83%8C%E8%AF%B5/" rel="tag">-政治背诵</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E7%82%B9/" rel="tag">-热点</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D/" rel="tag">-热词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%83%AD%E8%AF%8D-%E9%95%BF%E4%B8%89%E8%A7%92/" rel="tag">-热词 -长三角</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E4%BF%9D%E4%BA%91%E5%9F%B9%E8%AE%AD-%E7%BE%8E%E4%B8%BD%E4%B8%AD%E5%9B%BD%C2%B7%E9%9D%92%E6%98%A5%E8%A1%8C%E5%8A%A8/" rel="tag">-环保云培训 -美丽中国·青春行动</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9C%9F%E9%A2%98/" rel="tag">-真题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/" rel="tag">-社会学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/" rel="tag">-第七次人口普查</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E%E5%9C%B0%E7%90%86%E5%AD%A6/" rel="tag">-经济地理学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87/" rel="tag">-英语作文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD%E7%BF%BB%E8%AF%91/" rel="tag">-英语翻译</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B5%B5%E7%87%95%E8%8F%81/" rel="tag">-赵燕菁</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0/" rel="tag">-高数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E6%95%B0%E5%A4%A7%E9%A2%98/" rel="tag">-高数大题</a></li></ul></div></div></div></div><div class="horizontal-line" style="height: 1px"></div><div class="main__bottom"><div class="pre-next"><a class="pre-button" href="/2020/12/20/90-90%E9%AB%98%E6%95%B0%E5%A4%8D%E7%9B%98/">90-90高数复盘</a><a class="next-button" href="/2020/12/07/%E7%9F%B3%E6%B2%B9%E5%8D%B1%E6%9C%BA/">石油危机</a></div></div></div></div><div class="footer"><span>©️2019-2021 Designed By&nbsp;<strong><a href="https://github.com/random-yang" target="_blank" rel="noopener">RandomYang</a></strong> Powered By&nbsp;</span><strong><a href="https://hexo.io" target="_blank" rel="noopener">hexo</a></strong></div><div class="darkmode-mask" id="darkmode-mask"></div><div class="sidebar__button"></div></body></html>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    未来的东东东
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://zypher.cn/2020/12/09/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6%E8%A1%A5%E5%85%85/" title="人文地理学补充">http://zypher.cn/2020/12/09/%E4%BA%BA%E6%96%87%E5%9C%B0%E7%90%86%E5%AD%A6%E8%A1%A5%E5%85%85/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/12/07/%E7%9F%B3%E6%B2%B9%E5%8D%B1%E6%9C%BA/" rel="next" title="石油危机">
+                <i class="fa fa-chevron-left"></i> 石油危机
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/12/20/90-90%E9%AB%98%E6%95%B0%E5%A4%8D%E7%9B%98/" rel="prev" title="90-90高数复盘">
+                90-90高数复盘 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/gangqin.jpg"
+                alt="未来的东东东" />
+            
+              <p class="site-author-name" itemprop="name">未来的东东东</p>
+              <p class="site-description motion-element" itemprop="description">去摘，遥不可及的星</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ZypherRay" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#人文地理学课本补充"><span class="nav-number">1.</span> <span class="nav-text">人文地理学课本补充</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#人文地理学研究的方法论"><span class="nav-number">1.1.</span> <span class="nav-text">人文地理学研究的方法论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#经验主义方法论"><span class="nav-number">1.1.1.</span> <span class="nav-text">经验主义方法论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实证主义方法论"><span class="nav-number">1.1.2.</span> <span class="nav-text">实证主义方法论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#人本主义方法论"><span class="nav-number">1.1.3.</span> <span class="nav-text">人本主义方法论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构主义方法论"><span class="nav-number">1.1.4.</span> <span class="nav-text">结构主义方法论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文化生态学"><span class="nav-number">1.2.</span> <span class="nav-text">文化生态学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念"><span class="nav-number">1.2.1.</span> <span class="nav-text">概念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文化整合"><span class="nav-number">1.3.</span> <span class="nav-text">文化整合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#制度文化"><span class="nav-number">1.4.</span> <span class="nav-text">制度文化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文化景观解释遵循原则"><span class="nav-number">1.5.</span> <span class="nav-text">文化景观解释遵循原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#农业的起源和发展"><span class="nav-number">1.6.</span> <span class="nav-text">农业的起源和发展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念-1"><span class="nav-number">1.6.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传统农业基础理论"><span class="nav-number">1.6.2.</span> <span class="nav-text">传统农业基础理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索尔的推论"><span class="nav-number">1.6.3.</span> <span class="nav-text">索尔的推论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现代农业"><span class="nav-number">1.7.</span> <span class="nav-text">现代农业</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特点"><span class="nav-number">1.7.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型"><span class="nav-number">1.7.2.</span> <span class="nav-text">类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#民族"><span class="nav-number">1.8.</span> <span class="nav-text">民族</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念-2"><span class="nav-number">1.8.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#民族的形成"><span class="nav-number">1.8.2.</span> <span class="nav-text">民族的形成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特征"><span class="nav-number">1.8.3.</span> <span class="nav-text">特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#民族的分布区"><span class="nav-number">1.8.4.</span> <span class="nav-text">民族的分布区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#民族形式分布区"><span class="nav-number">1.8.5.</span> <span class="nav-text">民族形式分布区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语言"><span class="nav-number">1.9.</span> <span class="nav-text">语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念-3"><span class="nav-number">1.9.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">1.9.2.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语言的社会功能"><span class="nav-number">1.9.3.</span> <span class="nav-text">语言的社会功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语言的传播与环境"><span class="nav-number">1.10.</span> <span class="nav-text">语言的传播与环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自然因素的影响"><span class="nav-number">1.10.1.</span> <span class="nav-text">自然因素的影响</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会人文因素"><span class="nav-number">1.10.2.</span> <span class="nav-text">社会人文因素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语言扩散及其结果"><span class="nav-number">1.10.3.</span> <span class="nav-text">语言扩散及其结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人类活动的行为空间"><span class="nav-number">1.11.</span> <span class="nav-text">人类活动的行为空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#行为空间"><span class="nav-number">1.11.1.</span> <span class="nav-text">行为空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日常活动的行为空间"><span class="nav-number">1.11.2.</span> <span class="nav-text">日常活动的行为空间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宗教"><span class="nav-number">1.12.</span> <span class="nav-text">宗教</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#佛教"><span class="nav-number">1.12.1.</span> <span class="nav-text">佛教</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基督教"><span class="nav-number">1.12.2.</span> <span class="nav-text">基督教</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伊斯兰教"><span class="nav-number">1.12.3.</span> <span class="nav-text">伊斯兰教</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#旅游地理"><span class="nav-number">1.13.</span> <span class="nav-text">旅游地理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#旅游者"><span class="nav-number">1.13.1.</span> <span class="nav-text">旅游者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客源地与目的地"><span class="nav-number">1.13.2.</span> <span class="nav-text">客源地与目的地</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#客源地"><span class="nav-number">1.13.2.1.</span> <span class="nav-text">客源地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#目的地"><span class="nav-number">1.13.2.2.</span> <span class="nav-text">目的地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客源地和目的地的关系"><span class="nav-number">1.13.2.3.</span> <span class="nav-text">客源地和目的地的关系</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#旅游区域影响"><span class="nav-number">1.14.</span> <span class="nav-text">旅游区域影响</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对区域经济的影响"><span class="nav-number">1.14.1.</span> <span class="nav-text">对区域经济的影响</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#旅游与环境的关系"><span class="nav-number">1.14.2.</span> <span class="nav-text">旅游与环境的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#国家"><span class="nav-number">1.15.</span> <span class="nav-text">国家</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.15.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特征-1"><span class="nav-number">1.15.2.</span> <span class="nav-text">特征</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推拉理论"><span class="nav-number">1.16.</span> <span class="nav-text">推拉理论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四产业"><span class="nav-number">1.17.</span> <span class="nav-text">第四产业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五产业"><span class="nav-number">1.18.</span> <span class="nav-text">第五产业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六产业"><span class="nav-number">1.19.</span> <span class="nav-text">第六产业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区域创新系统"><span class="nav-number">1.20.</span> <span class="nav-text">区域创新系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内涵"><span class="nav-number">1.20.1.</span> <span class="nav-text">内涵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构成要素"><span class="nav-number">1.20.2.</span> <span class="nav-text">构成要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#体系特点"><span class="nav-number">1.20.3.</span> <span class="nav-text">体系特点</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">未来的东东东</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
